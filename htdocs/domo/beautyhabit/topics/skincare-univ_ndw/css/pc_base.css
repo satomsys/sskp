@@ -1,0 +1,138 @@
+/* charset */
+@charset "utf-8";
+
+/* reset */
+/* -------------------------------------- */
+html,body,div,span,object,iframe,
+h1,h2,h3,h4,h5,h6,p,
+strong,em,b,i,
+dl,dt,dd,ul,ol,li,
+img,
+table,caption,tbody,tfoot,thead,tr,th,td,
+pre,address,blockquote,
+form,label{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	text-decoration: none;
+	text-align: left;
+	vertical-align: baseline;
+	font-size: 100%;
+	border: 0;
+}
+ul,ol {
+	list-style: none;
+}
+input, select {
+	vertical-align: middle;
+}
+img {
+	vertical-align: top;
+	vertical-align: bottom;
+}
+
+:focus { outline: 0; }
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*clearfix*/
+/*--------------------------*/
+.cf:after,
+.cf:before {
+	content: '';
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+.cf {
+	zoom: 1;
+}
+
+.cb{
+	clear: both;
+}
+.fll{float: left;}
+.flr{float: right;}
+.tac{text-align: center;}
+
+.dtbl{display: table;}
+.dtblc{display: table-cell;}
+.dn{display: none;}
+
+.blkc{margin-left: auto;margin-right: auto;}
+
+.whlf{width: 49%;}
+.w55p{width: 55%;}
+.w60p{width: 60%;}
+.w70p{width: 70%;}
+.w80p{width: 80%;}
+.w90p{width: 90%;}
+.w92p{width: 92%;}
+.w94p{width: 94%;}
+.w96p{width: 96%;}
+.w98p{width: 98%;}
+.wmax{width: 100%;}
+
+.w100{width: 100px;}
+.w120{width: 120px;}
+
+.mac{
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/*margin*/
+.mt100{margin-top: 100px !important;}
+.mt95 {margin-top: 95px !important;}
+.mt90 {margin-top: 90px !important;}
+.mt85 {margin-top: 85px !important;}
+.mt80 {margin-top: 80px !important;}
+.mt75 {margin-top: 75px !important;}
+.mt70 {margin-top: 70px !important;}
+.mt65 {margin-top: 65px !important;}
+.mt60 {margin-top: 60px !important;}
+.mt55 {margin-top: 55px !important;}
+.mt50 {margin-top: 50px !important;}
+.mt45 {margin-top: 45px !important;}
+.mt40 {margin-top: 40px !important;}
+.mt35 {margin-top: 35px !important;}
+.mt30 {margin-top: 30px !important;}
+.mt25 {margin-top: 25px !important;}
+.mt20 {margin-top: 20px !important;}
+.mt15 {margin-top: 15px !important;}
+.mt10 {margin-top: 10px !important;}
+.mt05 {margin-top: 5px !important;}
+.mt00 {margin-top: 0px !important;}
+
+
+/*padding*/
+.pt100{padding-top: 100px !important;}
+.pt95 {padding-top: 95px !important;}
+.pt90 {padding-top: 90px !important;}
+.pt85 {padding-top: 85px !important;}
+.pt80 {padding-top: 80px !important;}
+.pt75 {padding-top: 75px !important;}
+.pt70 {padding-top: 70px !important;}
+.pt65 {padding-top: 65px !important;}
+.pt60 {padding-top: 60px !important;}
+.pt55 {padding-top: 55px !important;}
+.pt50 {padding-top: 50px !important;}
+.pt45 {padding-top: 45px !important;}
+.pt40 {padding-top: 40px !important;}
+.pt35 {padding-top: 35px !important;}
+.pt30 {padding-top: 30px !important;}
+.pt25 {padding-top: 25px !important;}
+.pt20 {padding-top: 20px !important;}
+.pt15 {padding-top: 15px !important;}
+.pt10 {padding-top: 10px !important;}
+.pt05 {padding-top: 5px !important;}
+.pt00 {padding-top: 0px !important;}
+
+
+.fwb{font-weight: bold;}
+.ff{font-family:"ヒラギノ明朝 Pro W3", "Hiragino Mincho ProN", "HGS明朝E", "HG明朝", "メイリオ", Meiryo, "ＭＳ Ｐ明朝", "MS PMincho", "ＭＳ 明朝", "MS Mincho", sans-serif;}
+.fs{font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;}
+/* ---------------------------- container */

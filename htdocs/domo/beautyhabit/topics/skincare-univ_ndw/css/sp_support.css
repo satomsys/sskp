@@ -1,0 +1,116 @@
+/* charset */
+@charset "utf-8";
+
+/* ---------------------------- cmn_vsl */
+.cmn_vsl .ttl_box .img img{
+  width: 90% !important;
+}
+.cmn_vsl .ttl_box .ttl{
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+.cmn_vsl .ttl_box .ttl img{
+  width: 90% !important;
+}
+
+/* ---------------------------- cmn_blk */
+.cmn_blk{
+  padding: 5% 5% 10%;
+  background-color: #f2f5f7;
+  text-align: left;
+  font-size: 130%;
+  line-height: 1.7;
+}
+.cmn_btm{
+  padding-bottom: 10%;
+}
+.cmn_blk .sub{
+  display: block;
+  margin-bottom: 7% !important;
+  text-align: center;
+}
+.cmn_blk .sub img{
+  width: 80% !important;
+}
+
+/* -------------- blk01 */
+.blk_top .top_txt{
+  display: block;
+  margin-bottom: 10% !important;
+  text-align: center;
+  font-size: 100% !important;
+  letter-spacing: -0.01em;
+  line-height: 2;
+}
+
+.blk_top .min01{
+  margin-bottom: 2% !important;
+  font-size: 120% !important;
+  font-weight: bold;
+  color: #886e4f;
+}
+.blk_top .min02{
+  font-size: 110%;
+  font-weight: bold;
+  color: #e79698;
+}
+
+.blk_top .txt{
+  margin-top: 4% !important;
+}
+
+.blk_top .col03{
+  margin-bottom: 10% !important;
+}
+.blk_top .col03 .col{
+  margin-top: 6% !important;
+}
+.blk_top .col03 .col:first-child{
+  margin-top: 3% !important;
+}
+.blk_top .col{
+  display: table;
+}
+.blk_top .col .thm{
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 4% !important;
+  width: 28%;
+}
+.blk_top .col .txt_box{
+  display: table-cell;
+  vertical-align: middle;
+}
+.blk_top .col .txt{
+  margin-top: 2% !important;
+}
+
+/* -------------- blk_btm */
+.blk_btm{
+  position: relative;
+  margin-top: 5%;
+  padding: 2px;
+  border: 2px solid #886e4f;
+  background-color: #fff;
+}
+.blk_btm .in_blk{
+  padding: 5% 4% 8%;
+  border: 1px solid #886e4f;
+}
+.blk_btm .item{
+  width: 66%;
+  margin: 0 auto !important;
+}
+.blk_btm .txt_box{
+  line-height: 1.8;
+}
+.blk_btm .min01{
+  margin-bottom: 2% !important;
+  font-size: 120% !important;
+  font-weight: bold;
+  color: #886e4f;
+}
+
+.btm_btn{
+  margin-top: 5% !important;
+}

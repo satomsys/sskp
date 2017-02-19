@@ -1,0 +1,24 @@
+<?php
+
+// ▼R-#28973_【H28-00378-01】飲むドモホルンリンクル、めぐりの結晶　特設サイト立上げ 2016/10/25 nul-hatano
+header("Location: /domo/beautyhabit/review/mgk/interview/index.html", true, 301);
+exit;
+// ▲R-#28973_【H28-00378-01】飲むドモホルンリンクル、めぐりの結晶　特設サイト立上げ 2016/10/25 nul-hatano
+
+require_once '../../../../include/pc.inc.php';
+
+if(isSmartPhone()) {
+	// SPからのアクセスの場合SP用テンプレートを読む
+	$template_file = 'domo/beautyhabit/interview/index_smart.tpl';
+}
+
+// デバイスIDの取得
+if(!empty($_COOKIE['DEVICE_ID'])){
+	$device_id = true;
+}else{
+	$device_id = false;
+}
+$smarty->assign('device_id',$device_id);
+
+require_once $ROOT_DIR . '/include/pc_end.inc.php';
+?>

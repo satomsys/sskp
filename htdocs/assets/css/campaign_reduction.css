@@ -1,0 +1,31 @@
+table.table-reduction-subtotal .price-reduction, table.table-reduction-subtotal .price-unit {
+	color: #ff0000;
+	font-weight: bold;
+}
+
+
+.total-information-table-block01 table.table-reduction-subtotal {
+	float: right;
+	margin-left: 240px;
+	margin-top: 4px;
+}
+
+table.order-subtotal-information-table01 .col-subtotal .price-amount-without-reduction {
+	font-weight: bold;
+}
+
+table.order-subtotal-information-table01 .row-header-reduction-total {
+	background: none repeat scroll 0 0 #fae1e9;
+}
+
+@media screen and (max-width: 568px) {
+	body.template-enable-media-queries .total-information-table-block01 table.table-reduction-subtotal {
+		float: none;
+		margin-left:0;
+		width: 100%;
+	}
+	body.template-enable-media-queries .total-information-table-block01 table.table-reduction-subtotal .col-row-header {
+		padding-left: 10px;
+		vertical-align: middle;
+	}
+}

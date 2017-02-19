@@ -1,0 +1,196 @@
+/*******************************
+  口コミインタビューのリンクバナー
+*******************************/
+
+.bh-pickup {
+	max-width: @column_PC;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 100px;  
+}
+@media screen and (max-width: @break_SP) {
+// @media screen and (max-width: @break_SP) {
+  .bh-pickup{
+    padding-top: 45px;
+      .bh-sectionDeveloper &{
+        padding-left: 15px;
+        padding-right: 15px;
+      }    
+  }
+}
+
+
+.bh-pickup ul{
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.bh-pickup__li{
+  width: 100%;
+  height: 145px;
+  margin-bottom: 30px;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+  
+  &:last-child{
+  	margin-bottom: 0;
+  }
+
+	a {
+	  color: inherit;
+	  text-decoration: none;
+	}
+	
+	@media screen and (max-width: @break_TABsmall) {
+	// @media screen and (max-width: @break_SP) {
+		margin-bottom: 20px;
+	    background: #fff url(/assets/ps/domo/beautyhabit/common/img/arrow_sp.png) 99% center no-repeat ;
+	    -webkit-background-size: 12px;
+	    background-size: 12px;	
+	}
+}
+
+
+
+
+.bh-pickup__li__thumb,
+.bh-pickup__li__text{
+	line-height: 1;
+	height: 145px;  
+	float: left;
+	vertical-align: middle;
+	
+	@media screen and (max-width: @break_TABsmall) {
+	// @media screen and (max-width: @break_SP) {
+	    height: 135px;  
+	}
+}
+
+
+.bh-pickup__li__thumb{
+ 	width: 145px;
+	
+	@media screen and (max-width: @break_TABsmall) {
+	// @media screen and (max-width: @break_SP) {
+	    width: 39.13%;
+	    height: 100%;
+	    display: block;
+	    
+	    img{
+	    	display: none;
+	    }	    
+
+	  .bh-pickup__li:first-child &{
+	    background: url(/assets/ps/domo/beautyhabit/mgk/img/thumb_pickup_sp_1.jpg) center center no-repeat;
+	    -webkit-background-size: cover;
+	    background-size: cover;
+	  }   
+	   .bh-pickup__li:last-child &{
+	    background: url(/assets/ps/domo/beautyhabit/mgk/img/thumb_pickup_sp_2.jpg) center center no-repeat;
+	    -webkit-background-size: cover;
+	    background-size: cover;
+	  }   
+	}
+}
+
+.bh-pickup__li__text{
+  height: 105px;
+  margin-top: 20px;
+  display: table;
+  width: calc( ~'100% - 145px - 35px' );
+  margin-left: 35px;
+/*  padding-top: 20px;
+  padding-bottom: 20px;*/
+	
+	@media screen and (max-width: @break_TABsmall) {
+		margin-top: 15px;
+		margin-left: 15px;
+		
+	}
+	@media screen and (max-width: @break_TABsmall) {
+	// @media screen and (max-width: @break_SP) {
+	    width: calc( ~'100% - 39.13% - 10px' );
+	    height: auto;
+	    padding: 10px ;
+	    margin-top: 0px;
+	    margin-left: 0;
+	    display: block;
+	}
+}
+
+.bh-pickup__li__text__clmLeft{
+	width: 390px;
+	@media screen and (max-width: @break_TABsmall) {
+	// @media screen and (max-width: @break_SP) {
+	    width: auto;
+	}
+}
+
+
+.bh-pickup__li__text__clmRight{
+  width: 370px;
+  line-height: 2;
+  padding-left: 20px;
+  padding-right: 120px;
+  font-size: 14px;
+  color: #aaa; 
+  border-left: solid 1px #A68F68;
+  background: url(/assets/ps/domo/beautyhabit/common/img/arrow.png) 90% center no-repeat ;
+	@media screen and (max-width: @break_TABsmall) {
+	// @media screen and (max-width: @break_SP) {
+	    width: auto;
+	    line-height: 1.4;
+	    padding-left: 0;
+	    padding-right: 0;
+	    font-size: 12px;
+	    border: none;
+	    background: none;
+	}
+}
+
+
+.bh-pickup__li__text__clmLeft,
+.bh-pickup__li__text__clmRight{
+  display: table-cell;
+  vertical-align: middle;
+	@media screen and (max-width: @break_TABsmall) {
+	// @media screen and (max-width: @break_SP) {
+	    display:block;
+	}
+}
+
+
+.bh-pickup__category {
+  margin-top: 0;
+	@media screen and (max-width: @break_TABsmall) {
+	// @media screen and (max-width: @break_SP) {
+	    max-width: 80%;
+	    margin-bottom: 5px;
+	}
+}
+
+.bh-pickup__subTitle {
+  margin: 0;
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  color: #A68F6D;
+  font-size: 1.5em;
+  line-height: 1.4;
+  
+	@media screen and (max-width: @break_TABsmall) {
+		font-size: 1.25em;
+	}
+	@media screen and (max-width: @break_TABsmall) {
+	// @media screen and (max-width: @break_SP) {
+	    margin-top: 0.5em;
+	    margin-bottom: 0.5em;
+	    font-size: 1em;
+	}
+}
+/**********************  
+**********************/
+// MediaQuery
+// SP
+// @media screen and (max-width: @break_SP) {}  

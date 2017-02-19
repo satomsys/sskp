@@ -1,0 +1,790 @@
+/*******************************
+ 2016 feb beauty habitナビ改修 
+ <div id="bh-localHeader" class="bh-localHeader bh-localHeader--megaDrop"></div>
+*******************************/
+@spNavheight: 43px;
+@radius: 10px;
+
+///////// overlay /////////
+body {
+  &:after{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    opacity: 0;
+    transition: opacity 1s ease 0.1s;
+    background-color: fade(#b29f82, 90%);
+  }
+    &.open.fixed {
+      overflow: hidden;
+    }
+    &.open:after{
+        opacity: 1;
+        z-index: 3;
+    }
+   // MediaQuery
+    // SP
+    @media screen and (max-width: @break_SP) { 
+      &:after{
+        display: none;
+      }
+    }       
+}
+
+.megaDrop
+{
+    position: absolute;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    right: 0;
+    left: 0;     
+
+    z-index: 4;  
+    
+  .open &{
+    //  TOPはjQuery設定
+    
+    // position: fixed;
+    // width: 100%;
+    // margin-right: auto;
+    // margin-left: auto;
+    // right: 0;
+    // left: 0;    
+  }
+
+  &--header.fixed{
+    // width: 100%;
+    // margin-right: auto;
+    // margin-left: auto;
+    position: fixed;
+    // top: 39px;
+    right: 0;
+    left: 0;
+    z-index: 4;
+  }
+
+  @media screen and (max-width: @break_SP) {
+    position: static;
+
+    &--header{
+     display: none;
+    }    
+    &--header.fixed{
+      top: 0px;
+    }    
+  }  
+  
+  ////////////飲む・食べるドモホルンリンクル ///////
+.bh-localHeader {
+  min-width: 0px;
+  // min-width: 980px;
+  box-sizing: border-box;
+  min-height: 55px;
+  padding: 5px 0 4px;
+  position: relative;
+  z-index: 4;  
+  background: url(/assets/ps/domo/beautyhabit/common/img/bg_localheader_01.jpg) repeat center center;
+  background-size: cover;
+  @media screen and (max-width: @break_SP) {
+    width: 100%;
+    min-width: 320px;
+    height: @spNavheight;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    min-height: inherit;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    .fixed & {
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      left: 0;
+    }
+  }
+  ///////// 飲む・食べるドモホルンリンクル ///////// 
+  &__wrap{
+    max-width: 940px;
+    margin: 0 auto;    
+    
+    // MediaQuery
+    // SP
+    @media screen and (max-width: @break_SP) { 
+      padding: 3px;
+    }      
+  }
+
+
+  &__innr {
+    width: 100%;
+    padding: 0 20px;
+    display: table;
+    table-layout: fixed;
+    box-sizing: border-box;
+    @media screen and (max-width: @break_SP) {
+      height: 35px;
+      padding: 0;
+    }
+  }
+  &__left {
+      display: table-cell;
+      vertical-align: middle;  
+  }
+
+  //////menubutton //////
+  &__right {
+      width: 50px;
+      height: 50px;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      padding: 5px 5px 2px;
+      border: solid 2px #fff;
+      border-radius: 3px;
+      box-sizing: border-box;
+      cursor: pointer;
+    user-select:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-drag:none;
+    -khtml-user-drag:none;      
+      
+    @media screen and (max-width: @break_SP) {
+      width: 38px;
+      height: 100%;
+      // padding-top: 6px;
+      // padding-bottom: 6px;
+    }      
+  }
+
+  //////タイトル領域 //////  
+  &__title {
+    display: block;
+    background: url(/assets/ps/domo/beautyhabit/common/img/title_localheader.png) no-repeat;
+    width: 407px;
+    height: 30px;
+    padding: 0;
+    margin: 0 0 0 15px;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    &:hover {
+      opacity: 0.8;
+      -webkit-transition: .3s ease;
+      transition: .3s ease;
+    }
+    h1 {
+      margin: 0;
+    }
+    span {
+      display: none;
+    }
+    @media screen and (max-width: @break_SP) {
+      width: 270px;
+      margin-left: 15px;
+      margin-right: 15px;
+      height: 0;
+      padding-bottom: 6%;
+      background-size: contain;
+    }
+  }
+
+  //////ボタン //////
+
+  &__btn {
+      display: inline-block;
+      transition: all .4s;
+      box-sizing: border-box;
+      position: relative;
+      width: 30px;
+      height: 17px;
+      cursor: pointer;
+      >span {
+        display: inline-block;
+        transition: all .4s;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        line-height: 1;
+        background-color: #fff;
+        border-radius: 4px;
+        &:nth-of-type(1) {
+          top: 0;
+          .open & {
+            -webkit-transform: translateY(7px) rotate(-45deg);
+            transform: translateY(7px) rotate(-45deg);
+          }
+        }
+        &:nth-of-type(2) {
+          top: 7px;
+          .open & {
+            border-radius: 100%;
+            transform-origin: 50%;
+            transform: rotateY(20deg) ;
+            opacity: 0;
+          }
+        }
+        &:nth-of-type(3) {
+          bottom: 0;
+          .open & {
+            -webkit-transform: translateY(-7px) rotate(45deg);
+            transform: translateY(-7px) rotate(45deg);
+          }
+        }
+      }    
+    @media screen and (max-width: @break_SP) {
+      width: 100%;
+      height: 16px;
+      top: 1px;
+ 
+      >span {
+        display: inline-block;
+        transition: all .4s;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        line-height: 1;
+        background-color: #fff;
+        border-radius: 4px;
+        &:nth-of-type(1) {
+          top: 0;
+          .open & {
+            -webkit-transform: translateY(7px) rotate(-45deg);
+            transform: translateY(7px) rotate(-45deg);
+          }
+        }
+        &:nth-of-type(2) {
+          top: 7px;
+          .open & {
+            opacity: 0;
+          }
+        }
+        &:nth-of-type(3) {
+          bottom: 0;
+          .open & {
+            -webkit-transform: translateY(-7px) rotate(45deg);
+            transform: translateY(-7px) rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+  &__btnText {
+      display: block;
+      text-align: center;
+      color: #fff;
+      font-size: .563em;
+      line-height: 1;
+  }
+}
+
+
+  ///////////ナビゲーション ///////////
+.bh-localNav {
+  // max-width:980px;
+  min-width: 0px;
+  height: auto;
+  margin-top: 20px;
+  // height: 89px;
+  display: none;
+  background: none;
+
+  @media screen and (max-width: @break_SP) {
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    margin-top: 0;
+    position: absolute;
+    z-index:10;
+    top: @spNavheight;
+    left: 0;
+    background: #EDE7DF;
+    height: auto;
+    box-sizing: border-box;
+    padding: 15px 0 0px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    .fixed & {
+      position: fixed;
+      z-index: 1000;
+      top: 43px;
+      left: 0;
+      height: 100%;
+    }
+    &.open {
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+
+
+  ///////////ナビインナー ///////////
+  &__innr {
+    width: auto;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    @media screen and (max-width: @break_SP) {
+      width: 100%;
+      padding: 0 2px;
+    }
+  }
+
+
+  /////////ラッパー ////////
+  &__list {
+    width: 76.6%;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    
+    // MediaQuery
+    // SP
+    @media screen and (max-width: @break_TABsmall) {
+       width: 97.5%;
+    }      
+    // MediaQuery
+    // SP
+    @media screen and (max-width: @break_SP) {
+       width: 100%;
+    }  
+
+  }
+
+
+
+  /////////リスト ////////
+  &__list__ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: table;
+    table-layout: fixed;
+    // display: block;
+    list-style: none;
+    overflow: hidden;
+    border-spacing: 10px 5px;
+    background-color: transparent;
+
+    &.upper li{
+      font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+
+    }
+
+    &.lower {
+      // margin-top: 10px;
+      clear: both;
+      // margin-top: 40px;
+    }
+
+    &.upper li:last-child{
+      
+    }
+
+    &.lower .bh-localNav__list__nav
+    {
+      width: 32%;
+      margin-left: 2%;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 0.9em;
+      &:first-child{
+        margin-left: 0;
+      }
+      div{
+        font-size: 0.9em;
+        line-height: 1.46;        
+        color: #999;
+      }
+
+    }
+   @media screen and ( min-height: 601px){
+      &.lower .bh-localNav__list__nav{
+        min-height: 150px;
+      }    
+   }       
+    
+
+   // @media screen and (max-width: @break_TABsmall), 
+   //        screen and ( max-height: 600px){
+   //  &.lower .bh-localNav__list__nav{
+   //    min-height: 0;
+   //  }         
+   // }    
+
+   @media screen and (max-width: @break_PC), 
+          screen and (max-width: @break_TABsmall),
+          screen and ( max-height: 700px){
+          // screen and ( max-height: 600px){
+      &.lower .bh-localNav__list__nav{
+        min-height: 0;
+        div{
+          display: none;
+        }
+      }
+    }  
+
+    @media screen and (max-width: @break_SP) {
+      border-spacing: 5px;
+      .clearfix();
+      
+      &.lower .bh-localNav__list__nav{
+        width: 33.3333%;
+        padding-left: 10px;
+        padding-right: 10px;
+      }      
+    }
+
+  }
+
+  ///////// 単体 /////////  
+  &__list__nav {
+    width: calc( ~'50% - 1%' );
+    margin-left: 2%;
+    padding: 15px 25px;
+    // float: left;
+    display: table-cell;
+    vertical-align: middle;
+    box-sizing: border-box;
+    border-radius: @radius;
+    background: #fff;
+    
+    &:first-child{
+      margin-left: 0;
+    }
+
+
+    span{
+      line-height: 1;
+      margin-bottom: 0.5em;
+      display: block;
+      text-align: center;
+    }
+    
+    a{
+      line-height: 1;
+      text-decoration: none;
+      color: inherit;      
+    }
+    span{
+      line-height: 1;
+    }
+    img{
+      line-height: 1;
+      max-width: 100%;
+      height: auto;
+    }
+
+    >a {
+      width: auto;
+      height: auto;        
+      position: relative;
+      display: block;
+
+      &:before {
+        display: none;
+        // content: '';
+        // position: absolute;
+        // width: 100%;
+        // height: 100%;
+        // top: 0;
+        // left: 0;
+        // background: rgba(232, 161, 131, 0);
+        // -webkit-transition: .3s ease;
+        // transition: .3s ease;
+      }
+      // &:hover {
+      //   opacity: 0.8;
+      //   // &:before {
+      //   //   background: rgba(232, 161, 131, 0.5);
+      //   //   -webkit-transition: .3s ease;
+      //   //   transition: .3s ease;
+      //   //   @media screen and (max-width: @break_SP) {
+      //   //     content: none;
+      //   //     display: none;
+      //   //   }
+      //   // }
+      // }
+    }
+
+    /////////アイコン画像
+
+    // MediaQuery
+    // TAB 950 or height -700px
+    @media screen and (max-width: @break_TAB),
+            screen and ( max-height: 700px ) {
+      &.bh-localNav__list__nav--ndw,
+      &.bh-localNav__list__nav--mgk{
+        span img{
+          max-width: 120px;
+          margin-bottom: 5px;
+        }
+      }             
+    }
+
+    // MediaQuery
+    // TAB 768 or height 700
+    @media screen and ( max-width: @break_TABsmall ),
+            screen and ( max-height: 700px ) {
+       //アイコンの最高幅設定
+      span {
+        max-width: 106px;
+        margin: auto;
+        text-align: center;
+      }      
+    }    
+
+    // MediaQuery
+    // SP
+    @media screen and (max-width: @break_SP) 
+    {
+       width: 50%;
+       padding: 10px 8px;
+       margin-left: 0;
+       float: none;
+       
+      span img{
+        max-width: 100%;
+      }       
+    }  
+  }
+
+
+
+
+
+  ///////// ul /////////
+  &__list__menu{
+    margin: 0;
+    padding-left: 0;
+  }
+
+  //////個別設定 //////
+  &__list__nav--ndw{
+    .bh-localNav__list__menu__li{
+      border-color: #AA8F6D;
+      background-image: url(/assets/ps/domo/beautyhabit/common/img/arrow_nav_ndw.png);
+    }
+   a{
+      color: #AA8F6D;
+    }
+  }
+  &__list__nav--mgk{
+    .bh-localNav__list__menu__li{
+      border-color: #e28192;
+      background-image: url(/assets/ps/domo/beautyhabit/common/img/arrow_nav_mgk.png);
+    }    
+    a{
+      color: #e28192;
+    }
+  }
+  &__list__menu__li
+  {
+    line-height: 1;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+    list-style: none;
+    border-top: solid 1px;
+    font-size: 1.2em;
+    text-align: center;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: 5px;
+    &.li-button{
+      padding-top: 1em;
+      padding-bottom: 5px;
+      background: none;
+    }
+    
+    .sub{
+      line-height: 1;
+      margin-bottom: 0.5em;
+      font-size: 0.6em;
+      color: #999;
+    }
+  }
+
+    // MediaQuery
+    // TAB
+   @media screen and (max-width: @break_TAB),
+          screen and ( max-height: 700px ) 
+    {
+      &__list__menu__li
+      {
+        font-size: 0.85em;
+        
+        &.li-button{
+          padding-left: 1em;
+          padding-right: 1em;
+        }            
+        
+        .sub{
+          display: none;
+        }
+      }         
+    }
+  }
+}
+
+
+/////////////////////
+// サイト下部
+/////////////////////
+
+.bh-localNav.bh-localNav--footer{
+
+  top: 0;
+  position: relative;
+
+  // MediaQuery
+  // TAB
+  @media screen and (max-width: @break_TAB) {
+    width: auto;
+    min-width: 0;
+  }  
+  // // MediaQuery
+  // // TAB 768
+  // @media screen and (max-width: @break_TABsmall) {
+    // MediaQuery
+  // TAB 950
+  @media screen and (max-width: @break_TAB) {
+    height: auto;
+    padding-bottom: 5px;
+    display: block;
+    background: @bgColor;
+    // position: static;
+    
+    .bh-localNav__innr{
+      width: auto;
+      padding-right: 5%;
+      padding-left: 5%;
+    }
+
+    
+    //////// リスト /////////
+    .bh-localNav__list__ul
+    {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      display: table;
+      table-layout: fixed;
+      border-spacing: 10px;
+      border: none;
+      background-color: transparent;
+    }
+    .lower .bh-localNav__list__nav{
+      min-height: 160px;
+      padding: 20px;   
+        a{
+          width: 86px;
+          padding-bottom: 64px;
+        }           
+    }
+    .upper .bh-localNav__list__nav{
+      a{
+        width: 120px;
+        padding-bottom: 57px;
+      }
+    }    
+    ///////// 単体 /////////
+    .bh-localNav__list__nav
+    {
+      min-height: 75px;
+      padding: 10px;      
+      display: table-cell;
+      float: none;
+      border-radius: @radius;
+      background-color: #fff;
+      
+      a{
+        width: auto;
+        height: 0;
+        margin: auto;
+        background-size: 100% auto;
+        background-position: center center;
+      }
+    
+      ///// 単体 /////
+      //飲むども
+      &.bh-localNav__list__nav--ndw a{
+        background-image: url(/assets/ps/domo/beautyhabit/common/img/_localnav/localnav_ndw_sp.png);
+      }
+      //めぐりの結晶
+     &.bh-localNav__list__nav--mgk a{
+        background-image: url(/assets/ps/domo/beautyhabit/common/img/_localnav/localnav_mgk_sp.png);
+      }
+      //眠りとめぐりの研究所
+      &.bh-localNav__list__nav--kenkyujo a{
+        background-image: url(/assets/ps/domo/beautyhabit/common/img/_localnav/localnav_kenkyu_sp.png);
+      }
+      //口コM・インタビュー
+      &.bh-localNav__list__nav--kuchikomi a{
+        background-image: url(/assets/ps/domo/beautyhabit/common/img/_localnav/localnav_kuchikomi_sp.png);
+      }
+      //トピックス
+      &.bh-localNav__list__nav--pickup a{
+        background-image: url(/assets/ps/domo/beautyhabit/common/img/_localnav/localnav_pickup_sp.png);
+      }
+      
+    }
+    
+    .upper .bh-localNav__list__nav a{
+      background-position: center center;
+    }    
+  }
+  // MediaQuery
+  // TAB 768
+  @media screen and (max-width: @break_TABsmall) {
+
+     //////// リスト /////////
+    .bh-localNav__list__ul
+    {
+      border-spacing: 5px;
+    } 
+    ///////// 単体 /////////
+    .bh-localNav__list__nav
+    {
+      padding: 10px;      
+    }
+
+  }  
+  // MediaQuery
+  // SP
+  @media screen and (max-width: @break_SP) {
+     //////// リスト /////////
+    .bh-localNav__list__ul
+    {
+      border-spacing: 5px;
+    }     
+   
+    .lower .bh-localNav__list__nav
+    {  
+      padding: 10px;
+        a{
+          max-width: 86px;
+          width: auto;
+        }           
+    }
+
+    // .bh-localNav__innr{
+    //   padding-right: 0%;
+    //   padding-left: 0%;
+    // }
+  }  
+}
+
+// MediaQuery
+// SP
+// @media screen and (max-width: 568px) {}  

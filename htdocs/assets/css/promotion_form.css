@@ -1,0 +1,27 @@
+.button-block01 {
+  margin-bottom: 32px;
+}
+
+.heading201 {
+  width: 900px;
+  margin-left: 20px;
+}
+
+.heading202 {
+  margin-left: 20px;
+}
+
+.grid12-row .columns-8 {
+    width: 600px !important;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.content-block01 .content-wrapper01, .user-specific-header .content-wrapper01, .page-header .header-top01 .content-wrapper01, .header-middle01 .content-wrapper01, .header-navigation01 .content-wrapper01, .header-simple-domo01 .content-wrapper01, .footer-bottom01 .content-wrapper01, .page-footer .footer-top01 .content-wrapper01, .page-footer .footer-middle01 .content-wrapper01 {
+padding: 0 !important;
+}
+
+img {
+   /* ▼行全体の下端に揃える */
+   vertical-align: bottom;
+}

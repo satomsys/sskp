@@ -1,0 +1,2631 @@
+@charset "UTF-8";
+
+@media (max-width: 320px) {
+
+.page-beautyhabit_labo {
+}
+
+/*--------------PC用スタイルを非表示----------------*/
+
+.page-beautyhabit_labo .pc{
+	display: none !important;
+}
+
+/*--------------リンク----------------*/
+
+.page-beautyhabit_labo .content a:link,
+.page-beautyhabit_labo .content a:visited {
+	color: #e27b8c;
+	text-decoration: underline;
+}
+
+.page-beautyhabit_labo .content a:hover,
+.page-beautyhabit_labo .content a:active {
+	color: #e27b8c;
+	text-decoration: none;
+}
+
+/*--------------Clearfix----------------*/
+
+.page-beautyhabit_labo .content .clearfix { zoom: 1; }
+.page-beautyhabit_labo .content .clearfix:before, .clearfix:after { content: ""; display: table; }
+.page-beautyhabit_labo .content .clearfix:after { clear: both; }
+
+/*--------------背景----------------*/
+
+.page-beautyhabit_labo .content .gradation {
+	padding-top: 40px;
+	background: url(/assets/ps/domo/beautyhabit/lab/img/common/bg.png) no-repeat center top;
+	background-size: contain;
+	margin: -80px 0 40px;
+}
+
+/*--------------------------
+レイアウト
+------------------------------*/
+
+.page-beautyhabit_labo .header {
+	position: relative;
+	width: 100%;
+	background: #89d6e0;
+}
+
+.page-beautyhabit_labo .header .header_inner {
+	width: 100%;
+}
+
+.page-beautyhabit_labo .wrap {
+	background: #eee7df;
+}
+
+.page-beautyhabit_labo .content {
+	width: 100%;
+	background: #eee7df;
+	margin: 0;
+}
+
+.page-beautyhabit_labo .content .content_inner {
+	width: 94%;
+	padding: 20px 0;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .column_01 div .box_white {
+	width: 100%;
+	background: #fff;
+	padding: 25px;
+	box-sizing: border-box;
+	margin-bottom: 40px;
+}
+
+.page-beautyhabit_labo .content .content_inner .column_02 div .box_white {
+	width: 100%;
+	background: #fff;
+	padding: 25px;
+	box-sizing: border-box;
+	margin-bottom: 40px;
+}
+
+.page-beautyhabit_labo .content .content_inner .box_clear {
+	width: 100%;
+	padding: 0;
+	box-sizing: border-box;
+	margin-bottom: 40px;
+}
+
+.page-beautyhabit_labo .content .content_inner .column_01,
+.page-beautyhabit_labo .content .content_inner .column_02 {
+	width: 100%;
+	margin: 0 0 40px;
+	font-size: 1em;
+}
+
+.page-beautyhabit_labo .content .content_inner .column_01 > div {
+	width: 100%;
+}
+
+
+.page-beautyhabit_labo .content .content_inner .column_02 > div {
+	width: 100%;
+	margin: 0;
+}
+
+.page-beautyhabit_labo .content .content_inner .column_02 > div:nth-child(2n) {
+	margin: 0;
+}
+
+.page-beautyhabit_labo .content .content_inner .box_white img,
+.page-beautyhabit_labo .content .content_inner .box_clear img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+.page-beautyhabit_labo .content .content_inner .img_container {
+	width: 100%;
+	height: auto;
+	margin: 0 0 20px;
+}
+
+.page-beautyhabit_labo .content .content_inner .text_01 {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .text_02 {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .text_03 {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .column_01 p,
+.page-beautyhabit_labo .content .content_inner .column_02 p {
+	margin: 0 0 20px;
+}
+
+.page-beautyhabit_labo .content .content_inner .column_01 .bg_white,
+.page-beautyhabit_labo .content .content_inner .column_02 .bg_white {
+	background: #fff;
+}
+
+.page-beautyhabit_labo .content .content_inner .column_01 .child {
+	width: 100%;
+	margin: 0 0 15px;
+}
+
+
+/*--------------------------
+コンポーネント
+------------------------------*/
+
+/*--------------見出し----------------*/
+
+.page-beautyhabit_labo .header h1,
+.page-beautyhabit_labo .header h2,
+.page-beautyhabit_labo .content h3,
+.page-beautyhabit_labo .content h4,
+.page-beautyhabit_labo .content h5,
+.page-beautyhabit_labo .content h6 {
+	line-height: 1.0;
+}
+
+.page-beautyhabit_labo .header h2 img,
+.page-beautyhabit_labo .content h3 img,
+.page-beautyhabit_labo .content h4 img,
+.page-beautyhabit_labo .content h5 img,
+.page-beautyhabit_labo .content h6 img {
+	max-width: 100%;
+}
+
+.page-beautyhabit_labo .header .header_inner .h1_container {
+	width: 100%;
+	margin: 0;
+	background: #fff;
+	padding: 20px 0 14px;
+}
+
+.page-beautyhabit_labo .header h1 {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .header .header_inner .h1_container h1 div {
+	width: 100%;
+	/*text-align: center;*/
+	line-height: 1.0;
+}
+
+.page-beautyhabit_labo .header .header_inner .h1_container h1 img {
+	width: 70%;
+	height: auto;
+	vertical-align: top;
+}
+
+.page-beautyhabit_labo .header .header_inner .h2_container {
+	width: 100%;
+	background: url(/assets/ps/domo/beautyhabit/lab/img/common/h2_bg.png);
+	background-position: center center;
+	padding: 20px 0;
+}
+
+.page-beautyhabit_labo .header h2 {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content h3 {
+	width: 100%;
+	box-sizing: border-box;
+	margin: 0 0 30px;
+}
+
+.page-beautyhabit_labo .content h4 {
+	color: #000;
+	text-align: center;
+	position: relative;
+}
+
+.page-beautyhabit_labo .content h4:after {
+	content: "";
+	position: relative;
+	display: block;
+	width: 94px;
+	margin: 0 auto 30px;
+	padding: 20px 0 0;
+	border-bottom: 4px solid #000;
+}
+
+.page-beautyhabit_labo .content h5 {
+	background: #b6a184;
+	background: -moz-linear-gradient(top,  #b6a184 0%, #a28a68 80%);
+	background: -webkit-linear-gradient(top,  #b6a184 0%,#a28a68 80%);
+	background: linear-gradient(to bottom,  #b6a184 0%,#a28a68 80%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6a184', endColorstr='#a28a68',GradientType=0 );
+	text-align: center;
+	padding: 10px 0;
+	box-sizing: border-box;
+}
+
+.page-beautyhabit_labo .content h6 {
+	background: #e27b8c;
+	text-align: center;
+	padding: 10px 0;
+	box-sizing: border-box;
+	margin: 0 0 30px;
+}
+
+/*--------------リスト----------------*/
+
+.page-beautyhabit_labo .content ul,
+.page-beautyhabit_labo .content ol {
+	width: 100%;
+	box-sizing: border-box;
+	margin: 0 0 30px;
+	padding: 0 10px;
+	list-style: none;
+	clear: both;
+}
+
+.page-beautyhabit_labo .content ul li {
+	margin: 0 0 6px;
+	padding: 0 0 0 0px;
+	position: relative;
+}
+
+.page-beautyhabit_labo .content ul li:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 2px;
+	left: 0;
+	background: #e27b8c;
+	width: 16px;
+	height: 16px;
+}
+
+.page-beautyhabit_labo .content ul li span {
+	display: inline-block;
+	padding-left: 24px;
+}
+
+.page-beautyhabit_labo .content ol {
+	counter-reset:number;
+}
+
+.page-beautyhabit_labo .content ol li {
+	clear: both;
+	margin: 0 0 20px;
+	padding: 0 0 0 0px;
+	position: relative;
+}
+
+.page-beautyhabit_labo .content ol li:before {
+	counter-increment: number;
+	content: counter(number);
+	background: #b4a183;
+	color: #fff;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	padding: 6px;
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: -4px;
+	left: 0;
+}
+
+.page-beautyhabit_labo .content ol li span {
+	display: inline-block;
+	padding-left: 36px;
+}
+
+.page-beautyhabit_labo .content ul.raw_material_list {
+	width: 100%;
+	box-sizing: border-box;
+	margin: 0 0 30px;
+	padding: 0 10px;
+	list-style: none;
+}
+
+.page-beautyhabit_labo .content ul.raw_material_list li {
+	margin: 0 0 6px;
+	padding: 0 0 0 0px;
+	position: relative;
+}
+
+.page-beautyhabit_labo .content ul.raw_material_list li:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 2px;
+	left: 0;
+	background: #e27b8c;
+	width: 16px;
+	height: 16px;
+	line-height: 1.0;
+}
+
+.page-beautyhabit_labo .content ul.raw_material_list li span {
+	display: inline-block;
+	padding-left: 24px;
+}
+
+/*--------------吹き出し----------------*/
+
+.page-beautyhabit_labo .content .balloon-bottom {
+	position: relative;
+	display: inline-block;
+	padding: 20px;
+	color: #000;
+	background: #fff;
+	border: 4px solid #e3e3e3;
+	z-index: 0;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 20px;
+	margin: 0 0 40px;
+}
+
+.page-beautyhabit_labo .content .balloon-bottom:before {
+	content: "";
+	position: absolute;
+	bottom: -20px; left: 50%;
+	margin-left: -20px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 20px 20px 0 20px;
+	border-color: #fff transparent transparent transparent;
+	z-index: 0;
+}
+.page-beautyhabit_labo .content .balloon-bottom:after {
+	content: "";
+	position: absolute;
+	bottom: -26px; left: 50%;
+	margin-left: -20px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 22px 21px 0 21px;
+	border-color: #e3e3e3 transparent transparent transparent;
+	z-index: -1;
+}
+
+.page-beautyhabit_labo .content .balloon-top {
+	position: relative;
+	display: inline-block;
+	padding: 20px;
+	color: #000;
+	background: #fff;
+	border: 4px solid #e3e3e3;
+	z-index: 0;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 20px;
+	margin: 20px 0 40px;
+}
+
+.page-beautyhabit_labo .content .balloon-top:before {
+	content: "";
+	position: absolute;
+	top: -18px;
+	left: 50%;
+	margin-left: -20px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 20px 20px 20px;
+	border-color: transparent transparent #fff transparent;
+	z-index: 0;
+}
+.page-beautyhabit_labo .content .balloon-top:after {
+	content: "";
+	position: absolute;
+	top: -24px;
+	left: 50%;
+	margin-left: -20px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 22px 21px 21px;
+	border-color: transparent transparent #e3e3e3 transparent;
+	z-index: -1;
+}
+
+/*--------------動画----------------*/
+
+.page-beautyhabit_labo .youtube {
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%;
+	margin: 0;
+	background: -webkit-linear-gradient(top, #d1c5b3 0%, #b3a084 100%);
+	background: -moz-linear-gradient(top, #d1c5b3 0%, #b3a084 100%);
+	background: -ms-linear-gradient(top, #d1c5b3 0%, #b3a084 100%);
+	background: -o-linear-gradient(top, #d1c5b3 0%, #b3a084 100%);
+	background: linear-gradient(top, #d1c5b3 0%, #b3a084 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd1c5b3', endColorstr='#ffb3a084', GradientType=0);
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd1c5b3',endColorstr='#ffb3a084',GradientType=0);
+}
+
+.page-beautyhabit_labo .youtube iframe,
+.page-beautyhabit_labo .youtube object,
+.page-beautyhabit_labo .youtube embed {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+
+/*--------------文字の強調----------------*/
+
+.page-beautyhabit_labo .content .pink {
+	color: #e27b8c;
+}
+
+.page-beautyhabit_labo .content .bold {
+	font-weight: bold;
+}
+
+.page-beautyhabit_labo .content .large {
+	font-size: 120%;
+}
+
+/*--------------------------
+その他のパーツ
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .kansyu {
+	width: 100%;
+	margin: 0 0 20px;
+}
+
+.page-beautyhabit_labo .content .content_inner .kansyu img {
+	width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+.page-beautyhabit_labo .content .button_next a {
+	display: inline-block;
+	color: #ff7578;
+	border: 4px solid #ff7578;
+	background: #fff;
+	padding: 6px 20px;
+	text-align: center;
+	margin: 0 0 20px;
+}
+
+.page-beautyhabit_labo .content .button_next a:link,
+.page-beautyhabit_labo .content .button_next a:visited,
+.page-beautyhabit_labo .content .button_next a:hover,
+.page-beautyhabit_labo .content .button_next a:active {
+	color: #ff7578;
+	text-decoration: none;
+}
+
+.page-beautyhabit_labo .content .next {
+	text-align: center;
+	font-size: 110%;
+	line-height: 1.0;
+	margin: 0 auto 30px;
+}
+
+.page-beautyhabit_labo .content .next a:link,
+.page-beautyhabit_labo .content .next a:visited {
+	color: #000;
+	text-decoration: none;
+	border-bottom: 3px solid #816234;
+}
+
+.page-beautyhabit_labo .content .next a:hover,
+.page-beautyhabit_labo .content .next a:active {
+	color: #000;
+	text-decoration: none;
+	border-bottom: 3px solid #816234;
+}
+
+.page-beautyhabit_labo .footer .footer_inner ul {
+	list-style: none;
+	width: 100%;
+	padding: 0;
+	margin: 0 0 30px;
+	box-sizing: border-box;
+}
+
+/*--------------------------
+Sleep01
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .sleep01_04 {
+	width: 90% !important;
+	margin: 0 auto;
+}
+
+/*--------------------------
+Sleep02
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .sleep02_03 {
+	margin-top: -30px !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .sleep02_02,
+.page-beautyhabit_labo .content .content_inner .sleep02_03_2 {
+	width: 90% !important;
+	margin: 0 auto;
+}
+
+/*--------------------------
+Sleep03
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .sleep03_03 {
+	margin-bottom: -30px !important;
+}
+
+/*--------------------------
+Sleep04
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .sleep04_02 {
+	margin-top: -60px !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .sleep04_06 {
+	width: 90% !important;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .sleep04_06 p:first-of-type {
+	margin-bottom: 0;
+}
+
+.page-beautyhabit_labo .content .content_inner .sleep04_06 ul {
+	margin: 0;
+	padding: 0;
+}
+
+.page-beautyhabit_labo .content .content_inner .sleep04_06 ul li {
+	margin: 0;
+	padding: 0;
+	width: 50%;
+	display: block;
+	float: left;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.page-beautyhabit_labo .content .content_inner .sleep04_06 ul li:before {
+	display: none;
+}
+
+.page-beautyhabit_labo .content .content_inner .sleep04_08 {
+	margin-top: 40px !important;
+}
+
+/*--------------------------
+Meguri01
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .meguri01_04 .box_white {
+	text-align: center;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri01_04 .box_white img {
+	width: 75%;
+	height: auto;
+	vertical-align: top;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri01_04 > div:nth-child(2) {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri01_05 {
+	margin-top: -40px !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri01_06 {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri01_07 {
+	margin-top: -40px !important;
+}
+
+/*--------------------------
+Meguri02
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .meguri02_02 > div:nth-child(2) {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri02_03 {
+	margin-top: -40px !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri02_06 > div:nth-child(2) {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri02_07 > div:nth-child(2) {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri02_07 .box_white {
+	text-align: center;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri02_07 .box_white img {
+	width: 75%;
+	height: auto;
+	vertical-align: top;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri02_08 {
+	margin-top: -40px !important;
+}
+
+/*--------------------------
+Meguri03
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .meguri03_01 .img_container {
+	text-align: center;
+	padding: 30px 0;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri03_01 .img_container img {
+	width: 80%;
+	height: auto;
+	vertical-align: top;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri03_02 > div:nth-child(2) {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri03_03 {
+	margin-top: -40px !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri03_04 > div:nth-child(2) {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri03_05 {
+	margin-top: -40px !important;
+}
+
+/*--------------------------
+Meguri04
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .meguri04_01,
+.page-beautyhabit_labo .content .content_inner .meguri04_02,
+.page-beautyhabit_labo .content .content_inner .meguri04_03 {
+	margin-top: 0 !important;
+}
+
+.page-beautyhabit_labo .content .box_white {
+	padding: 25px 14px !important;
+}
+
+.page-beautyhabit_labo .content .box_white .meguri04_img {
+	width: 100%;
+	text-align: center;
+}
+
+.page-beautyhabit_labo .content .meguri04_recipe .meguri04_img .sp {
+	display: none !important;
+}
+
+/*--------------------------
+Raw_material01
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .raw_material01_03 {
+	margin-bottom: 0 !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .raw_material01_03 .box_clear,
+.page-beautyhabit_labo .content .content_inner .raw_material01_03 p {
+	margin-bottom: 0 !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .raw_material01_03_01 {
+	width: 90%;
+	margin: 0 auto;
+}
+
+/*--------------------------
+Raw_material02
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .raw_material02_01 {
+	margin-top: 30px !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .raw_material02_02 {
+	margin-bottom: 0 !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .raw_material02_02 .box_clear {
+	margin-bottom: 0 !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .raw_material02_03 {
+	margin-bottom: 0 !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .raw_material02_03 .box_clear {
+	margin-bottom: 0 !important;
+}
+
+/*--------------------------
+Raw_material03
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .raw_material03_01 {
+	margin-top: 30px !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .raw_material03_02 {
+	margin-bottom: 0 !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .raw_material03_02 .box_clear {
+	margin-bottom: 0 !important;
+}
+
+/*--------------------------
+Raw_material04
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .raw_material04_01 {
+	margin-top: 30px !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .raw_material04_03 {
+	margin-bottom: 0 !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .raw_material04_03 .box_clear,
+.page-beautyhabit_labo .content .content_inner .raw_material04_03 p {
+	margin-bottom: 0 !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .raw_material04_03_01 {
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media (min-width: 321px) and (max-width: 568px) {
+
+/*--------------------------
+基本設定
+------------------------------*/
+
+.page-beautyhabit_labo {
+}
+
+/*--------------PC用スタイルを非表示----------------*/
+
+.page-beautyhabit_labo .pc{
+	display: none !important;
+}
+
+/*--------------リンク----------------*/
+
+.page-beautyhabit_labo .content a:link,
+.page-beautyhabit_labo .content a:visited {
+	color: #e27b8c;
+	text-decoration: underline;
+}
+
+.page-beautyhabit_labo .content a:hover,
+.page-beautyhabit_labo .content a:active {
+	color: #e27b8c;
+	text-decoration: none;
+}
+
+/*--------------Clearfix----------------*/
+
+.page-beautyhabit_labo .content .clearfix { zoom: 1; }
+.page-beautyhabit_labo .content .clearfix:before, .clearfix:after { content: ""; display: table; }
+.page-beautyhabit_labo .content .clearfix:after { clear: both; }
+
+/*--------------背景----------------*/
+
+.page-beautyhabit_labo .content .gradation {
+	padding-top: 40px;
+	background: url(/assets/ps/domo/beautyhabit/lab/img/common/bg.png) no-repeat center top;
+	background-size: contain;
+	margin: -80px 0 40px;
+}
+
+/*--------------------------
+レイアウト
+------------------------------*/
+
+.page-beautyhabit_labo .header {
+	position: relative;
+	width: 100%;
+	background: #89d6e0;
+}
+
+.page-beautyhabit_labo .header .header_inner {
+	width: 100%;
+}
+
+.page-beautyhabit_labo .wrap {
+	background: #eee7df;
+}
+
+.page-beautyhabit_labo .content {
+	width: 100%;
+	background: #eee7df;
+	margin: 0;
+}
+
+.page-beautyhabit_labo .content .content_inner {
+	width: 94%;
+	padding: 20px 0;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .column_01 div .box_white {
+	width: 100%;
+	background: #fff;
+	padding: 25px;
+	box-sizing: border-box;
+	margin-bottom: 40px;
+}
+
+.page-beautyhabit_labo .content .content_inner .column_02 div .box_white {
+	width: 100%;
+	background: #fff;
+	padding: 25px;
+	box-sizing: border-box;
+	margin-bottom: 40px;
+}
+
+.page-beautyhabit_labo .content .content_inner .box_clear {
+	width: 100%;
+	padding: 0;
+	box-sizing: border-box;
+	margin-bottom: 40px;
+}
+
+.page-beautyhabit_labo .content .content_inner .column_01,
+.page-beautyhabit_labo .content .content_inner .column_02 {
+	width: 100%;
+	margin: 0 0 40px;
+	font-size: 1em;
+}
+
+.page-beautyhabit_labo .content .content_inner .column_01 > div {
+	width: 100%;
+}
+
+
+.page-beautyhabit_labo .content .content_inner .column_02 > div {
+	width: 100%;
+	margin: 0;
+}
+
+.page-beautyhabit_labo .content .content_inner .column_02 > div:nth-child(2n) {
+	margin: 0;
+}
+
+.page-beautyhabit_labo .content .content_inner .box_white img,
+.page-beautyhabit_labo .content .content_inner .box_clear img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+.page-beautyhabit_labo .content .content_inner .img_container {
+	width: 100%;
+	height: auto;
+	margin: 0 0 20px;
+}
+
+.page-beautyhabit_labo .content .content_inner .text_01 {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .text_02 {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .text_03 {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .column_01 p,
+.page-beautyhabit_labo .content .content_inner .column_02 p {
+	margin: 0 0 20px;
+}
+
+.page-beautyhabit_labo .content .content_inner .column_01 .bg_white,
+.page-beautyhabit_labo .content .content_inner .column_02 .bg_white {
+	background: #fff;
+}
+
+.page-beautyhabit_labo .content .content_inner .column_01 .child {
+	width: 100%;
+	margin: 0 0 15px;
+}
+
+
+/*--------------------------
+コンポーネント
+------------------------------*/
+
+/*--------------見出し----------------*/
+
+.page-beautyhabit_labo .header h1,
+.page-beautyhabit_labo .header h2,
+.page-beautyhabit_labo .content h3,
+.page-beautyhabit_labo .content h4,
+.page-beautyhabit_labo .content h5,
+.page-beautyhabit_labo .content h6 {
+	line-height: 1.0;
+}
+
+.page-beautyhabit_labo .header h2 img,
+.page-beautyhabit_labo .content h3 img,
+.page-beautyhabit_labo .content h4 img,
+.page-beautyhabit_labo .content h5 img,
+.page-beautyhabit_labo .content h6 img {
+	max-width: 100%;
+}
+
+.page-beautyhabit_labo .header .header_inner .h1_container {
+	width: 100%;
+	margin: 0;
+	background: #fff;
+	padding: 20px 0 14px;
+}
+
+.page-beautyhabit_labo .header h1 {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .header .header_inner .h1_container h1 div {
+	width: 100%;
+	/*text-align: center;*/
+	line-height: 1.0;
+}
+
+.page-beautyhabit_labo .header .header_inner .h1_container h1 img {
+	width: 70%;
+	height: auto;
+	vertical-align: top;
+}
+
+.page-beautyhabit_labo .header .header_inner .h2_container {
+	width: 100%;
+	background: url(/assets/ps/domo/beautyhabit/lab/img/common/h2_bg.png);
+	background-position: center center;
+	padding: 20px 0;
+}
+
+.page-beautyhabit_labo .header h2 {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content h3 {
+	width: 100%;
+	box-sizing: border-box;
+	margin: 0 0 30px;
+}
+
+.page-beautyhabit_labo .content h4 {
+	color: #000;
+	text-align: center;
+	position: relative;
+}
+
+.page-beautyhabit_labo .content h4:after {
+	content: "";
+	position: relative;
+	display: block;
+	width: 94px;
+	margin: 0 auto 30px;
+	padding: 20px 0 0;
+	border-bottom: 4px solid #000;
+}
+
+.page-beautyhabit_labo .content h5 {
+	background: #b6a184;
+	background: -moz-linear-gradient(top,  #b6a184 0%, #a28a68 80%);
+	background: -webkit-linear-gradient(top,  #b6a184 0%,#a28a68 80%);
+	background: linear-gradient(to bottom,  #b6a184 0%,#a28a68 80%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6a184', endColorstr='#a28a68',GradientType=0 );
+	text-align: center;
+	padding: 10px 0;
+	box-sizing: border-box;
+}
+
+.page-beautyhabit_labo .content h6 {
+	background: #e27b8c;
+	text-align: center;
+	padding: 10px 0;
+	box-sizing: border-box;
+	margin: 0 0 30px;
+}
+
+/*--------------リスト----------------*/
+
+.page-beautyhabit_labo .content ul,
+.page-beautyhabit_labo .content ol {
+	width: 100%;
+	box-sizing: border-box;
+	margin: 0 0 30px;
+	padding: 0 10px;
+	list-style: none;
+	clear: both;
+}
+
+.page-beautyhabit_labo .content ul li {
+	margin: 0 0 6px;
+	padding: 0 0 0 0px;
+	position: relative;
+}
+
+.page-beautyhabit_labo .content ul li:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 2px;
+	left: 0;
+	background: #e27b8c;
+	width: 16px;
+	height: 16px;
+}
+
+.page-beautyhabit_labo .content ul li span {
+	display: inline-block;
+	padding-left: 24px;
+}
+
+.page-beautyhabit_labo .content ol {
+	counter-reset:number;
+}
+
+.page-beautyhabit_labo .content ol li {
+	clear: both;
+	margin: 0 0 20px;
+	padding: 0 0 0 0px;
+	position: relative;
+}
+
+.page-beautyhabit_labo .content ol li:before {
+	counter-increment: number;
+	content: counter(number);
+	background: #b4a183;
+	color: #fff;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	padding: 6px;
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: -4px;
+	left: 0;
+}
+
+.page-beautyhabit_labo .content ol li span {
+	display: inline-block;
+	padding-left: 36px;
+}
+
+.page-beautyhabit_labo .content ul.raw_material_list {
+	width: 100%;
+	box-sizing: border-box;
+	margin: 0 0 30px;
+	padding: 0 10px;
+	list-style: none;
+}
+
+.page-beautyhabit_labo .content ul.raw_material_list li {
+	margin: 0 0 6px;
+	padding: 0 0 0 0px;
+	position: relative;
+}
+
+.page-beautyhabit_labo .content ul.raw_material_list li:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 2px;
+	left: 0;
+	background: #e27b8c;
+	width: 16px;
+	height: 16px;
+	line-height: 1.0;
+}
+
+.page-beautyhabit_labo .content ul.raw_material_list li span {
+	display: inline-block;
+	padding-left: 24px;
+}
+
+/*--------------吹き出し----------------*/
+
+.page-beautyhabit_labo .content .balloon-bottom {
+	position: relative;
+	display: inline-block;
+	padding: 20px;
+	color: #000;
+	background: #fff;
+	border: 4px solid #e3e3e3;
+	z-index: 0;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 20px;
+	margin: 0 0 40px;
+}
+
+.page-beautyhabit_labo .content .balloon-bottom:before {
+	content: "";
+	position: absolute;
+	bottom: -20px; left: 50%;
+	margin-left: -20px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 20px 20px 0 20px;
+	border-color: #fff transparent transparent transparent;
+	z-index: 0;
+}
+.page-beautyhabit_labo .content .balloon-bottom:after {
+	content: "";
+	position: absolute;
+	bottom: -26px; left: 50%;
+	margin-left: -20px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 22px 21px 0 21px;
+	border-color: #e3e3e3 transparent transparent transparent;
+	z-index: -1;
+}
+
+.page-beautyhabit_labo .content .balloon-top {
+	position: relative;
+	display: inline-block;
+	padding: 20px;
+	color: #000;
+	background: #fff;
+	border: 4px solid #e3e3e3;
+	z-index: 0;
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 20px;
+	margin: 20px 0 40px;
+}
+
+.page-beautyhabit_labo .content .balloon-top:before {
+	content: "";
+	position: absolute;
+	top: -18px;
+	left: 50%;
+	margin-left: -20px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 20px 20px 20px;
+	border-color: transparent transparent #fff transparent;
+	z-index: 0;
+}
+.page-beautyhabit_labo .content .balloon-top:after {
+	content: "";
+	position: absolute;
+	top: -24px;
+	left: 50%;
+	margin-left: -20px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 22px 21px 21px;
+	border-color: transparent transparent #e3e3e3 transparent;
+	z-index: -1;
+}
+
+/*--------------動画----------------*/
+
+.page-beautyhabit_labo .youtube {
+	position: relative;
+	width: 100%;
+	padding-top: 56.25%;
+	margin: 0;
+	background: -webkit-linear-gradient(top, #d1c5b3 0%, #b3a084 100%);
+	background: -moz-linear-gradient(top, #d1c5b3 0%, #b3a084 100%);
+	background: -ms-linear-gradient(top, #d1c5b3 0%, #b3a084 100%);
+	background: -o-linear-gradient(top, #d1c5b3 0%, #b3a084 100%);
+	background: linear-gradient(top, #d1c5b3 0%, #b3a084 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd1c5b3', endColorstr='#ffb3a084', GradientType=0);
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd1c5b3',endColorstr='#ffb3a084',GradientType=0);
+}
+
+.page-beautyhabit_labo .youtube iframe,
+.page-beautyhabit_labo .youtube object,
+.page-beautyhabit_labo .youtube embed {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+
+/*--------------文字の強調----------------*/
+
+.page-beautyhabit_labo .content .pink {
+	color: #e27b8c;
+}
+
+.page-beautyhabit_labo .content .bold {
+	font-weight: bold;
+}
+
+.page-beautyhabit_labo .content .large {
+	font-size: 120%;
+}
+
+/*--------------------------
+その他のパーツ
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .kansyu {
+	width: 100%;
+	margin: 0 0 20px;
+}
+
+.page-beautyhabit_labo .content .content_inner .kansyu img {
+	width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+.page-beautyhabit_labo .content .button_next a {
+	display: inline-block;
+	color: #ff7578;
+	border: 4px solid #ff7578;
+	background: #fff;
+	padding: 6px 20px;
+	text-align: center;
+	margin: 0 0 20px;
+}
+
+.page-beautyhabit_labo .content .button_next a:link,
+.page-beautyhabit_labo .content .button_next a:visited,
+.page-beautyhabit_labo .content .button_next a:hover,
+.page-beautyhabit_labo .content .button_next a:active {
+	color: #ff7578;
+	text-decoration: none;
+}
+
+.page-beautyhabit_labo .content .next {
+	text-align: center;
+	font-size: 110%;
+	line-height: 1.0;
+	margin: 0 auto 30px;
+}
+
+.page-beautyhabit_labo .content .next a:link,
+.page-beautyhabit_labo .content .next a:visited {
+	color: #000;
+	text-decoration: none;
+	border-bottom: 3px solid #816234;
+}
+
+.page-beautyhabit_labo .content .next a:hover,
+.page-beautyhabit_labo .content .next a:active {
+	color: #000;
+	text-decoration: none;
+	border-bottom: 3px solid #816234;
+}
+
+.page-beautyhabit_labo .footer .footer_inner ul {
+	list-style: none;
+	width: 100%;
+	padding: 0;
+	margin: 0 0 30px;
+	box-sizing: border-box;
+}
+
+/*--------------------------
+Sleep01
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .sleep01_04 {
+	width: 90% !important;
+	margin: 0 auto;
+}
+
+/*--------------------------
+Sleep02
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .sleep02_03 {
+	margin-top: -30px !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .sleep02_02,
+.page-beautyhabit_labo .content .content_inner .sleep02_03_2 {
+	width: 90% !important;
+	margin: 0 auto;
+}
+
+/*--------------------------
+Sleep03
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .sleep03_03 {
+	margin-bottom: -30px !important;
+}
+
+/*--------------------------
+Sleep04
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .sleep04_02 {
+	margin-top: -60px !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .sleep04_06 {
+	width: 90% !important;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .sleep04_06 p:first-of-type {
+	margin-bottom: 0;
+}
+
+.page-beautyhabit_labo .content .content_inner .sleep04_06 ul {
+	margin: 0;
+	padding: 0;
+}
+
+.page-beautyhabit_labo .content .content_inner .sleep04_06 ul li {
+	margin: 0;
+	padding: 0;
+	width: 50%;
+	display: block;
+	float: left;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.page-beautyhabit_labo .content .content_inner .sleep04_06 ul li:before {
+	display: none;
+}
+
+.page-beautyhabit_labo .content .content_inner .sleep04_08 {
+	margin-top: 40px !important;
+}
+
+/*--------------------------
+Meguri01
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .meguri01_04 .box_white {
+	text-align: center;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri01_04 .box_white img {
+	width: 75%;
+	height: auto;
+	vertical-align: top;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri01_04 > div:nth-child(2) {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri01_05 {
+	margin-top: -40px !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri01_06 {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri01_07 {
+	margin-top: -40px !important;
+}
+
+/*--------------------------
+Meguri02
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .meguri02_02 > div:nth-child(2) {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri02_03 {
+	margin-top: -40px !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri02_06 > div:nth-child(2) {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri02_07 > div:nth-child(2) {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri02_07 .box_white {
+	text-align: center;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri02_07 .box_white img {
+	width: 75%;
+	height: auto;
+	vertical-align: top;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri02_08 {
+	margin-top: -40px !important;
+}
+
+/*--------------------------
+Meguri03
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .meguri03_01 .img_container {
+	text-align: center;
+	padding: 30px 0;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri03_01 .img_container img {
+	width: 80%;
+	height: auto;
+	vertical-align: top;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri03_02 > div:nth-child(2) {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri03_03 {
+	margin-top: -40px !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri03_04 > div:nth-child(2) {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri03_05 {
+	margin-top: -40px !important;
+}
+
+/*--------------------------
+Meguri04
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .meguri04_01,
+.page-beautyhabit_labo .content .content_inner .meguri04_02,
+.page-beautyhabit_labo .content .content_inner .meguri04_03 {
+	margin-top: 0 !important;
+}
+
+.page-beautyhabit_labo .content .box_white {
+	padding: 25px !important;
+}
+
+.page-beautyhabit_labo .content .box_white .meguri04_img {
+	width: 100%;
+	text-align: center;
+}
+
+.page-beautyhabit_labo .content .box_white .meguri04_img .sp_320 {
+	display: none !important;
+}
+
+/*--------------------------
+Raw_material01
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .raw_material01_03 {
+	margin-bottom: 0 !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .raw_material01_03 .box_clear,
+.page-beautyhabit_labo .content .content_inner .raw_material01_03 p {
+	margin-bottom: 0 !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .raw_material01_03_01 {
+	width: 90%;
+	margin: 0 auto;
+}
+
+/*--------------------------
+Raw_material02
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .raw_material02_01 {
+	margin-top: 30px !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .raw_material02_02 {
+	margin-bottom: 0 !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .raw_material02_02 .box_clear {
+	margin-bottom: 0 !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .raw_material02_03 {
+	margin-bottom: 0 !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .raw_material02_03 .box_clear {
+	margin-bottom: 0 !important;
+}
+
+/*--------------------------
+Raw_material03
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .raw_material03_01 {
+	margin-top: 30px !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .raw_material03_02 {
+	margin-bottom: 0 !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .raw_material03_02 .box_clear {
+	margin-bottom: 0 !important;
+}
+
+/*--------------------------
+Raw_material04
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .raw_material04_01 {
+	margin-top: 30px !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .raw_material04_03 {
+	margin-bottom: 0 !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .raw_material04_03 .box_clear,
+.page-beautyhabit_labo .content .content_inner .raw_material04_03 p {
+	margin-bottom: 0 !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .raw_material04_03_01 {
+	width: 90%;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+@media (min-width: 569px) {
+
+/*--------------------------
+基本設定
+------------------------------*/
+
+.page-beautyhabit_labo {
+}
+
+/*--------------スマホ用スタイルを非表示----------------*/
+
+.page-beautyhabit_labo .sp{
+	display: none !important;
+}
+
+/*--------------リンク----------------*/
+
+.page-beautyhabit_labo .content a:link,
+.page-beautyhabit_labo .content a:visited {
+	color: #e27b8c;
+	text-decoration: underline;
+}
+
+.page-beautyhabit_labo .content a:hover,
+.page-beautyhabit_labo .content a:active {
+	color: #e27b8c;
+	text-decoration: none;
+}
+
+/*--------------Clearfix----------------*/
+
+.page-beautyhabit_labo .content .clearfix { zoom: 1; }
+.page-beautyhabit_labo .content .clearfix:before, .clearfix:after { content: ""; display: table; }
+.page-beautyhabit_labo .content .clearfix:after { clear: both; }
+
+/*--------------背景----------------*/
+
+.page-beautyhabit_labo .content .gradation {
+	padding-top: 80px;
+	background: url(/assets/ps/domo/beautyhabit/lab/img/common/bg.png) no-repeat center top;
+	background-size: auto;
+	margin: -80px 0 80px;
+}
+
+/*--------------画像リンクホバー----------------*/
+
+.page-beautyhabit_labo .content a img {
+	-webkit-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.page-beautyhabit_labo .content a img:hover {
+	opacity:0.8;
+	filter: alpha(opacity=80);
+	-ms-filter: "alpha( opacity=80 )";
+	-webkit-transition: .3s ease;
+	transition: .3s ease;
+}
+
+/*--------------------------
+レイアウト
+------------------------------*/
+
+.page-beautyhabit_labo .header {
+	position: relative;
+	width: 100%;
+	background: #89d6e0;
+}
+
+.page-beautyhabit_labo .header .header_inner {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .wrap {
+	background: #eee7df;
+}
+
+.page-beautyhabit_labo .content {
+	width: 100%;
+	background: #eee7df;
+	margin: 0;
+}
+
+.page-beautyhabit_labo .content .content_inner {
+	width: 940px;
+	padding: 50px 0 0;
+	margin: 0 auto 0;
+}
+
+.page-beautyhabit_labo .content .content_inner .column_01 div .box_white {
+	width: 100%;
+	background: #fff;
+	padding: 40px 80px;
+	box-sizing: border-box;
+	margin-bottom: 40px;
+}
+
+.page-beautyhabit_labo .content .content_inner .column_02 div .box_white {
+	width: 100%;
+	background: #fff;
+	padding: 20px;
+	box-sizing: border-box;
+	margin-bottom: 40px;
+}
+
+.page-beautyhabit_labo .content .content_inner .box_clear {
+	width: 100%;
+	padding: 0;
+	box-sizing: border-box;
+	margin-bottom: 40px;
+}
+
+.page-beautyhabit_labo .content .content_inner .column_01,
+.page-beautyhabit_labo .content .content_inner .column_02 {
+	width: 100%;
+	margin: 0 0 40px;
+	font-size: 1.25em;
+}
+
+.page-beautyhabit_labo .content .content_inner .column_01 > div {
+	width: 100%;
+}
+
+
+.page-beautyhabit_labo .content .content_inner .column_02 > div {
+	width: 444px;
+	float: left;
+	margin: 0 52px 0 0;
+}
+
+.page-beautyhabit_labo .content .content_inner .column_02 > div:nth-child(2n) {
+	margin: 0;
+}
+
+.page-beautyhabit_labo .content .content_inner .box_white img,
+.page-beautyhabit_labo .content .content_inner .box_clear img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+.page-beautyhabit_labo .content .content_inner .img_container {
+	width: 100%;
+	height: auto;
+	margin: 0 0 40px;
+}
+
+.page-beautyhabit_labo .content .content_inner .text_01 {
+	width: 768px;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .text_02 {
+	width: 768px;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .text_03 {
+	width: 600px;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content .content_inner .column_01 p,
+.page-beautyhabit_labo .content .content_inner .column_02 p {
+	margin: 0 0 40px;
+}
+
+.page-beautyhabit_labo .content .content_inner .column_01 .bg_white,
+.page-beautyhabit_labo .content .content_inner .column_02 .bg_white {
+	background: #fff;
+}
+
+.page-beautyhabit_labo .content .content_inner .column_01 .child {
+	width: 369px;
+	margin: 0 42px 0 0;
+	float: left;
+}
+
+.page-beautyhabit_labo .content .content_inner .column_01 .child:nth-child(2) {
+	margin-right: 0;
+}
+
+.page-beautyhabit_labo .footer {
+	clear: both;
+	width: 100%;
+	background: #eee7df;
+	position: relative;
+	padding: 0 0 60px;
+}
+
+.page-beautyhabit_labo .footer .footer_inner {
+	width: 600px;
+	margin: 0 auto;
+	padding: 0px 0 0;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.page-beautyhabit_labo .footer-bottom01 {
+	border-top: none !important;
+	background-size: contain !important;
+	background-position: center !important;
+}
+
+/*--------------------------
+コンポーネント
+------------------------------*/
+
+/*--------------見出し----------------*/
+
+.page-beautyhabit_labo .header h1,
+.page-beautyhabit_labo .header h2,
+.page-beautyhabit_labo .content h3,
+.page-beautyhabit_labo .content h4,
+.page-beautyhabit_labo .content h5,
+.page-beautyhabit_labo .content h6 {
+	font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "ＭＳ 明朝", serif;
+	line-height: 1.0;
+}
+
+.page-beautyhabit_labo .header .header_inner .h1_container {
+	width: 100%;
+	margin: 0;
+	background: #fff;
+	padding: 20px 40px;
+	box-sizing: border-box;
+}
+
+.page-beautyhabit_labo .header h1 {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.page-beautyhabit_labo .header .header_inner .h1_container h1 div {
+	width: 369px;
+	height: 59px;
+	/*margin: 0 auto;*/
+}
+
+.page-beautyhabit_labo .header .header_inner .h1_container h1 img {
+	vertical-align: top;
+	/*text-align: center;*/
+}
+
+.page-beautyhabit_labo .header .header_inner .h1_container h1 img.h1_img {
+	width: 369px;
+	height: 59px;
+}
+
+.page-beautyhabit_labo .header .header_inner .h2_container {
+	width: 100%;
+	background: url(/assets/ps/domo/beautyhabit/lab/img/common/h2_bg.png);
+	background-position: center center;
+	padding: 40px;
+	box-sizing: border-box;
+}
+
+.page-beautyhabit_labo .header h2 {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .content h3 {
+	color: #000;
+	width: 100%;
+	box-sizing: border-box;
+	margin: 60px 0;
+}
+
+.page-beautyhabit_labo .content h4 {
+	text-align: center;
+	position: relative;
+}
+
+.page-beautyhabit_labo .content h4:after {
+	content: "";
+	position: relative;
+	display: block;
+	width: 94px;
+	margin: 0 auto 50px;
+	padding: 20px 0 0;
+	border-bottom: 4px solid #000;
+}
+
+.page-beautyhabit_labo .content h5 {
+	background: #b6a184;
+	background: -moz-linear-gradient(top,  #b6a184 0%, #a28a68 80%);
+	background: -webkit-linear-gradient(top,  #b6a184 0%,#a28a68 80%);
+	background: linear-gradient(to bottom,  #b6a184 0%,#a28a68 80%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b6a184', endColorstr='#a28a68',GradientType=0 );
+	text-align: center;
+	padding: 10px 0;
+	box-sizing: border-box;
+}
+
+.page-beautyhabit_labo .content h6 {
+	background: #e27b8c;
+	text-align: center;
+	padding: 10px 0;
+	box-sizing: border-box;
+	margin: 0 0 30px;
+}
+
+/*--------------リスト----------------*/
+
+.page-beautyhabit_labo .content ul,
+.page-beautyhabit_labo .content ol {
+	box-sizing: border-box;
+	margin: 0 auto 40px;
+	padding: 0 10px;
+	list-style: none;
+	clear: both;
+}
+
+.page-beautyhabit_labo .content .column1 ul,
+.page-beautyhabit_labo .content .column1 ol {
+	width: 768px;
+}
+
+.page-beautyhabit_labo .content ul li {
+	margin: 0 0 6px;
+	padding: 0 0 0 0px;
+	position: relative;
+}
+
+.page-beautyhabit_labo .content ul li:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 4px;
+	left: 0;
+	background: #e27b8c;
+	width: 24px;
+	height: 24px;
+}
+
+.page-beautyhabit_labo .content ul li span {
+	display: inline-block;
+	padding-left: 36px;
+}
+
+.page-beautyhabit_labo .content ol {
+	counter-reset:number;
+}
+
+.page-beautyhabit_labo .content ol li {
+	clear: both;
+	margin: 0 0 20px;
+	padding: 0 0 0 0px;
+	position: relative;
+}
+
+.page-beautyhabit_labo .content ol li:before {
+	counter-increment: number;
+	content: counter(number);
+	background: #b4a183;
+	color: #fff;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	padding: 6px;
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: -4px;
+	left: 0;
+}
+
+.page-beautyhabit_labo .content ol li span {
+	display: inline-block;
+	padding-left: 40px;
+}
+
+/*--------------吹き出し----------------*/
+
+.page-beautyhabit_labo .content .balloon-bottom {
+	position: relative;
+	display: block;
+	padding: 20px;
+	color: #000;
+	background: #fff;
+	border: 4px solid #e3e3e3;
+	z-index: 0;
+	width: 940px;
+	box-sizing: border-box;
+	border-radius: 20px;
+	margin: 30px auto 60px;
+	font-size: 1.25em;
+}
+
+.page-beautyhabit_labo .content .balloon-bottom:before {
+	content: "";
+	position: absolute;
+	bottom: -20px;
+	left: 50%;
+	margin-left: -20px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 20px 20px 0 20px;
+	border-color: #fff transparent transparent transparent;
+	z-index: 0;
+}
+.page-beautyhabit_labo .content .balloon-bottom:after {
+	content: "";
+	position: absolute;
+	bottom: -26px;
+	left: 50%;
+	margin-left: -20px;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 22px 21px 0 21px;
+	border-color: #e3e3e3 transparent transparent transparent;
+	z-index: -1;
+}
+
+.page-beautyhabit_labo .content .balloon-top {
+	position: relative;
+	display: block;
+	padding: 20px;
+	color: #000;
+	background: #fff;
+	border: 4px solid #e3e3e3;
+	z-index: 0;
+	width: 940px;
+	box-sizing: border-box;
+	border-radius: 20px;
+	margin: 30px auto 60px;
+	font-size: 1.25em;
+}
+
+.page-beautyhabit_labo .content .balloon-top:before {
+	content: "";
+	position: absolute;
+	top: -18px;
+	left: 50%;
+	margin-left: -20px;
+	display: block;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 20px 20px 20px;
+	border-color: transparent transparent #fff transparent;
+	z-index: 0;
+}
+.page-beautyhabit_labo .content .balloon-top:after {
+	content: "";
+	position: absolute;
+	top: -24px;
+	left: 50%;
+	margin-left: -20px;
+	display: block;
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 22px 21px 21px;
+	border-color: transparent transparent #e3e3e3 transparent;
+	z-index: -1;
+}
+
+/*--------------動画----------------*/
+
+.page-beautyhabit_labo .youtube {
+	width: 100%;
+	height: 529px;
+	overflow: hidden;
+	background: -webkit-linear-gradient(top, #d1c5b3 0%, #b3a084 100%);
+	background: -moz-linear-gradient(top, #d1c5b3 0%, #b3a084 100%);
+	background: -ms-linear-gradient(top, #d1c5b3 0%, #b3a084 100%);
+	background: -o-linear-gradient(top, #d1c5b3 0%, #b3a084 100%);
+	background: linear-gradient(top, #d1c5b3 0%, #b3a084 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd1c5b3', endColorstr='#ffb3a084', GradientType=0);
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd1c5b3',endColorstr='#ffb3a084',GradientType=0);
+}
+.page-beautyhabit_labo .youtube_inner {
+	position: relative;
+	width: 940px;
+	height: 529px;
+	margin: 0 auto;
+}
+
+.page-beautyhabit_labo .youtube iframe,
+.page-beautyhabit_labo .youtube object,
+.page-beautyhabit_labo .youtube embed {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+
+/*--------------文字の強調----------------*/
+
+.page-beautyhabit_labo .content .pink {
+	color: #e27b8c;
+}
+
+.page-beautyhabit_labo .content .bold {
+	font-weight: bold;
+}
+
+.page-beautyhabit_labo .content .large {
+	font-size: 120%;
+}
+
+/*--------------------------
+その他のパーツ
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .kansyu {
+	width: 420px;
+	margin: 0 auto 30px;
+}
+
+.page-beautyhabit_labo .content .content_inner .kansyu img {
+	width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+.page-beautyhabit_labo .content .button_next a {
+	display: inline-block;
+	color: #ff7578;
+	border: 4px solid #ff7578;
+	background: #fff;
+	padding: 6px 20px;
+	text-align: center;
+	margin: 0 0 20px;
+}
+
+.page-beautyhabit_labo .content .button_next a:link,
+.page-beautyhabit_labo .content .button_next a:visited,
+.page-beautyhabit_labo .content .button_next a:hover,
+.page-beautyhabit_labo .content .button_next a:active {
+	color: #ff7578;
+	text-decoration: none;
+}
+
+.page-beautyhabit_labo .content .next {
+	text-align: center;
+	font-size: 110%;
+	line-height: 1.0;
+	margin: 0 auto 30px;
+}
+
+.page-beautyhabit_labo .content .next a:link,
+.page-beautyhabit_labo .content .next a:visited {
+	color: #000;
+	text-decoration: none;
+	border-bottom: 3px solid #816234;
+}
+
+.page-beautyhabit_labo .content .next a:hover,
+.page-beautyhabit_labo .content .next a:active {
+	color: #000;
+	text-decoration: none;
+	border-bottom: 3px solid #816234;
+}
+
+.pagetop a {
+	display: block;
+	font-size: 60px;
+	text-align: center;
+	background: #fff;
+	width: 120px;
+	height: 120px;
+	box-sizing: border-box;
+	padding-top: 14px;
+	border-radius: 60px;
+	position: absolute;
+	bottom: 0px;
+	right: -170px;
+	box-shadow: 0 0 10px 1px rgba(0,0,0,0.3);
+	cursor: pointer;
+}
+
+.pagetop a:link {
+	color: #a07a56;
+	text-decoration: none;
+	-webkit-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.pagetop a:hover {
+	color: #a07a56;
+	text-decoration: none;
+	opacity:0.8;
+	filter: alpha(opacity=80);
+	-ms-filter: "alpha( opacity=80 )";
+	-webkit-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.page-beautyhabit_labo .footer .footer_inner ul {
+	list-style: none;
+	width: 100%;
+	padding: 0;
+	margin: 0 0 30px;
+	box-sizing: border-box;
+}
+
+.page-beautyhabit_labo .footer .footer_inner ul li a {
+	display: block;
+	width: 285px;
+	float: left;
+	margin: 0 30px 0 0;
+	padding: 0;
+}
+
+.page-beautyhabit_labo .footer .footer_inner ul li:nth-child(2) a {
+	margin-right: 0;
+}
+
+.page-beautyhabit_labo .footer .footer_inner ul li a img {
+	width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+/*--------------------------
+Sleep01
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .sleep01_02 {
+	width: 761px;
+	height: 231px;
+}
+
+.page-beautyhabit_labo .content .content_inner .sleep01_04 {
+	margin-top: -30px !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .sleep01_05 {
+	margin-bottom: -60px !important;
+}
+
+/*--------------------------
+Sleep02
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .sleep02_04 {
+	background-size: contain !important;
+	margin-bottom: -30px !important;
+}
+
+/*--------------------------
+Sleep03
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .sleep03_03 {
+	margin-bottom: -40px !important;
+}
+
+/*--------------------------
+Sleep04
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .sleep04_04 {
+	text-align: center !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .sleep04_06 p:first-of-type {
+	margin-bottom: 0;
+}
+
+.page-beautyhabit_labo .content .content_inner .sleep04_06 ul {
+	margin: 0;
+	padding: 0;
+}
+
+.page-beautyhabit_labo .content .content_inner .sleep04_06 ul li {
+	margin: 0;
+	padding: 0;
+	width: 50%;
+	float: left;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.page-beautyhabit_labo .content .content_inner .sleep04_06 ul li:before {
+	display: none;
+}
+
+.page-beautyhabit_labo .content .content_inner .sleep04_08 {
+	margin-top: 60px !important;
+}
+
+/*--------------------------
+Meguri01
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .meguri01_03 .box_white {
+	text-align: center;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri01_04 .box_white {
+	text-align: center;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri01_04 .box_white img {
+	width: 75%;
+	height: auto;
+	vertical-align: top;
+}
+
+/*--------------------------
+Meguri02
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .meguri02_07 > div {
+	width: 444px;
+	float: right !important;
+	margin: 0 0 0 52px !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri02_07 > div:nth-child(2n) {
+	margin-left: 0 !important;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri02_07 .box_white {
+	text-align: center;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri02_07 .box_white img {
+	width: 90%;
+	height: auto;
+	vertical-align: top;
+}
+
+
+.page-beautyhabit_labo .content .content_inner .meguri02_08 .box_white {
+	text-align: center;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri02_08 .box_white img {
+	width: 80%;
+	height: auto;
+	vertical-align: top;
+}
+
+/*--------------------------
+Meguri03
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .meguri03_01 .img_container {
+	text-align: center;
+}
+
+.page-beautyhabit_labo .content .content_inner .meguri03_05 {
+	margin-top: -40px !important;
+}
+
+/*--------------------------
+Meguri04
+------------------------------*/
+
+.page-beautyhabit_labo .content .box_white .meguri04_img {
+	width: 100%;
+	text-align: center;
+}
+
+.page-beautyhabit_labo .content .box_white .meguri04_img .sp_320 {
+	display: none !important;
+}
+
+/*--------------------------
+Raw_material01
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .raw_material01_03 .box_clear,
+.page-beautyhabit_labo .content .content_inner .raw_material01_03 p {
+	margin-bottom: 0 !important;
+}
+
+/*--------------------------
+Raw_material04
+------------------------------*/
+
+.page-beautyhabit_labo .content .content_inner .raw_material04_03 {
+	margin-bottom: 0 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

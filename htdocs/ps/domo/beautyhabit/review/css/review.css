@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/*--------------------------
+review 共通
+------------------------------*/
+
+.page-review .f-size {
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 30px;
+}
+.page-review .f-size-s {
+	font-size: 10px;
+	font-size: 1.0rem;
+	line-height: 20px;
+}
+.page-review a:hover img {
+	filter: alpha(opacity=80);
+	-moz-opacity: .8;
+	opacity: .8;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+}
+/*-------------- contents header ----------------*/
+.page-review .header-wrap {
+	background: #ffb76c;
+	font-size: 0;
+	text-align: center;
+}
+.page-review .c-ttl {
+	font-size: 0;
+	line-height: none;
+	background: #fff;
+	text-align: left;
+	padding: 20px 40px;
+}
+.page-review .page-ttl {
+	font-size: 0;
+	line-height: none;
+	background: #ece2cb url(/assets/ps/domo/beautyhabit/review/img/bg_page_ttl.jpg) no-repeat left top;
+	padding: 40px;
+	text-align: left;
+}
+
+@media screen and (max-width: 568px) {
+.page-review .c-ttl {
+	width: 100%;
+	padding: 20px 0 14px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.page-review .page-ttl {
+	padding: 20px 0;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.page-review .page-ttl img {
+	width: 90%;
+	margin: 0 auto;
+}
+}
+/*-------------- 補足 ----------------*/
+.page-review .repletion {
+	position: relative;
+	margin: 5px 0 45px;
+	padding: 0;
+	list-style: none;
+	font-size: .8em;
+}
+
+@media screen and (max-width: 740px) {
+.page-review .repletion {
+	margin-top: 8px;
+	margin-right: 3%;
+	margin-bottom: 17px;
+	margin-left: 3%;
+}
+}
+.page-review .repletion li:before {
+	content: "※";
+	margin-right: 3px;
+}
+/*-------------- reset ----------------*/
+.page-review h1, .page-review h2, .page-review h3, .page-review figure, .page-review figcaption {
+	margin: 0;
+	padding: 0;
+}
+.page-review h1, .page-review h2, .page-review h3 {
+	font-size: 0;
+}
+/*-------------- link ----------------*/
+.page-review a {
+	color: #d36b7e;
+	text-decoration: none;
+}
+.page-review a:hover {
+	text-decoration: underline;
+}
+.page-review a img {
+	border: none;
+	outline: none;
+}
+/*-------------- layout ----------------*/
+.page-review {
+	background: #ede7df;
+	overflow: hidden;
+}
+.page-review .single-wrap {
+	max-width: 940px;
+	margin: 0 auto;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+@media screen and (max-width: 568px) {
+.page-review {
+	max-width: auto;
+	padding-bottom: 5px;
+	margin-bottom: 0;
+}
+}
+/*-------------- switch ----------------*/
+.img-sp {
+	display: none;
+}
+.img-pc {
+	display: block;
+}
+.txt-sp {
+	display: none;
+}
+.txt-pc {
+	display: block;
+}
+.clear {
+	overflow: hidden;
+}
+/*-------------- basic ----------------*/
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+.plascontainer {
+	background: #ede7df;
+	padding-bottom: 50px;
+	overflow: hidden;
+	margin-bottom: -85px;
+	padding-bottom: 85px;
+}
+
+/*--------------------------
+SP メディアクエリ設定 737以下
+------------------------------*/
+@media screen and (max-width: 737px) {
+/*-------------- switch ----------------*/
+.img-sp {
+	display: block;
+}
+.img-pc {
+	display: none;
+}
+.txt-sp {
+	display: block;
+}
+.txt-pc {
+	display: none;
+}
+}
+/*-------------- btn ----------------*/
+.page-review .btn-more {
+	text-align: center;
+	margin: 10px 0;
+}
+
+@media screen and (max-width: 568px) {
+.page-review .btn-more {
+	text-align: center;
+	margin: 3%;
+}
+.page-review .btn-more img {
+	width: 100%;
+	height: auto;
+}
+}
+.page-review .btn-link-wrap {
+	text-align: center;
+	margin: 67px 0;
+}
+
+@media screen and (max-width: 568px) {
+.page-review .btn-link-wrap {
+	margin: 30px 3%;
+}
+}
+
+@media screen and (max-width: 568px) {
+.page-review .btn-more .btn-mgk, .page-review .btn-more .btn-ndw {
+	max-width: 490px;
+	width: 65%;
+	height: auto;
+}
+}
+.txt-b {
+	display: inline-block;
+	white-space: nowrap;
+}

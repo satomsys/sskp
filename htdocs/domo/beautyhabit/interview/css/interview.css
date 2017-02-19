@@ -1,0 +1,63 @@
+@charset "shift_jis";
+
+
+/* reset style
+----------------------------------------------------------------------------------------------*/
+
+
+.top_mv {
+	padding-bottom:20px;
+}
+
+.top_mv h1 {
+	margin-bottom:10px!important;
+}
+
+.top_mv p {
+	padding-top:10px;
+	color:#663300;
+	text-align:center;
+}
+
+.top_bloc1 { 
+	background:url("../images/bg_01.jpg") no-repeat;
+	width:670px;
+	height:400px; 
+	margin-bottom:30px;
+}
+
+.top_bloc1_inner {
+	padding:280px 0 0 160px;
+	}
+
+.top_bloc2 { 
+	background:url("../images/bg_02.jpg") no-repeat;
+	width:670px;
+	height:350px; 
+	margin-bottom:30px;
+}
+
+.top_bloc2_inner {
+	float: right;
+	padding:230px 60px 0 0;
+	}
+
+.top_bloc3 { 
+	background:url("../images/bg_03.jpg") no-repeat;
+	width:670px;
+	height:349px; 
+}
+
+.top_bloc3_inner {
+	padding:230px 0 0 160px;
+	}
+
+
+
+
+
+
+
+
+
+

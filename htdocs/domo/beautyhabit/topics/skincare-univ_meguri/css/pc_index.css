@@ -1,0 +1,117 @@
+/* charset */
+@charset "utf-8";
+
+
+/* ---------------------------- idx */
+#contents{
+  font-size: 18px !important;
+}
+
+.idx_wrap{
+  /*width: 980px;*/
+  // width: 940px;
+  max-width: 940px;
+  margin: 0 auto;
+  background-color: #f2f5f7;
+}
+
+/* -------------- vsl */
+.idx_vsl{
+  width: 940px;
+  overflow: hidden;
+  position: relative;
+  /* padding-top: 50px !important; */
+}
+.idx_vsl .vsl{
+  font-size: 0;
+  width: 100%;
+}
+.idx_vsl .vsl img{
+  width: 100%;
+}
+.idx_vsl .ttl{
+  position: absolute;
+  top: 26px;
+  /*left: 155px;*/
+  left: 135px;
+}
+.idx_vsl .sub{
+  position: absolute;
+  z-index: 2;
+  top: 260px;
+  left: -20px;
+}
+.idx_vsl .list{
+  position: absolute;
+  z-index: 1;
+  top: 296px;
+  left: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /*width: 616px;*/
+  width: 590px;
+  /*padding: 46px 0 3% 130px;*/
+  padding: 46px 0 3% 100px !important;
+  background: url("../images/sp/idx_vsl_bg.png");
+  color: #4c4c4c;
+  font-size: 18px;
+}
+.idx_vsl .list li{
+  margin-top: 14px !important;
+  padding-left: 10%;
+  background: url("../images/idx_vsl_ic.png") no-repeat 2% center;
+  line-height: 30px;
+}
+.idx_vsl .list li:first-child{margin-top: 0;}
+
+/* -------------- blk */
+.idx_blk{
+  position: relative;
+  margin-top: 5%;
+  clear: both;
+}
+.idx_blk .ttl{
+  width: 28%;
+}
+.idx_blk .txt_box{
+  position: relative;
+  width: 42.55%;
+  margin: 30px 0 0 80px !important;
+  padding-bottom: 60px !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.idx_blk .txt_box .box{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  line-height: 2;
+}
+.idx_blk .catch{
+  margin-top: 25px !important;
+}
+
+.idx_blk .thm{
+  width: 39.89%;
+  position: absolute;
+  right: 5%;
+  top : 20px;
+}
+
+/* -------------- navi */
+.idx_nav{
+  padding-top: 15px !important;
+  text-align: center;
+  overflow: hidden;
+}
+.idx_nav li{
+  max-width: 33.3%;
+  float: left;
+  padding-right: 5px;
+  padding-left: 5px;
+  display: inline-block;
+  font-size: 0;
+}
+

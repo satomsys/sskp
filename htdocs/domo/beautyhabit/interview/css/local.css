@@ -1,0 +1,48 @@
+@charset "shift_jis";
+
+
+/* reset style
+----------------------------------------------------------------------------------------------*/
+
+----------------------------------------------------------------------------------------------*/
+
+.page_main { padding-bottom:30px; }
+.page_main h1 { margin-bottom:10px!important; }
+.page_main p { font-size:95%; color:#535353; }
+
+
+
+
+
+.section_01 { display:block; float:left; width:327px; height:100%; overflow:hidden; }
+
+
+
+.itvbloc { display:block; float:left; width:327px; height:100%; overflow:hidden; }
+.itvbloc h2 { height:45px; }
+.itvbloc .namebloc { height:95px; }
+.itvbloc h3 { padding:20px 0 0 22px; }
+.itvbloc #bk1 h3,
+.itvbloc #bk2 h3,
+.itvbloc #bk31 h3,
+.itvbloc #bk32 h3 { padding:27px 0 0 22px; }
+.itvbloc .useyear { padding:9px 0 16px 22px; }
+.itvbloc .profimg { display:block; padding:0 19px 0 22px; float:left; }
+.itvbloc .profdet { display:block; width:44%; float:left; }
+.itvbloc p.detail { display:block; height:139px; font-size:12px; float:left; line-height:1.4em;}
+
+.itvbloc p.linkTypeB01 { clear:both; display:block; font-size:105%; background-repeat:no-repeat; }
+
+#bk1 { display:block; width:327px; height:276px; background:url("../images/itv1_back.jpg") no-repeat; margin-bottom:20px; }
+#bk2 { display:block; width:327px; height:276px; background:url("../images/itv2_back.jpg") no-repeat; margin-bottom:20px;  }
+#bk31 { display:block; width:327px; height:276px; background:url("../images/itv3_1_back.jpg") no-repeat; }
+#bk32 { display:block; width:327px; height:276px; background:url("../images/itv3_2_back.jpg") no-repeat; /*margin-top:44px; */}
+
+.pl16 { padding-left:16px; }
+.ml16 { margin-left:16px; }
+
+
+
+
+
+

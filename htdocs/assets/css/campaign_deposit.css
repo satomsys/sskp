@@ -1,0 +1,34 @@
+table.table-deposit-subtotal .price-deposit, table.table-deposit-subtotal .price-unit {
+	color: #ff0000;
+	font-weight: bold;
+}
+
+
+.total-information-table-block01 table.table-deposit-subtotal {
+	float: right;
+	margin-left: 240px;
+	margin-top: 4px;
+}
+
+
+table.order-subtotal-information-table01 .col-subtotal .price-amount-without-reduction {
+	font-weight: bold;
+}
+
+
+table.order-subtotal-information-table01 .row-header-deposit-total {
+	background: none repeat scroll 0 0 #fae1e9;
+}
+
+
+@media screen and (max-width: 568px) {
+	body.template-enable-media-queries .total-information-table-block01 table.table-deposit-subtotal {
+		float: none;
+		margin-left:0;
+		width: 100%;
+	}
+	body.template-enable-media-queries .total-information-table-block01 table.table-deposit-subtotal .col-row-header {
+		padding-left: 10px;
+		vertical-align: middle;
+	}
+}

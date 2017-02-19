@@ -1,0 +1,58 @@
+@charset "shift_jis";
+/* ----------------------------
+  COMMON
+------------------------------ */
+
+.topic_path {
+	padding:0 12px;
+	background:#faf4f2;
+	box-shadow: 0 2px 6px -3px rgba(0, 0, 0, 0.2) inset, 0 -2px 6px -3px rgba(0, 0, 0, 0.2) inset;
+	margin-bottom: 22px;
+	padding:14px 12px 11px 12px;
+}
+
+.topic_path ol {
+	margin:1px 0 9px 0;
+}
+
+.topic_path li {
+	display:inline;
+	font-weight:bold;
+	font-size:1.3rem;
+	line-height:1.84615;
+}
+
+.topic_path li a {
+	font-weight:bold;
+	color:#99331f;
+}
+
+.topic_path li:after {
+	content:">";
+	padding:0 0 0 6px;
+}
+
+.topic_path li:last-child:after {
+	content:"";
+}
+
+h1.tit {
+	font-size: 2.4rem;
+	font-weight: bold;
+	line-height: 1.25;
+	text-shadow: none;
+	font-family: "ƒqƒ‰ƒMƒm–¾’© Pro W3","Hiragino Mincho ProN","HGS–¾’©E","HG–¾’©","ƒƒCƒŠƒI",Meiryo,"‚l‚r ‚o–¾’©","MS PMincho","‚l‚r –¾’©","MS Mincho",sans-serif;
+}
+
+/*	clearfix
+------------------------------------*/
+.clearfix:after {content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */

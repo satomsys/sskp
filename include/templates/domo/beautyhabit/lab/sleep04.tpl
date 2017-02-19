@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<!--[if IE 6]><html lang='ja' class='ie6' prefix='og: http://ogp.me/ns#'><![endif]-->
+<!--[if IE 7]><html lang='ja' class='ie7' prefix='og: http://ogp.me/ns#'><![endif]-->
+<!--[if IE 8]><html lang='ja' class='ie8' prefix='og: http://ogp.me/ns#'><![endif]-->
+<!--[if IE 9]><html lang='ja' class='ie9' prefix='og: http://ogp.me/ns#'><![endif]-->
+<!-- [if gt IE 9] <!-->
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+<!-- <![endif]-->
+
+<head>
+  <meta charset="Shift_JIS">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <!--///// (1) ページタイトル　キーワード　ディスクリプション - START /////-->
+  <title>【調査】4週間の摂取で変化！？しみ編｜ねむりとめぐりの研究所＜公式＞</title>
+  <meta name="description" content="眠りの質を高めることで「しみ」や「キメ」にどのような変化があるのか、調査をしました。">
+  <meta name="keywords" content="ドモホルンリンクル,ドモホルン,ドモ,再春館製薬所,再春館,飲むドモホルンリンクル,睡眠,睡眠の質,ドリンク">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.saishunkan.co.jp/domo/beautyhabit/lab/sleep04.html">
+  <meta property="og:title" content="【調査】4週間の摂取で変化！？しみ編｜ねむりとめぐりの研究所＜公式＞">
+  <meta property="og:description" content="眠りの質を高めることで「しみ」や「キメ」にどのような変化があるのか、調査をしました。" />
+  <meta property="og:image" content="http://www.saishunkan.co.jp/assets/ps/domo/beautyhabit/img/common/og_image.jpg" />
+  <!--///// (1) ページタイトル　キーワード　ディスクリプション - END /////-->
+  <!-- ▼サイト共通で使うスタイル・スクリプト-->
+  <link rel="stylesheet" href="/assets/css/style.css?20160128" />
+  <script src="/assets/js/vendor/jquery.min.js" charset="utf-8"></script>
+  <script src="/assets/js/vendor/underscore-min.js" charset="utf-8"></script>
+  <script src="/assets/js/vendor/require.js" charset="utf-8"></script>
+  <script src="/assets/js/require_config.js?20160128" charset="utf-8"></script>
+  <script src="/assets/js/app.js?20160128" charset="utf-8"></script>
+  <!-- ▲サイト共通で使うスタイル・スクリプト-->
+  <!-- ▼ページ毎に必要なスタイル・スクリプトなど-->
+  <!--///// (2) ページに必要なjs と CSS - START /////-->
+  <!-- /beautyhabit/ 共通部分css -->
+  <link rel="stylesheet" href="/assets/ps/domo/beautyhabit/common/css/common.css?20161014" />
+  <link rel="stylesheet" href="/assets/ps/domo/beautyhabit/common/css/osusume.css?20161014" />
+  <!-- end /beautyhabit/ 共通部分css -->
+  <!--///// 下層ページ用 CSS & Web フォント - START /////-->
+  <link rel="stylesheet" href="/assets/ps/domo/beautyhabit/lab/css/rest.css" />
+  <link rel="stylesheet" href="/assets/ps/domo/beautyhabit/lab/css/style.css?20161108" />
+  <link rel="stylesheet" href="/assets/ps/domo/beautyhabit/lab/css/ndw.css?20161108" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"  rel="stylesheet" type="text/css" />
+  <!--///// 下層ページ用 CSS & Web フォント - END /////-->
+  <script>
+    require(["jquery"], function() {
+      require(["/assets/ps/domo/beautyhabit/common/js/jquery.matchHeight-min.js","/assets/ps/domo/beautyhabit/common/js/remodal.min.js","/assets/ps/domo/beautyhabit/lab/js/jquery.heightLine.js"], function() {
+        require(["/assets/ps/domo/beautyhabit/common/js/function.js?20161014", "/assets/ps/domo/beautyhabit/lab/js/function.js?20161108", "/assets/ps/domo/beautyhabit/common/js/osusume.js"]);
+      })
+    });
+  </script>
+  <!--///// (2) ページに必要なjs と CSS - END /////-->
+  <!-- ▲ページ毎に必要なスタイル・スクリプトなど-->
+</head>
+
+[: if $status_login:]
+	[:* ログイン済 *:]
+	[:assign var=body_template_class value='template-post-login-layout02':]
+[: else :]
+	[:* 未ログイン *:]
+	[:assign var=body_template_class value='template-pre-login-layout02':]
+
+	[: if $revisitFlg !==1 && $revisitFlg !==2 :]
+		[:* S未請求 *:]
+		[:assign var=body_template_class value='template-pre-login-layout01':]
+	[: /if :]
+[: /if :]
+
+<body class="page-skincare_tips template-enable-media-queries page-beautyhabit_labo [:$body_template_class:]">
+  <!--///// (3) GTMの指定 - START /////-->
+  [:include file="domo/beautyhabit/_header.inc.tpl":]
+  <!--///// (3) GTMの指定 - END /////-->
+
+  <!--///// (4) コンテンツ  <div id="main" class="bh-main">内 - START /////-->
+  <div id="main" class="bh-main">
+  [:* SP用にナビゲーションを表示 *:]
+  [:include file="domo/beautyhabit/_sp_navi.inc.tpl":]
+    
+  <!--///// 下層ページ - START /////-->
+  
+  <div class="wrap">
+
+    <div class="header">
+      <div class="header_inner">
+        <div class="h1_container">
+          <h1>
+            <div class="sp"><img src="/assets/ps/domo/beautyhabit/lab/img/common/h1_sp.png" /></div>
+            <div class="pc"><img class="h1_img" src="/assets/ps/domo/beautyhabit/lab/img/common/h1_pc.png" /></div>
+          </h1>
+        </div><!-- .h1_container -->
+        <div class="h2_container sp">
+          <h2>
+            <img class="sp" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/title_01_sp.png" alt="【調査】4週間の摂取で変化しみ編" />
+          </h2>
+        </div><!-- .h2_container sp -->
+        <div class="h2_container pc" style="margin-top:44px;">
+          <h2>
+            <img class="pc" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/title_01_pc.png" alt="【調査】4週間の摂取で変化しみ編" />
+          </h2>
+        </div><!-- .h2_container pc -->
+      </div><!-- .header_inner -->
+    </div><!-- .header -->
+
+    <div class="content">
+      <div class="content_inner">
+
+        <div class="kansyu"><img src="/assets/ps/domo/beautyhabit/lab/img/common/kansyu.png" /></div>
+
+        <div class="balloon-top">今回は、私たちが実験・調査したしみ、キメといったお肌お悩みと睡眠との関係、アンケート結果をご紹介したいと思います。</div>
+
+        <div class="column_01">
+          <div>
+            <h6>
+              <img class="pc" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/title_02_pc.png" alt="しみ、キメとの関連性を調べるため、下記の条件にて調査を行いました。" />
+              <img class="sp" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/title_02_sp.png" alt="しみ、キメとの関連性を調べるため、下記の条件にて調査を行いました。" />
+            </h6>
+            <div class="box_clear">
+              <div class="text_01">
+                <ul>
+                  <li><span class="bold large">睡眠前に眠りの質を高めるドリンクを摂取</span></li>
+                  <li><span class="bold large">調査母数：10名</span></li>
+                  <li><span class="bold large">平均年齢：35.8歳</span></li>
+                  <li><span class="bold large">継続期間：4週間</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column_02 clearfix heightLine sleep04_10">
+          <div>
+            <h5>
+              <img class="pc" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/title_03_pc.png" alt="飲用前と飲用後のしみの個数が減少" />
+              <img class="sp" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/title_03_sp.png" alt="飲用前と飲用後のしみの個数が減少" />
+            </h5>
+            <div class="box_white">
+              <img class="pc" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/01_pc.png" />
+              <img class="sp" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/01_sp.png" />
+            </div>
+          </div>
+          <div>
+            <h5>
+              <img class="pc" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/title_04_pc.png" alt="シミ個数の推移" />
+              <img class="sp" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/title_04_sp.png" alt="シミ個数の推移" />
+            </h5>
+            <div class="box_white">
+              <img class="pc" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/02_pc.png" />
+              <img class="sp" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/02_sp.png" />
+            </div>
+          </div>
+        </div>
+        
+        <div class="column_01 sleep04_02">
+          <div>
+            <div class="box_clear">
+              <div class="text_01">
+                <p>グラフで示したとおり、<span class="pink large bold">しみ個数が減少</span>していることもわかりました。実際、お肌を撮影しても同じようにしみの個数が減っていました。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column_01">
+          <div>
+            <h6>
+              <img class="pc" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/title_05_pc.png" alt="4週間の飲用で、キメに対して改善されたことを示す結果に！" />
+              <img class="sp" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/title_05_sp.png" alt="4週間の飲用で、キメに対して改善されたことを示す結果に！" />
+            </h6>
+            <div class="box_clear">
+              <div class="text_01">
+                <p>キメとの関係を調べるために、試験用の粘着フィルムで角質を採取し【はがれた量】を比較しました。「キメが整ったお肌は、角質が均一にはがれる」ことからこのような手法をとり調査することにしました。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column_01">
+          <div>
+            <h5>
+              <img class="pc" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/title_06_pc.png" alt="飲用前と飲用後で角質のはがれ方が変化" />
+              <img class="sp" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/title_06_sp.png" alt="飲用前と飲用後で角質のはがれ方が変化" />
+            </h5>
+            <div class="box_white sleep04_04">
+              <img class="pc" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/03_pc.png" />
+              <img class="sp" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/03_sp.png" />
+            </div>
+          </div>
+        </div>
+        
+        <div class="column_01">
+          <div>
+            <div class="box_clear">
+              <div class="text_01">
+                <p>30代・60代ともに飲用前後を比較しました。<br />色が濃いところは、キメが乱れているため角質がはがれて重なりあっている状態であることを示しています。飲用後は、濃い色の箇所が減ったことが見て取れました。<br />これは<br /><span class="pink large bold">4週間の飲用で、キメに対して改善されたことを示す</span>結果となっています。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column_01">
+          <div>
+            <h6>
+              <img class="pc" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/title_07_pc.png" alt="飲用前・後のアンケート結果" />
+              <img class="sp" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/title_07_sp.png" alt="飲用前・後のアンケート結果" />
+            </h6>
+            <div class="box_clear">
+              <div class="text_01">
+                <p>上記の肌診断を行った方々にアンケートを下記の項目において行いました。</p>
+                <ol>
+                  <li><span class="bold">睡眠時間は何時間でしたか？</span></li>
+                  <li><span class="bold">寝つき（布団に入ってから眠るまでに必要な時間）はどうでしたか？</span></li>
+                  <li><span class="bold">夜間、睡眠途中に目が覚めましたか？</span></li>
+                  <li><span class="bold">睡眠時間は十分でしたか？</span></li>
+                  <li><span class="bold">希望する起床時刻より早く目覚め、それ以上眠れないことがありましたか？</span></li>
+                  <li><span class="bold">全体的な睡眠の質はどうでしたか？</span></li>
+                  <li><span class="bold">日中の眠気はどうでしたか？</span></li>
+                  <li><span class="bold">日中の疲労感（身体的および精神的）はどうでしたか？</span></li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="column_02">
+          <div>
+            <h5>
+              <img class="pc" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/title_08_pc.png" alt="飲用前後で睡眠の質が変化" />
+              <img class="sp" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/title_08_sp.png" alt="飲用前後で睡眠の質が変化" />
+            </h5>
+            <div class="box_white">
+              <img class="pc" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/04_pc.png" />
+              <img class="sp" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/04_sp.png" />
+            </div>
+          </div>
+          <div>
+            <div class="box_clear sleep04_06">
+              <p>「6.全体的な睡眠の質はどうでしたか？」を例に見てみると経過日数の増加に対してグラフは右下がりになっています。<br />これは</p>
+              <ul class="clearfix">
+                <li>満足している…0</li>
+                <li>かなり不満…2</li>
+                <li>少し不満…1</li>
+                <li>非常に不満…3</li>
+              </ul>
+              <p>として算出しています。</p>
+              <p>グラフの下がり方から、<span class="pink large bold">経過日数を追うごとに睡眠の質が良くなっている</span>ことが読み取れます。</p>
+            </div>
+          </div>
+        </div>
+ 
+         <div class="column_01">
+          <div>
+            <div class="box_clear">
+              <div class="text_01">
+                <p>このようにお肌の結果の数字とこれらをつきあわせることで私たちは<span class="pink large bold">「睡眠の質とお肌」は深い関係にある</span>と考えるにいたりました。ただ、「睡眠とお肌」の関係については、継続調査の必要性を 強く感じています。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+        <div class="gradation">
+          
+          <div class="column_01  sleep04_08">
+            <div>
+              <h4>
+                <img class="pc" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/title_09_pc.png" alt="調査結果からわかったこと" />
+                <img class="sp" src="/assets/ps/domo/beautyhabit/lab/img/sleep04/title_09_sp.png" alt="調査結果からわかったこと" />
+              </h4>
+              <div class="box_clear">
+                <div class="text_01">
+                  <p>質のよい睡眠がお肌にどのような影響を与えているかの調査結果は、しわやしみなどに効果がみえますが、これはどんな方にも同じように効果がでるということではありません。<br />年齢肌の悩みの深さによっては、効果が実感にいたるまでには時間が必要な場合もあります。<br /><span class="pink large bold">睡眠は、美肌と関係の深い「ホルモンバランス」「血行」「免疫機能」に直接働きかけています。</span></p>
+                  <p><span class="bold large">体の疲れを取り除き人の根本力を支える「睡眠」</span>は、私たちにとってなくてはならない時間です。<br />その時間を美肌を生み出す時間にするためにも、美しくなることのできるような眠りの習慣を身につけましょう。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- .gradation -->
+
+      </div><!-- .content_inner -->
+    </div><!-- .content -->
+    
+    <!-- // おすすめコンテンツ - START -->    
+    <div class="bh-section bh-sectionNomudomo">
+      <div class="bh-innr">
+
+        <div class="bh-osusume">
+          <h3 class="bh-osusume__title"><img src="/assets/ps/domo/beautyhabit/ndw/img/title_osusume_01.png" alt=""></h3>
+          <div class="bh-osusume__contents">
+            <ul class="bh-osusume__clm">
+              <li class="bh-osusume__clm__li" style="height: 450px;">
+                <a href="/domo/beautyhabit/lab/sleep01.html" class="bh-lab">
+                  <div class="bh-osusume__spBox">
+                    <div class="bh-osusume__thumb"><img src="/assets/ps/domo/beautyhabit/common/img/5.jpg" alt=""></div>
+                    <div class="bh-osusume__spBox__right">
+                      <p class="bh-osusume__category"><img src="/assets/ps/domo/beautyhabit/top/img/title_panel_labo_01.png" alt="ねむりとめぐりの研究所"></p>
+                      <p class="bh-osusume__subTitle">美肌を生み出す秘密とは？睡眠とお肌の関係</p>
+                    </div>
+                  </div>
+                  <div class="bh-osusume__text">成長ホルモンの分泌量が減ると、お肌が乾燥しハリが失われます。</div>
+                </a>
+              </li>
+              <li class="bh-osusume__clm__li" style="height: 450px;">
+                <a href="/domo/beautyhabit/lab/sleep02.html" class="bh-lab">
+                  <div class="bh-osusume__spBox">
+                    <div class="bh-osusume__thumb"><img src="/assets/ps/domo/beautyhabit/common/img/6.jpg" alt=""></div>
+                    <div class="bh-osusume__spBox__right">
+                      <p class="bh-osusume__category"><img src="/assets/ps/domo/beautyhabit/top/img/title_panel_labo_01.png" alt="ねむりとめぐりの研究所"></p>
+                      <p class="bh-osusume__subTitle">質の良い睡眠が美肌を生み出す！</p>
+                    </div>
+                  </div>
+                  <div class="bh-osusume__text">ぐっすり眠れた朝は、肌のツヤがよく、化粧ノリが良い、そのわけは？</div>
+                </a>
+              </li>
+              <li class="bh-osusume__clm__li" style="height: 450px;">
+                <a href="/domo/beautyhabit/lab/sleep03.html" class="bh-lab">
+                  <div class="bh-osusume__spBox">
+                    <div class="bh-osusume__thumb"><img src="/assets/ps/domo/beautyhabit/common/img/7.jpg" alt=""></div>
+                    <div class="bh-osusume__spBox__right">
+                      <p class="bh-osusume__category"><img src="/assets/ps/domo/beautyhabit/top/img/title_panel_labo_01.png" alt="ねむりとめぐりの研究所"></p>
+                      <p class="bh-osusume__subTitle">【調査】4週間の摂取で変化!?「しわ」編</p>
+                    </div>
+                  </div>
+                  <div class="bh-osusume__text">眠りの質を高めることで、しわにどのような変化が？</div>
+                </a>
+              </li>
+              <li class="bh-osusume__clm__li" style="height: 450px;">
+                <a href="/domo/beautyhabit/lab/meguri01.html" class="bh-lab">
+                  <div class="bh-osusume__spBox">
+                    <div class="bh-osusume__thumb"><img src="/assets/ps/domo/beautyhabit/common/img/9.jpg" alt=""></div>
+                    <div class="bh-osusume__spBox__right">
+                      <p class="bh-osusume__category"><img src="/assets/ps/domo/beautyhabit/top/img/title_panel_labo_01.png" alt="ねむりとめぐりの研究所"></p>
+                      <p class="bh-osusume__subTitle">代謝をあげて肌本来の美しさを！</p>
+                    </div>
+                  </div>
+                  <div class="bh-osusume__text">代謝をあげると、健康だけでなくお肌にも良い影響を及ぼします。</div>
+                </a>
+              </li>
+              <li class="bh-osusume__clm__li" style="height: 450px;">
+                <a href="/domo/beautyhabit/lab/meguri02.html" class="bh-lab">
+                  <div class="bh-osusume__spBox">
+                    <div class="bh-osusume__thumb"><img src="/assets/ps/domo/beautyhabit/common/img/10.jpg" alt=""></div>
+                    <div class="bh-osusume__spBox__right">
+                      <p class="bh-osusume__category"><img src="/assets/ps/domo/beautyhabit/top/img/title_panel_labo_01.png" alt="ねむりとめぐりの研究所"></p>
+                      <p class="bh-osusume__subTitle">血行不良が肌老化の原因！？</p>
+                    </div>
+                  </div>
+                  <div class="bh-osusume__text">「血行」は、お肌とからだをすこやかに保つために必要不可欠なもの。</div>
+                </a>
+              </li>
+              <li class="bh-osusume__clm__li" style="height: 450px;">
+                <a href="/domo/beautyhabit/lab/meguri03.html" class="bh-lab">
+                  <div class="bh-osusume__spBox">
+                    <div class="bh-osusume__thumb"><img src="/assets/ps/domo/beautyhabit/common/img/11.jpg" alt=""></div>
+                    <div class="bh-osusume__spBox__right">
+                      <p class="bh-osusume__category"><img src="/assets/ps/domo/beautyhabit/top/img/title_panel_labo_01.png" alt="ねむりとめぐりの研究所"></p>
+                      <p class="bh-osusume__subTitle">シワシミ対策の鍵！からだの奥のめぐり</p>
+                    </div>
+                  </div>
+                  <div class="bh-osusume__text">めぐりとは、不要なものを排出し、必要なものを行き渡らせること。</div>
+                </a>
+              </li>
+              
+			  <li class="bh-osusume__clm__li" style="height: 450px;">
+                <a href="/domo/beautyhabit/lab/raw_material01.html" class="bh-lab">
+                  <div class="bh-osusume__spBox">
+                    <div class="bh-osusume__thumb"><img src="/assets/ps/domo/beautyhabit/common/img/12.jpg" alt=""></div>
+                    <div class="bh-osusume__spBox__right">
+                      <p class="bh-osusume__category"><img src="/assets/ps/domo/beautyhabit/top/img/title_panel_labo_01.png" alt="ねむりとめぐりの研究所"></p>
+                      <p class="bh-osusume__subTitle">眠りの質を高め、疲れを和らげるクワンソウ</p>
+                    </div>
+                  </div>
+                  <div class="bh-osusume__text">クワンソウエキスは、目覚めを抑え、深い眠りの持続を助けます。</div>
+                </a>
+              </li>
+							<li class="bh-osusume__clm__li" style="height: 450px;">
+                <a href="/domo/beautyhabit/lab/raw_material04.html" class="bh-lab">
+                  <div class="bh-osusume__spBox">
+                    <div class="bh-osusume__thumb"><img src="/assets/ps/domo/beautyhabit/common/img/15.jpg" alt=""></div>
+                    <div class="bh-osusume__spBox__right">
+                      <p class="bh-osusume__category"><img src="/assets/ps/domo/beautyhabit/top/img/title_panel_labo_01.png" alt="ねむりとめぐりの研究所"></p>
+                      <p class="bh-osusume__subTitle">体を温めるゆずの力 ゆず種子エキス</p>
+                    </div>
+                  </div>
+                  <div class="bh-osusume__text">ゆずの成分リモニンには、血行促進、リラックス作用があります。</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bh-localPagetop">
+          <div class="bh-localPagetop__btnBox">
+            <ul class="bh-localPagetop__btnList">
+              <li class="bh-localPagetop__btnList__li">
+                <a href="/domo/beautyhabit/"><img src="/assets/ps/domo/beautyhabit/common/img/btn_ndwtop_01.png" alt=""></a>
+              </li>
+              <li class="bh-localPagetop__btnList__li">
+                <a href="/domo/"><img src="/assets/ps/domo/beautyhabit/common/img/btn_top_01.png" alt=""></a>
+              </li>
+            </ul>
+          </div>
+          <div class="bh-localPagetop__pagetop">
+            <a href="#top"><img src="/assets/ps/domo/beautyhabit/common/img/btn_pagetop_01.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- // おすすめコンテンツ - END -->
+
+  </div><!-- .wrap -->  
+  <!--///// 下層ページ - END /////-->
+
+  </div>
+  <!--///// (4) コンテンツ  <div id="main">内 - END /////-->
+
+[:* ▼R-#29383_【H28-00117-03】食品サイト_LABO配下／ピックアップトピック配下_お試しセットバナーを取るorフッター差替え 2016/11/14 nul-hatano *:]
+  [:include file="domo/_shared/_footer02.inc.tpl":]
+[:* ▲R-#29383_【H28-00117-03】食品サイト_LABO配下／ピックアップトピック配下_お試しセットバナーを取るorフッター差替え 2016/11/14 nul-hatano *:]
+
+  <!--///// (5) サイトカタリスト、YTM - START /////-->
+  [:include file="domo/_shared/_footer_analysis.inc.tpl":]
+  <!--///// (5) サイトカタリスト、YTM - END /////-->
+</body>
+</html>

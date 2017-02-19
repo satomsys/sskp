@@ -1,0 +1,134 @@
+@charset "UTF-8";
+.box {
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	margin: 40px auto;
+	background: #fff;
+	background-repeat: no-repeat;
+	background-size: 32% auto;
+	-webkit-background-size: 32% auto;
+	-moz-background-size: 32% auto;
+}
+.left {
+	padding-left: 32%;
+}
+.right {
+	padding-right: 32%;
+}
+.page-review_list .box.mkg01 {
+	background-image: url(/assets/ps/domo/beautyhabit/review/mgk/interview/img/img01.jpg);
+	background-position: left bottom -25px;
+}
+.page-review_list .box.mkg02 {
+	background-image: url(/assets/ps/domo/beautyhabit/review/mgk/interview/img/img02.jpg);
+	background-position: right bottom -45px;
+}
+.page-review_list .box.ndw01 {
+	background-image: url(/assets/ps/domo/beautyhabit/review/ndw/interview/img/img01.jpg);
+	background-position: left bottom -55px;
+}
+.page-review_list .box.ndw02 {
+	background-image: url(/assets/ps/domo/beautyhabit/review/ndw/interview/img/img02.jpg);
+	background-position: right bottom -80px;
+}
+.box p {
+	position: relative;
+	margin: 0;
+}
+.box p.box-line {
+	z-index: 0;
+}
+.box p.box-ttl, .box p.box-txt {
+	z-index: 5;
+}
+.box.ndw01 p.box-line {
+	margin: -3% 0 -6%;
+}
+.box p.box-txt, .box p.btn-read {
+	margin: 0 5%;
+}
+.box .box-txt .box-name {
+	padding: 1.5em 0 1em;
+	display: block;
+}
+.box .btn-read {
+	width: 45%;
+	padding-bottom: 1.5em;
+}
+.btn-datail {
+	margin: 55px auto 45px;
+}
+.btn-datail.ndw {
+	width: 65.74%;
+}
+.btn-datail.mgk {
+	width: 55.53%;
+}
+
+/*--------------------------
+SP メディアクエリ設定 737以下
+------------------------------*/
+@media screen and (max-width: 737px) {
+.box {
+	width: 93.06%;
+	background-size: 37% auto;
+	-webkit-background-size: 37% auto;
+	-moz-background-size: 37% auto;
+}
+.left {
+	padding-left: 37%;
+}
+.right {
+	padding-right: 37%;
+}
+.page-review_list .box.mkg01 {
+	background-image: url(/assets/ps/domo/beautyhabit/review/mgk/interview/img/img01_sp.jpg);
+	background-position: left center;
+}
+.page-review_list .box.mkg02 {
+	background-image: url(/assets/ps/domo/beautyhabit/review/mgk/interview/img/img02_sp.jpg);
+	background-position: right center;
+}
+.page-review_list .box.ndw01 {
+	background-image: url(/assets/ps/domo/beautyhabit/review/ndw/interview/img/img01_sp.jpg);
+	background-position: left bottom -230px;
+}
+.page-review_list .box.ndw02 {
+	background-image: url(/assets/ps/domo/beautyhabit/review/ndw/interview/img/img02_sp.jpg);
+	background-position: right bottom -170px;
+}
+.box.ndw01 p.box-line {
+	margin: -4% 0 0;
+}
+.box .btn-read {
+	width: 60%;
+}
+.btn-datail {
+	margin: 36px auto 43px;
+}
+.btn-datail.ndw {
+	width: 77.33%;
+}
+.btn-datail.mgk {
+	width: 65.33%;
+}
+}
+
+@media screen and (max-width: 568px) {
+.box .btn-read {
+	width: 85%;
+}
+.page-review_list .box.mkg01, .page-review_list .box.ndw01 {
+	background-position: left top;
+}
+.page-review_list .box.mkg02, .page-review_list .box.ndw02 {
+	background-position: right top;
+}
+.page-review_list .box.ndw01 {
+	background-position: left top;
+}
+.page-review_list .box.ndw02 {
+	background-position: right top;
+}
+}

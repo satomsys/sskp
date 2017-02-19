@@ -1,0 +1,65 @@
+/*******************************
+ モジュール
+*******************************/
+
+@charset "utf-8";
+/* user reset 共通*/
+.bh-onlySP {
+  display: none;
+}
+@media screen and (max-width: @break_SP) {
+  .bh-onlySP {
+    display: block;
+  }
+}
+@media screen and (max-width: @break_SP) {
+  .bh-onlyPC {
+    display: none;
+  }
+}
+.bh-hide {
+  display: none;
+}
+div.bh-main,.bh-main {
+  min-width: 980px;
+  // padding-top: 143px;
+  padding-top: @pcNavheight;
+  @media screen and (max-width: @break_TAB) {
+    min-width: 0;
+  }  
+}
+@media screen and (max-width: @break_SP) {
+div.bh-main,.bh-main {
+    width: 100%;
+    min-width: inherit;
+    padding-top: 43px;
+    // padding-top: 43px;
+  }
+}
+.bh-main img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+.bh-section {
+  box-sizing: border-box;
+   * {
+    box-sizing: border-box;
+  }
+  .bh-innr{
+    box-sizing: content-box;
+  }
+}
+
+
+div.bh-innr
+{
+  @media screen and (max-width: @break_TAB) {
+    max-width: 940px;
+    width: auto;
+  }  
+}
+
+// MediaQuery
+// SP
+// @media screen and (max-width: 568px) {}  

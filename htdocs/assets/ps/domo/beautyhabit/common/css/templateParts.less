@@ -1,0 +1,70 @@
+@import "_mixins.less";
+/**************************** 
+ 2016 feb beauty habit 改修
+ 共通パーツ操作CSS
+****************************/ 
+@import "_d201602_variables";
+@import "_d201602_modules";
+@import "_d201602_localnavigation";
+@import "_d201602_chumon";
+@import "_d201602_relatedContents";
+@import "_d201602_osusume";
+
+
+
+/********** TOPへバナー **********/
+
+.bh-nomudomotop{
+  &__banner{
+    max-width: @column_PC;
+    padding-left: 0;
+    margin: 80px auto;
+    list-style: none;
+    
+    li{
+      text-align: center;      
+    }
+  }
+  @media screen and (max-width: @break_SP) {
+    &__banner{
+      margin: 50px auto;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+  }    
+}
+
+
+/********** page top **********/
+
+.bh-localNav__pagetop{
+  width: 60px;
+  margin-left: auto;
+  position: absolute;
+  right: 3%;
+  bottom: 100%;
+  // MediaQuery
+  // SP
+  @media screen and (max-width: @break_SP) {
+      width: 60px;
+      position: static;
+  }  
+
+  a {
+    display: block;
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+   
+    &:hover{
+      transition: opacity .3s ease;
+      filter: alpha(opacity=80);
+      opacity: 0.8;
+      zoom: 1;
+      text-decoration: none;    
+    }
+  }
+}
+
+// MediaQuery
+// SP
+// @media screen and (max-width: 568px) {}  

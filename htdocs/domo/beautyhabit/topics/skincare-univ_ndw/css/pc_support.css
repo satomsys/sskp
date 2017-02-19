@@ -1,0 +1,118 @@
+/* charset */
+@charset "utf-8";
+
+/* ---------------------------- sec01 */
+.cmn_blk{
+  display: block;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 80px 80px;
+  font-size: 14px;
+}
+
+
+/* -------------- blk01 */
+.blk_top{
+  position: relative;
+  margin-top: 92px;
+  padding: 0 50px 30px;
+  border: 4px solid #886e4f;
+}
+.blk_top .sub{
+  display: block;
+  width: 500px;
+  margin: -92px auto 35px !important;
+  text-align: center;
+  background-color: #f2f5f7;
+}
+
+.blk_top .top_txt{
+  margin-bottom: 30px !important;
+  line-height: 1.8;
+  font-size: 18px;
+  text-align: center;
+}
+
+.blk_top .min01{
+  margin-bottom: 25px !important;
+  font-size: 26px !important;
+  font-weight: bold;
+  color: #886e4f;
+}
+.blk_top .min02{
+  font-size: 22px !important;
+  font-weight: bold;
+  color: #e79698;
+}
+
+.blk_top .col03{
+  margin-bottom: 70px;
+}
+.blk_top .col03 .col{
+  float: left;
+  width: 31.25%;
+  // width: 210px;
+  margin-left: 2.9%;
+}
+.blk_top .col03 .col:first-child{
+  margin-left: 0;
+}
+.blk_top .col .thm{
+  margin-bottom: 15px !important;
+  text-align: center;
+}
+
+.blk_top .txt{
+  line-height: 1.8;
+}
+
+
+/* -------------- blk_btm */
+.blk_btm{
+  position: relative;
+  margin-top: 55px;
+  padding: 8px;
+  border: 4px solid #886e4f;
+  background-color: #fff;
+}
+.blk_btm .in_blk{
+  padding: 55px 38px 50px;
+  border: 1px solid #886e4f;
+}
+.blk_btm .sub{
+  margin-bottom: 55px !important;
+  text-align: center;
+}
+
+.blk_btm .min01{
+  margin-bottom: 15px !important;
+  font-size: 26px !important;
+  font-weight: bold;
+  color: #886e4f;
+}
+
+.blk_btm .item_box{
+  display: table;
+  max-width: 560px;  
+  // width: 560px;
+  margin: 0 auto 0;
+}
+.blk_btm .item_box .item{
+  display: table-cell;
+  vertical-align: top;
+  width: 90px;
+}
+.blk_btm .item_box .txt_box{
+  display: table-cell;
+  vertical-align: top;
+  padding-left: 40px;
+  line-height: 1.8;
+}
+
+.blk_btm .btm_btn{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}

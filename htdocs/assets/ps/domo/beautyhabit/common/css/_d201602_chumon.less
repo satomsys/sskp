@@ -1,0 +1,217 @@
+/*******************************
+  注文ボタン
+*******************************/
+
+@buttonMaxWidth: 861px;
+
+/********** 飲むドモホルンリンクル注文ボタン **********/
+.bh-productList--wide 
+{
+  padding-top: 100px;
+	@media screen and (max-width: @break_SP) {
+	    padding-top: 45px;
+      .bh-sectionDeveloper &{
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+	}
+	
+	.bh-productList__title 
+	{
+	  margin-top: 0;
+	  text-align: center;
+	}
+	
+	@media screen and (max-width: @break_SP) {
+	 .bh-productList__title img {
+	    max-width: 79%;
+	  }
+	}
+}
+
+
+.bh-productList__clm {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  // padding-right: 28px;
+  zoom: 1;
+}
+.bh-productList__clm:before,
+.bh-productList__clm:after {
+  display: block;
+  height: 0;
+  visibility: hidden;
+  content: "\0020";
+}
+.bh-productList__clm:after {
+  clear: both;
+}
+@media screen and (max-width: @break_SP) {
+  .bh-productList__clm {
+    padding-right: 0;
+  }
+}
+
+
+///////// リスト単体
+.bh-productList__clm__li {
+  position: relative;
+  float: left;
+  width: 456px;
+  margin-top: 28px;
+  margin-right: 28px;
+}
+.bh-productList__clm__li:nth-child(2n+0) {
+  margin-right: -56px;
+}
+.bh-productList--wide .bh-productList__clm__li {
+  text-align: center;
+  float: none;
+  max-width: 861px;
+  width: auto;
+  // padding: 0 4.06%;
+  margin: 28px auto;
+  
+  /////ラベル付き
+  &.bh-productList__clm__li--label{
+    max-width: 861px;
+    margin-left: 0;
+    margin-botom: 0;
+    padding-right: 0;
+    padding-left: 0;        
+    left: 35px / @buttonMaxWidth;
+  }
+  // &:nth-child(2n+0) {
+  //   margin-right: inherit;
+  // }
+  
+
+  @media screen and (max-width: @break_TAB) {
+    margin-left: percentage(70px / @buttonMaxWidth);
+    margin-right: percentage(70px / @buttonMaxWidth);    
+  }
+
+  @media screen and (max-width: @break_TABsmall) {
+    // margin-left: percentage(35px / @buttonMaxWidth);
+    // margin-right: percentage(35px / @buttonMaxWidth);
+    // padding-right: 7.06%;
+    // padding-left: 7.06%;
+
+    // &.bh-productList__clm__li--label{
+      // margin-left: percentage(35px / @buttonMaxWidth) * -1;
+      // left: -35px;
+    // }    
+  }
+  @media screen and (max-width: @break_SP) {
+    margin-right: 0;
+    margin-left: 0;
+    &,
+     &.bh-productList__clm__li--label{
+      width: auto;
+      margin: 20px 15px 0;
+    }    
+    &:last-child{
+      margin-top: 15px;
+    }
+
+    &.bh-productList__clm__li--label{
+      margin-top: 10px;
+    } 
+    // &:nth-child(2n+0) {
+    //   margin-right: 0;
+    // }
+    &.bh-productList__clm__li--label
+     {
+      left: 0px;  
+      // .bh-productList__btn{
+      //   width: auto;
+      // }    
+      // .bh-productList__btn2{
+      //   width: 92%;
+      // }  
+    }
+  }
+}
+
+
+///////// ボタン ////////
+.bh-productList__btn {
+  width: percentage(300/@buttonMaxWidth);
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  right: 6.36%;
+  top: 51.428571%;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+  
+ .bh-productList--wide .bh-productList__clm__li:last-child &{
+    width: percentage(300/861);
+  } 
+  &:hover {
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+    filter: alpha(opacity=80);
+    -ms-filter: alpha(opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+    zoom: 1;
+    text-decoration: none;
+  }
+  ////ラベル付き
+  .bh-productList__clm__li--label & {
+    top: 38.46134%;
+    right: 2.3222%;
+    // top: 90px;
+  }
+  //低いやつ
+  .bh-productList__clm__li--tiny & {
+    top: 51.428571%;    
+  }
+
+
+  @media screen and (max-width: @break_SP) {
+      width: auto;
+      position: static;
+      
+     .bh-productList--wide .bh-productList__clm__li:last-child &{
+         width: auto;
+      } 
+    }  
+  }
+
+////定期お届けコースだけの嬉しい特典はコチラ
+.bh-productList__btn2 {
+  width: percentage(500/861);
+
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  top: percentage(180 / 244 );
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+  
+  &:hover {
+    -webkit-transition: opacity .3s ease;
+    transition: opacity .3s ease;
+    filter: alpha(opacity=80);
+    -ms-filter: alpha(opacity=80);
+    opacity: 0.8;
+    zoom: 1;
+    text-decoration: none;
+  }
+  @media screen and (max-width: @break_SP) {
+      right: 4%;
+      width: 92%;
+      top: 80%;
+      text-align: center;
+  }
+}
+
+// MediaQuery
+// SP
+// @media screen and (max-width: @break_SP) {}  

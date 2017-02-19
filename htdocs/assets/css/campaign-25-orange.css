@@ -1,0 +1,12 @@
+.balloon-campaign-25 {
+    background: #ff5a00;
+    border-color: #ff782f;
+}
+.balloon-campaign-25 .balloon-content {
+    font-size: 1em;
+    color: #fff;
+}
+
+.balloon-campaign-25 .ir-balloon-arrow01 {
+    background: url("../img/balloon-arrow-campaign02.png") no-repeat 0 0;
+}

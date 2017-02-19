@@ -1,0 +1,1267 @@
+@charset "utf-8";
+/**************************** 
+ 2016 feb beauty habit 改修
+ 共通パーツ操作CSS
+****************************/
+/*******************************
+ モジュール
+*******************************/
+/* user reset 共通*/
+.bh-onlySP {
+  display: none;
+}
+@media screen and (max-width: 568px) {
+  .bh-onlySP {
+    display: block;
+  }
+}
+@media screen and (max-width: 568px) {
+  .bh-onlyPC {
+    display: none;
+  }
+}
+.bh-hide {
+  display: none;
+}
+div.bh-main,
+.bh-main {
+  min-width: 980px;
+  padding-top: 59px;
+}
+@media screen and (max-width: 950px) {
+  div.bh-main,
+  .bh-main {
+    min-width: 0;
+  }
+}
+@media screen and (max-width: 568px) {
+  div.bh-main,
+  .bh-main {
+    width: 100%;
+    min-width: inherit;
+    padding-top: 43px;
+  }
+}
+.bh-main img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+.bh-section {
+  box-sizing: border-box;
+}
+.bh-section * {
+  box-sizing: border-box;
+}
+.bh-section .bh-innr {
+  box-sizing: content-box;
+}
+@media screen and (max-width: 950px) {
+  div.bh-innr {
+    max-width: 940px;
+    width: auto;
+  }
+}
+/*******************************
+ 2016 feb beauty habitナビ改修 
+ <div id="bh-localHeader" class="bh-localHeader bh-localHeader--megaDrop"></div>
+*******************************/
+body:after {
+  content: " ";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  opacity: 0;
+  transition: opacity 1s ease 0.1s;
+  background-color: rgba(178, 159, 130, 0.9);
+}
+body.open.fixed {
+  overflow: hidden;
+}
+body.open:after {
+  opacity: 1;
+  z-index: 3;
+}
+@media screen and (max-width: 568px) {
+  body:after {
+    display: none;
+  }
+}
+.megaDrop {
+  position: absolute;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  right: 0;
+  left: 0;
+  z-index: 4;
+}
+.megaDrop--header.fixed {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 4;
+}
+@media screen and (max-width: 568px) {
+  .megaDrop {
+    position: static;
+  }
+  .megaDrop--header {
+    display: none;
+  }
+  .megaDrop--header.fixed {
+    top: 0px;
+  }
+}
+.megaDrop .bh-localHeader {
+  min-width: 0px;
+  box-sizing: border-box;
+  min-height: 55px;
+  padding: 5px 0 4px;
+  position: relative;
+  z-index: 4;
+  background: url(/assets/ps/domo/beautyhabit/common/img/bg_localheader_01.jpg) repeat center center;
+  background-size: cover;
+}
+@media screen and (max-width: 568px) {
+  .megaDrop .bh-localHeader {
+    width: 100%;
+    min-width: 320px;
+    height: 43px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    min-height: inherit;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .fixed .megaDrop .bh-localHeader {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+  }
+}
+.megaDrop .bh-localHeader__wrap {
+  max-width: 940px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 568px) {
+  .megaDrop .bh-localHeader__wrap {
+    padding: 3px;
+  }
+}
+.megaDrop .bh-localHeader__innr {
+  width: 100%;
+  padding: 0 20px;
+  display: table;
+  table-layout: fixed;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 568px) {
+  .megaDrop .bh-localHeader__innr {
+    height: 35px;
+    padding: 0;
+  }
+}
+.megaDrop .bh-localHeader__left {
+  display: table-cell;
+  vertical-align: middle;
+}
+.megaDrop .bh-localHeader__right {
+  width: 50px;
+  height: 50px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 5px 5px 2px;
+  border: solid 2px #fff;
+  border-radius: 3px;
+  box-sizing: border-box;
+  cursor: pointer;
+  -ms-user-select: none;
+      user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+}
+@media screen and (max-width: 568px) {
+  .megaDrop .bh-localHeader__right {
+    width: 38px;
+    height: 100%;
+  }
+}
+.megaDrop .bh-localHeader__title {
+  display: block;
+  background: url(/assets/ps/domo/beautyhabit/common/img/title_localheader.png) no-repeat;
+  width: 407px;
+  height: 30px;
+  padding: 0;
+  margin: 0 0 0 15px;
+  transition: .3s ease;
+}
+.megaDrop .bh-localHeader__title:hover {
+  opacity: 0.8;
+  transition: .3s ease;
+}
+.megaDrop .bh-localHeader__title h1 {
+  margin: 0;
+}
+.megaDrop .bh-localHeader__title span {
+  display: none;
+}
+@media screen and (max-width: 568px) {
+  .megaDrop .bh-localHeader__title {
+    width: 270px;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 0;
+    padding-bottom: 6%;
+    background-size: contain;
+  }
+}
+.megaDrop .bh-localHeader__btn {
+  display: inline-block;
+  transition: all .4s;
+  box-sizing: border-box;
+  position: relative;
+  width: 30px;
+  height: 17px;
+  cursor: pointer;
+}
+.megaDrop .bh-localHeader__btn > span {
+  display: inline-block;
+  transition: all .4s;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  line-height: 1;
+  background-color: #fff;
+  border-radius: 4px;
+}
+.megaDrop .bh-localHeader__btn > span:nth-of-type(1) {
+  top: 0;
+}
+.open .megaDrop .bh-localHeader__btn > span:nth-of-type(1) {
+  -webkit-transform: translateY(7px) rotate(-45deg);
+  -ms-transform: translateY(7px) rotate(-45deg);
+      transform: translateY(7px) rotate(-45deg);
+}
+.megaDrop .bh-localHeader__btn > span:nth-of-type(2) {
+  top: 7px;
+}
+.open .megaDrop .bh-localHeader__btn > span:nth-of-type(2) {
+  border-radius: 100%;
+  -webkit-transform-origin: 50%;
+      -ms-transform-origin: 50%;
+          transform-origin: 50%;
+  -webkit-transform: rotateY(20deg);
+          transform: rotateY(20deg);
+  opacity: 0;
+}
+.megaDrop .bh-localHeader__btn > span:nth-of-type(3) {
+  bottom: 0;
+}
+.open .megaDrop .bh-localHeader__btn > span:nth-of-type(3) {
+  -webkit-transform: translateY(-7px) rotate(45deg);
+  -ms-transform: translateY(-7px) rotate(45deg);
+      transform: translateY(-7px) rotate(45deg);
+}
+@media screen and (max-width: 568px) {
+  .megaDrop .bh-localHeader__btn {
+    width: 100%;
+    height: 16px;
+    top: 1px;
+  }
+  .megaDrop .bh-localHeader__btn > span {
+    display: inline-block;
+    transition: all .4s;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    line-height: 1;
+    background-color: #fff;
+    border-radius: 4px;
+  }
+  .megaDrop .bh-localHeader__btn > span:nth-of-type(1) {
+    top: 0;
+  }
+  .open .megaDrop .bh-localHeader__btn > span:nth-of-type(1) {
+    -webkit-transform: translateY(7px) rotate(-45deg);
+    -ms-transform: translateY(7px) rotate(-45deg);
+        transform: translateY(7px) rotate(-45deg);
+  }
+  .megaDrop .bh-localHeader__btn > span:nth-of-type(2) {
+    top: 7px;
+  }
+  .open .megaDrop .bh-localHeader__btn > span:nth-of-type(2) {
+    opacity: 0;
+  }
+  .megaDrop .bh-localHeader__btn > span:nth-of-type(3) {
+    bottom: 0;
+  }
+  .open .megaDrop .bh-localHeader__btn > span:nth-of-type(3) {
+    -webkit-transform: translateY(-7px) rotate(45deg);
+    -ms-transform: translateY(-7px) rotate(45deg);
+        transform: translateY(-7px) rotate(45deg);
+  }
+}
+.megaDrop .bh-localHeader__btnText {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: .563em;
+  line-height: 1;
+}
+.megaDrop .bh-localNav {
+  min-width: 0px;
+  height: auto;
+  margin-top: 20px;
+  display: none;
+  background: none;
+}
+@media screen and (max-width: 568px) {
+  .megaDrop .bh-localNav {
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    margin-top: 0;
+    position: absolute;
+    z-index: 10;
+    top: 43px;
+    left: 0;
+    background: #EDE7DF;
+    height: auto;
+    box-sizing: border-box;
+    padding: 15px 0 0px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .fixed .megaDrop .bh-localNav {
+    position: fixed;
+    z-index: 1000;
+    top: 43px;
+    left: 0;
+    height: 100%;
+  }
+  .megaDrop .bh-localNav.open {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+.megaDrop .bh-localNav__innr {
+  width: auto;
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 568px) {
+  .megaDrop .bh-localNav__innr {
+    width: 100%;
+    padding: 0 2px;
+  }
+}
+.megaDrop .bh-localNav__list {
+  width: 76.6%;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+@media screen and (max-width: 768px) {
+  .megaDrop .bh-localNav__list {
+    width: 97.5%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .megaDrop .bh-localNav__list {
+    width: 100%;
+  }
+}
+.megaDrop .bh-localNav__list__ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: table;
+  table-layout: fixed;
+  list-style: none;
+  overflow: hidden;
+  border-spacing: 10px 5px;
+  background-color: transparent;
+}
+.megaDrop .bh-localNav__list__ul.upper li {
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+.megaDrop .bh-localNav__list__ul.lower {
+  clear: both;
+}
+.megaDrop .bh-localNav__list__ul.lower .bh-localNav__list__nav {
+  width: 32%;
+  margin-left: 2%;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 0.9em;
+}
+.megaDrop .bh-localNav__list__ul.lower .bh-localNav__list__nav:first-child {
+  margin-left: 0;
+}
+.megaDrop .bh-localNav__list__ul.lower .bh-localNav__list__nav div {
+  font-size: 0.9em;
+  line-height: 1.46;
+  color: #999;
+}
+@media screen and (min-height: 601px) {
+  .megaDrop .bh-localNav__list__ul.lower .bh-localNav__list__nav {
+    min-height: 150px;
+  }
+}
+@media screen and (max-width: 980px), screen and (max-width: 768px), screen and (max-height: 700px) {
+  .megaDrop .bh-localNav__list__ul.lower .bh-localNav__list__nav {
+    min-height: 0;
+  }
+  .megaDrop .bh-localNav__list__ul.lower .bh-localNav__list__nav div {
+    display: none;
+  }
+}
+@media screen and (max-width: 568px) {
+  .megaDrop .bh-localNav__list__ul {
+    border-spacing: 5px;
+    zoom: 1;
+  }
+  .megaDrop .bh-localNav__list__ul:before,
+  .megaDrop .bh-localNav__list__ul:after {
+    display: block;
+    height: 0;
+    visibility: hidden;
+    content: "\0020";
+  }
+  .megaDrop .bh-localNav__list__ul:after {
+    clear: both;
+  }
+  .megaDrop .bh-localNav__list__ul.lower .bh-localNav__list__nav {
+    width: 33.3333%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+.megaDrop .bh-localNav__list__nav {
+  width: calc(50% - 1%);
+  margin-left: 2%;
+  padding: 15px 25px;
+  display: table-cell;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background: #fff;
+}
+.megaDrop .bh-localNav__list__nav:first-child {
+  margin-left: 0;
+}
+.megaDrop .bh-localNav__list__nav span {
+  line-height: 1;
+  margin-bottom: 0.5em;
+  display: block;
+  text-align: center;
+}
+.megaDrop .bh-localNav__list__nav a {
+  line-height: 1;
+  text-decoration: none;
+  color: inherit;
+}
+.megaDrop .bh-localNav__list__nav span {
+  line-height: 1;
+}
+.megaDrop .bh-localNav__list__nav img {
+  line-height: 1;
+  max-width: 100%;
+  height: auto;
+}
+.megaDrop .bh-localNav__list__nav > a {
+  width: auto;
+  height: auto;
+  position: relative;
+  display: block;
+}
+.megaDrop .bh-localNav__list__nav > a:before {
+  display: none;
+}
+@media screen and (max-width: 950px), screen and (max-height: 700px) {
+  .megaDrop .bh-localNav__list__nav.bh-localNav__list__nav--ndw span img,
+  .megaDrop .bh-localNav__list__nav.bh-localNav__list__nav--mgk span img {
+    max-width: 120px;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 768px), screen and (max-height: 700px) {
+  .megaDrop .bh-localNav__list__nav span {
+    max-width: 106px;
+    margin: auto;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 568px) {
+  .megaDrop .bh-localNav__list__nav {
+    width: 50%;
+    padding: 10px 8px;
+    margin-left: 0;
+    float: none;
+  }
+  .megaDrop .bh-localNav__list__nav span img {
+    max-width: 100%;
+  }
+}
+.megaDrop .bh-localNav__list__menu {
+  margin: 0;
+  padding-left: 0;
+}
+.megaDrop .bh-localNav__list__nav--ndw .bh-localNav__list__menu__li {
+  border-color: #AA8F6D;
+  background-image: url(/assets/ps/domo/beautyhabit/common/img/arrow_nav_ndw.png);
+}
+.megaDrop .bh-localNav__list__nav--ndw a {
+  color: #AA8F6D;
+}
+.megaDrop .bh-localNav__list__nav--mgk .bh-localNav__list__menu__li {
+  border-color: #e28192;
+  background-image: url(/assets/ps/domo/beautyhabit/common/img/arrow_nav_mgk.png);
+}
+.megaDrop .bh-localNav__list__nav--mgk a {
+  color: #e28192;
+}
+.megaDrop .bh-localNav__list__menu__li {
+  line-height: 1;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  list-style: none;
+  border-top: solid 1px;
+  font-size: 1.2em;
+  text-align: center;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 5px;
+}
+.megaDrop .bh-localNav__list__menu__li.li-button {
+  padding-top: 1em;
+  padding-bottom: 5px;
+  background: none;
+}
+.megaDrop .bh-localNav__list__menu__li .sub {
+  line-height: 1;
+  margin-bottom: 0.5em;
+  font-size: 0.6em;
+  color: #999;
+}
+@media screen and (max-width: 950px), screen and (max-height: 700px) {
+  .megaDrop .bh-localNav__list__menu__li {
+    font-size: 0.85em;
+  }
+  .megaDrop .bh-localNav__list__menu__li.li-button {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .megaDrop .bh-localNav__list__menu__li .sub {
+    display: none;
+  }
+}
+.bh-localNav.bh-localNav--footer {
+  top: 0;
+  position: relative;
+}
+@media screen and (max-width: 950px) {
+  .bh-localNav.bh-localNav--footer {
+    width: auto;
+    min-width: 0;
+  }
+}
+@media screen and (max-width: 950px) {
+  .bh-localNav.bh-localNav--footer {
+    height: auto;
+    padding-bottom: 5px;
+    display: block;
+    background: #EDE7DF;
+  }
+  .bh-localNav.bh-localNav--footer .bh-localNav__innr {
+    width: auto;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  .bh-localNav.bh-localNav--footer .bh-localNav__list__ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: table;
+    table-layout: fixed;
+    border-spacing: 10px;
+    border: none;
+    background-color: transparent;
+  }
+  .bh-localNav.bh-localNav--footer .lower .bh-localNav__list__nav {
+    min-height: 160px;
+    padding: 20px;
+  }
+  .bh-localNav.bh-localNav--footer .lower .bh-localNav__list__nav a {
+    width: 86px;
+    padding-bottom: 64px;
+  }
+  .bh-localNav.bh-localNav--footer .upper .bh-localNav__list__nav a {
+    width: 120px;
+    padding-bottom: 57px;
+  }
+  .bh-localNav.bh-localNav--footer .bh-localNav__list__nav {
+    min-height: 75px;
+    padding: 10px;
+    display: table-cell;
+    float: none;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  .bh-localNav.bh-localNav--footer .bh-localNav__list__nav a {
+    width: auto;
+    height: 0;
+    margin: auto;
+    background-size: 100% auto;
+    background-position: center center;
+  }
+  .bh-localNav.bh-localNav--footer .bh-localNav__list__nav.bh-localNav__list__nav--ndw a {
+    background-image: url(/assets/ps/domo/beautyhabit/common/img/_localnav/localnav_ndw_sp.png);
+  }
+  .bh-localNav.bh-localNav--footer .bh-localNav__list__nav.bh-localNav__list__nav--mgk a {
+    background-image: url(/assets/ps/domo/beautyhabit/common/img/_localnav/localnav_mgk_sp.png);
+  }
+  .bh-localNav.bh-localNav--footer .bh-localNav__list__nav.bh-localNav__list__nav--kenkyujo a {
+    background-image: url(/assets/ps/domo/beautyhabit/common/img/_localnav/localnav_kenkyu_sp.png);
+  }
+  .bh-localNav.bh-localNav--footer .bh-localNav__list__nav.bh-localNav__list__nav--kuchikomi a {
+    background-image: url(/assets/ps/domo/beautyhabit/common/img/_localnav/localnav_kuchikomi_sp.png);
+  }
+  .bh-localNav.bh-localNav--footer .bh-localNav__list__nav.bh-localNav__list__nav--pickup a {
+    background-image: url(/assets/ps/domo/beautyhabit/common/img/_localnav/localnav_pickup_sp.png);
+  }
+  .bh-localNav.bh-localNav--footer .upper .bh-localNav__list__nav a {
+    background-position: center center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bh-localNav.bh-localNav--footer .bh-localNav__list__ul {
+    border-spacing: 5px;
+  }
+  .bh-localNav.bh-localNav--footer .bh-localNav__list__nav {
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .bh-localNav.bh-localNav--footer .bh-localNav__list__ul {
+    border-spacing: 5px;
+  }
+  .bh-localNav.bh-localNav--footer .lower .bh-localNav__list__nav {
+    padding: 10px;
+  }
+  .bh-localNav.bh-localNav--footer .lower .bh-localNav__list__nav a {
+    max-width: 86px;
+    width: auto;
+  }
+}
+/*******************************
+  注文ボタン
+*******************************/
+/********** 飲むドモホルンリンクル注文ボタン **********/
+.bh-productList--wide {
+  padding-top: 100px;
+}
+@media screen and (max-width: 568px) {
+  .bh-productList--wide {
+    padding-top: 45px;
+  }
+  .bh-sectionDeveloper .bh-productList--wide {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.bh-productList--wide .bh-productList__title {
+  margin-top: 0;
+  text-align: center;
+}
+@media screen and (max-width: 568px) {
+  .bh-productList--wide .bh-productList__title img {
+    max-width: 79%;
+  }
+}
+.bh-productList__clm {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  zoom: 1;
+}
+.bh-productList__clm:before,
+.bh-productList__clm:after {
+  display: block;
+  height: 0;
+  visibility: hidden;
+  content: "\0020";
+}
+.bh-productList__clm:after {
+  clear: both;
+}
+@media screen and (max-width: 568px) {
+  .bh-productList__clm {
+    padding-right: 0;
+  }
+}
+.bh-productList__clm__li {
+  position: relative;
+  float: left;
+  width: 456px;
+  margin-top: 28px;
+  margin-right: 28px;
+}
+.bh-productList__clm__li:nth-child(2n+0) {
+  margin-right: -56px;
+}
+.bh-productList--wide .bh-productList__clm__li {
+  text-align: center;
+  float: none;
+  max-width: 861px;
+  width: auto;
+  margin: 28px auto;
+}
+.bh-productList--wide .bh-productList__clm__li.bh-productList__clm__li--label {
+  max-width: 861px;
+  margin-left: 0;
+  margin-botom: 0;
+  padding-right: 0;
+  padding-left: 0;
+  left: 0.04065041px;
+}
+@media screen and (max-width: 950px) {
+  .bh-productList--wide .bh-productList__clm__li {
+    margin-left: 8.1300813%;
+    margin-right: 8.1300813%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .bh-productList--wide .bh-productList__clm__li {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .bh-productList--wide .bh-productList__clm__li,
+  .bh-productList--wide .bh-productList__clm__li.bh-productList__clm__li--label {
+    width: auto;
+    margin: 20px 15px 0;
+  }
+  .bh-productList--wide .bh-productList__clm__li:last-child {
+    margin-top: 15px;
+  }
+  .bh-productList--wide .bh-productList__clm__li.bh-productList__clm__li--label {
+    margin-top: 10px;
+  }
+  .bh-productList--wide .bh-productList__clm__li.bh-productList__clm__li--label {
+    left: 0px;
+  }
+}
+.bh-productList__btn {
+  width: 34.84320557%;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  right: 6.36%;
+  top: 51.428571%;
+  transition: opacity .3s ease;
+}
+.bh-productList--wide .bh-productList__clm__li:last-child .bh-productList__btn {
+  width: 34.84320557%;
+}
+.bh-productList__btn:hover {
+  transition: opacity .3s ease;
+  filter: alpha(opacity=80);
+  -ms-filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  zoom: 1;
+  text-decoration: none;
+}
+.bh-productList__clm__li--label .bh-productList__btn {
+  top: 38.46134%;
+  right: 2.3222%;
+}
+.bh-productList__clm__li--tiny .bh-productList__btn {
+  top: 51.428571%;
+}
+@media screen and (max-width: 568px) {
+  .bh-productList__btn {
+    width: auto;
+    position: static;
+  }
+  .bh-productList--wide .bh-productList__clm__li:last-child .bh-productList__btn {
+    width: auto;
+  }
+}
+.bh-productList__btn2 {
+  width: 58.07200929%;
+  display: block;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  top: 73.7704918%;
+  transition: opacity .3s ease;
+}
+.bh-productList__btn2:hover {
+  transition: opacity .3s ease;
+  filter: alpha(opacity=80);
+  -ms-filter: alpha(opacity=80);
+  opacity: 0.8;
+  zoom: 1;
+  text-decoration: none;
+}
+@media screen and (max-width: 568px) {
+  .bh-productList__btn2 {
+    right: 4%;
+    width: 92%;
+    top: 80%;
+    text-align: center;
+  }
+}
+/*******************************
+  口コミインタビューのリンクバナー
+*******************************/
+.bh-pickup {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+}
+@media screen and (max-width: 568px) {
+  .bh-pickup {
+    padding-top: 45px;
+  }
+  .bh-sectionDeveloper .bh-pickup {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.bh-pickup ul {
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.bh-pickup__li {
+  width: 100%;
+  height: 145px;
+  margin-bottom: 30px;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  background-color: #fff;
+}
+.bh-pickup__li:last-child {
+  margin-bottom: 0;
+}
+.bh-pickup__li a {
+  color: inherit;
+  text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+  .bh-pickup__li {
+    margin-bottom: 20px;
+    background: #fff url(/assets/ps/domo/beautyhabit/common/img/arrow_sp.png) 99% center no-repeat;
+    background-size: 12px;
+  }
+}
+.bh-pickup__li__thumb,
+.bh-pickup__li__text {
+  line-height: 1;
+  height: 145px;
+  float: left;
+  vertical-align: middle;
+}
+@media screen and (max-width: 768px) {
+  .bh-pickup__li__thumb,
+  .bh-pickup__li__text {
+    height: 135px;
+  }
+}
+.bh-pickup__li__thumb {
+  width: 145px;
+}
+@media screen and (max-width: 768px) {
+  .bh-pickup__li__thumb {
+    width: 39.13%;
+    height: 100%;
+    display: block;
+  }
+  .bh-pickup__li__thumb img {
+    display: none;
+  }
+  .bh-pickup__li:first-child .bh-pickup__li__thumb {
+    background: url(/assets/ps/domo/beautyhabit/mgk/img/thumb_pickup_sp_1.jpg) center center no-repeat;
+    background-size: cover;
+  }
+  .bh-pickup__li:last-child .bh-pickup__li__thumb {
+    background: url(/assets/ps/domo/beautyhabit/mgk/img/thumb_pickup_sp_2.jpg) center center no-repeat;
+    background-size: cover;
+  }
+}
+.bh-pickup__li__text {
+  height: 105px;
+  margin-top: 20px;
+  display: table;
+  width: calc(100% - 145px - 35px);
+  margin-left: 35px;
+  /*  padding-top: 20px;
+  padding-bottom: 20px;*/
+}
+@media screen and (max-width: 768px) {
+  .bh-pickup__li__text {
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bh-pickup__li__text {
+    width: calc(100% - 39.13% - 10px);
+    height: auto;
+    padding: 10px ;
+    margin-top: 0px;
+    margin-left: 0;
+    display: block;
+  }
+}
+.bh-pickup__li__text__clmLeft {
+  width: 390px;
+}
+@media screen and (max-width: 768px) {
+  .bh-pickup__li__text__clmLeft {
+    width: auto;
+  }
+}
+.bh-pickup__li__text__clmRight {
+  width: 370px;
+  line-height: 2;
+  padding-left: 20px;
+  padding-right: 120px;
+  font-size: 14px;
+  color: #aaa;
+  border-left: solid 1px #A68F68;
+  background: url(/assets/ps/domo/beautyhabit/common/img/arrow.png) 90% center no-repeat;
+}
+@media screen and (max-width: 768px) {
+  .bh-pickup__li__text__clmRight {
+    width: auto;
+    line-height: 1.4;
+    padding-left: 0;
+    padding-right: 0;
+    font-size: 12px;
+    border: none;
+    background: none;
+  }
+}
+.bh-pickup__li__text__clmLeft,
+.bh-pickup__li__text__clmRight {
+  display: table-cell;
+  vertical-align: middle;
+}
+@media screen and (max-width: 768px) {
+  .bh-pickup__li__text__clmLeft,
+  .bh-pickup__li__text__clmRight {
+    display: block;
+  }
+}
+.bh-pickup__category {
+  margin-top: 0;
+}
+@media screen and (max-width: 768px) {
+  .bh-pickup__category {
+    max-width: 80%;
+    margin-bottom: 5px;
+  }
+}
+.bh-pickup__subTitle {
+  margin: 0;
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  color: #A68F6D;
+  font-size: 1.5em;
+  line-height: 1.4;
+}
+@media screen and (max-width: 768px) {
+  .bh-pickup__subTitle {
+    font-size: 1.25em;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bh-pickup__subTitle {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+  }
+}
+/**********************  
+**********************/
+/*******************************
+  おすすめコンテンツ
+*******************************/
+.bh-osusume {
+  margin-top: 60px;
+}
+@media screen and (max-width: 568px) {
+  .bh-osusume {
+    margin-top: 30px;
+  }
+}
+.bh-osusume__thumb {
+  margin-bottom: 15px;
+}
+.bh-osusume__title {
+  font-size: 0;
+  padding: 10px;
+  margin: 0 auto;
+  background: #b4a183;
+  text-align: center;
+}
+.bh-osusume__title img {
+  max-width: 174px !important;
+}
+@media screen and (max-width: 568px) {
+  .bh-osusume__title img {
+    width: 32.327586206897% !important;
+  }
+}
+@media screen and (max-width: 568px) {
+  .bh-osusume__contents {
+    background: #fff;
+  }
+}
+.bh-osusume__clm {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  padding-right: 41px;
+  zoom: 1;
+}
+.bh-osusume__clm:before,
+.bh-osusume__clm:after {
+  display: block;
+  height: 0;
+  visibility: hidden;
+  content: "\0020";
+}
+.bh-osusume__clm:after {
+  clear: both;
+}
+@media screen and (max-width: 568px) {
+  .bh-osusume__clm {
+    padding: 0 15px;
+  }
+}
+.bh-osusume__clm__li {
+  position: relative;
+  float: left;
+  width: 31.8131257%;
+  background: #fff;
+  padding: 25px;
+  margin-top: 20px;
+  margin-right: 4.56062291%;
+}
+.bh-osusume__clm__li:nth-child(3n+0) {
+  margin-right: -9.12124583%;
+}
+@media screen and (max-width: 568px) {
+  .bh-osusume__clm__li {
+    float: none;
+    width: auto;
+    padding: 15px 0;
+    margin-top: 0;
+    margin-right: 0;
+    border-top: 1px solid #A28B6C;
+    background: url('/assets/ps/domo/beautyhabit/common/img/arrow_sp.png') no-repeat right 10px center;
+    background-size: 4%;
+  }
+  .bh-osusume__clm__li:first-child {
+    margin-top: 0;
+    padding-top: 25px;
+    border: none;
+  }
+  .bh-osusume__clm__li:nth-child(3n+0) {
+    margin-right: 0;
+  }
+}
+.bh-osusume__clm__li > a {
+  text-decoration: none;
+  display: block;
+  transition: opacity .3s ease;
+}
+.bh-osusume__clm__li > a.bh-lab::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(39, 179, 198, 0);
+  transition: .3s ease;
+}
+.bh-osusume__clm__li > a.bh-lab:hover {
+  text-decoration: none;
+}
+.bh-osusume__clm__li > a.bh-lab:hover::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(39, 179, 198, 0.5);
+  transition: .3s ease;
+}
+.bh-osusume__clm__li > a.bh-interview::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 152, 45, 0);
+  transition: .3s ease;
+}
+.bh-osusume__clm__li > a.bh-interview:hover::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 152, 45, 0.5);
+  transition: .3s ease;
+}
+.bh-osusume__clm__li > a.bh-topics::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 118, 118, 0);
+  transition: .3s ease;
+}
+.bh-osusume__clm__li > a.bh-topics:hover::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 118, 118, 0.5);
+  transition: .3s ease;
+}
+.bh-osusume__clm__li > a:hover {
+  transition: opacity .3s ease;
+  filter: alpha(opacity=80);
+  -ms-filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  zoom: 1;
+  text-decoration: none;
+}
+@media screen and (max-width: 568px) {
+  .bh-osusume__spBox {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-right: 37px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .bh-osusume__spBox__right {
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .bh-osusume__thumb {
+    display: table-cell;
+    vertical-align: top;
+    width: 100px;
+  }
+}
+.bh-osusume__subTitle {
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  color: #A68F6D;
+  font-size: 1.5em;
+  line-height: 1.4;
+}
+@media screen and (max-width: 768px) {
+  .bh-osusume__subTitle {
+    font-size: 1.25em;
+  }
+  .bh-osusume__subTitle .txt-b {
+    white-space: pre-wrap;
+  }
+}
+@media screen and (max-width: 568px) {
+  .bh-osusume__subTitle {
+    font-size: 1em;
+  }
+}
+.bh-osusume__text {
+  color: #808080;
+  font-size: .875em;
+}
+@media screen and (max-width: 568px) {
+  .bh-osusume__text {
+    font-size: .875em;
+  }
+}
+/********** TOPへバナー **********/
+.bh-nomudomotop__banner {
+  max-width: 980px;
+  padding-left: 0;
+  margin: 80px auto;
+  list-style: none;
+}
+.bh-nomudomotop__banner li {
+  text-align: center;
+}
+@media screen and (max-width: 568px) {
+  .bh-nomudomotop__banner {
+    margin: 50px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+/********** page top **********/
+.bh-localNav__pagetop {
+  width: 60px;
+  margin-left: auto;
+  position: absolute;
+  right: 3%;
+  bottom: 100%;
+}
+@media screen and (max-width: 568px) {
+  .bh-localNav__pagetop {
+    width: 60px;
+    position: static;
+  }
+}
+.bh-localNav__pagetop a {
+  display: block;
+  transition: opacity .3s ease;
+}
+.bh-localNav__pagetop a:hover {
+  transition: opacity .3s ease;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+  zoom: 1;
+  text-decoration: none;
+}

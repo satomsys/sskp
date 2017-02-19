@@ -1,0 +1,308 @@
+@charset "utf-8";
+.bh-osusume {
+  margin-top: 60px;
+}
+@media screen and (max-width: 568px) {
+  .bh-osusume {
+    margin-top: 30px;
+  }
+}
+.bh-osusume__thumb {
+  margin-bottom: 15px;
+}
+.bh-osusume__title {
+  font-size: 0;
+  padding: 10px 0;
+  margin: 0 auto;
+  background: #b4a183;
+  text-align: center;
+}
+.bh-osusume__title img {
+  max-width: 174px !important;
+}
+@media screen and (max-width: 568px) {
+  .bh-osusume__title img {
+    width: 32.327586206897%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .bh-osusume__contents {
+    background: #fff;
+  }
+}
+.bh-osusume__clm {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  padding-right: 41px;
+  zoom: 1;
+}
+.bh-osusume__clm:before,
+.bh-osusume__clm:after {
+  display: block;
+  height: 0;
+  visibility: hidden;
+  content: "\0020";
+}
+.bh-osusume__clm:after {
+  clear: both;
+}
+@media screen and (max-width: 568px) {
+  .bh-osusume__clm {
+    padding: 0 15px;
+  }
+}
+.bh-osusume__clm__li {
+  position: relative;
+  float: left;
+  width: 286px;
+  background: #fff;
+  padding: 25px;
+  margin-top: 20px;
+  margin-right: 41px;
+}
+.bh-osusume__clm__li:nth-child(3n+0) {
+  margin-right: -82px;
+}
+@media screen and (max-width: 568px) {
+  .bh-osusume__clm__li {
+    float: none;
+    width: auto;
+    padding: 15px 0;
+    margin-top: 0;
+    margin-right: 0;
+    border-top: 1px solid #A28B6C;
+    background: url('/assets/ps/domo/beautyhabit/common/img/arrow_sp.png') no-repeat right 10px center;
+    background-size: 4%;
+  }
+  .bh-osusume__clm__li:first-child {
+    margin-top: 0;
+    padding-top: 25px;
+    border: none;
+  }
+  .bh-osusume__clm__li:nth-child(3n+0) {
+    margin-right: 0;
+  }
+}
+.bh-osusume__clm__li > a {
+  text-decoration: none;
+  display: block;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+.bh-osusume__clm__li > a.bh-lab::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(39, 179, 198, 0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.bh-osusume__clm__li > a.bh-lab:hover {
+  text-decoration: none;
+}
+.bh-osusume__clm__li > a.bh-lab:hover::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(39, 179, 198, 0.5);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.bh-osusume__clm__li > a.bh-interview::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 152, 45, 0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.bh-osusume__clm__li > a.bh-interview:hover::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 152, 45, 0.5);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  text-decoration:none;
+}
+.bh-osusume__clm__li > a.bh-topics::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 118, 118, 0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.bh-osusume__clm__li > a.bh-topics:hover::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 118, 118, 0.5);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+.bh-osusume__clm__li > a:hover {
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+  filter: alpha(opacity=80);
+  -ms-filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  zoom: 1;
+  text-decoration: none;
+}
+.bh-osusume__clm__li > a:hover:before {
+z-index: 1;
+
+}
+
+@media screen and (max-width: 568px) {
+  .bh-osusume__spBox {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 10px;
+    padding-right: 37px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .bh-osusume__spBox__right {
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 568px) {
+  .bh-osusume__thumb {
+    display: table-cell;
+    vertical-align: top;
+    width: 100px;
+  }
+}
+.bh-osusume__subTitle {
+  font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  color: #A68F6D;
+  font-size: 1.5em;
+  line-height: 1.4;
+}
+@media screen and (max-width: 568px) {
+  .bh-osusume__subTitle {
+    font-size: 1em;
+  }
+}
+.bh-osusume__text {
+  color: #808080;
+  font-size: .875em;
+}
+@media screen and (max-width: 568px) {
+  .bh-osusume__text {
+    font-size: .875em;
+  }
+}
+.bh-localPagetop {
+  position: relative;
+  margin-top: 60px;
+}
+@media screen and (max-width: 568px) {
+  .bh-localPagetop {
+    margin-top: 20px;
+    padding-bottom: 40px;
+  }
+}
+.bh-localPagetop__btnList {
+  font-size: 0;
+  text-align: center;
+}
+@media screen and (max-width: 568px) {
+  .bh-localPagetop__btnList {
+    zoom: 1;
+    padding-right: 20px;
+  }
+  .bh-localPagetop__btnList:before,
+  .bh-localPagetop__btnList:after {
+    display: block;
+    height: 0;
+    visibility: hidden;
+    content: "\0020";
+  }
+  .bh-localPagetop__btnList:after {
+    clear: both;
+  }
+}
+.bh-localPagetop__btnList__li {
+  display: inline-block;
+  margin: 0 20px;
+}
+@media screen and (max-width: 568px) {
+  .bh-localPagetop__btnList__li {
+    display: block;
+    float: left;
+    margin: 20px 20px 0 0;
+    width: 50%;
+  }
+  .bh-localPagetop__btnList__li:nth-child(2n+0) {
+    margin-right: -20px;
+  }
+}
+.bh-localPagetop a {
+  display: block;
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+}
+.bh-localPagetop a:hover {
+  -webkit-transition: opacity .3s ease;
+  transition: opacity .3s ease;
+  filter: alpha(opacity=80);
+  -ms-filter: alpha(opacity=80);
+  -moz-opacity: 0.8;
+  opacity: 0.8;
+  zoom: 1;
+}
+.bh-osusume__clm__li > a:hover:before {
+z-index: 1;
+}
+
+.bh-osusume__clm__li > a {
+ text-decoration:none !important;
+}
+
+
+.bh-localPagetop__pagetop {
+  width: 82px;
+  position: absolute;
+  right: 0;
+  top: 27px;
+  z-index: 1;
+}
+@media screen and (max-width: 568px) {
+  .bh-localPagetop__pagetop {
+    width: 60px;
+    top: inherit;
+    bottom: -20px;
+  }
+}
+/*# sourceMappingURL=osusume.css.map */
+
+.bh-innr{
+padding:0;
+}
+

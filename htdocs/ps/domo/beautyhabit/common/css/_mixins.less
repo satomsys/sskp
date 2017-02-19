@@ -1,0 +1,410 @@
+@charset "utf-8";
+// mixins
+.ff-mincho() {
+  font-family: "游明朝" , "Yu Mincho" , "游明朝体" , "YuMincho" , "ヒラギノ明朝 Pro W3" , "Hiragino Mincho Pro" , "HiraMinProN-W3" , "HGS明朝E" , "ＭＳ Ｐ明朝" , "MS PMincho" , serif;
+}
+
+// フォントサイズ設定用
+.fs(@fontsize: 12) {
+	@remValue: (@fontsize / 10);
+	font-size: @fontsize * 1px;   // rem非対応ブラウザ用
+	font-size: ~"@{remValue}rem"; // rem対応ブラウザの為に上書き指定
+}
+// テキストシャドウ
+.text-shadow(@string: 2px 2px 5px rgba(0, 0, 0, 0.5)) {
+	text-shadow: @string;
+}
+
+// クリアフィックス
+.clearfix() {
+	&:before,
+	&:after {
+		display: block;
+    height: 0;
+    visibility: hidden;
+    content: "\0020";
+	}
+	&:after {
+		clear:both;
+	}
+	zoom:1;//For IE 6/7 (trigger hasLayout)
+}
+
+// テキスト隠し
+.hidetext() {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+// display:inline-block
+.inline-block() {
+	display: -moz-inline-stack;
+	display: inline-block;
+	zoom:1;
+	*display: inline;
+}
+
+// display:table
+.table-fixed() {
+	display: table;
+	table-layout:fixed;
+	width:100%;
+}
+.table() {
+	display: table;
+	width:100%;
+}
+// display:table-cell
+.table-cell(@align: middle) {
+	display: table-cell;
+	vertical-align: @align;
+}
+
+// colum set
+// 余白固定
+.clmset(@margin,@clm) {
+	padding-right: @margin*(@clm - 1);
+	.clearfix();
+	>* {
+		float: left;
+		width: percentage(1/@clm);
+		margin-bottom: @margin;
+		margin-right: @margin;
+		border:1px solid #ccc;
+		&:nth-child(@{clm}n+@{clm}) {
+			margin-right: -@margin*@clm;
+		}
+	}
+	@media screen and (max-width: 767px) {
+		padding-right: @margin;
+		>* {
+			width: percentage(0.5);
+			&:nth-child(@{clm}n+@{clm}) {
+				margin-right: @margin;
+			}
+			&:nth-child(2n+0) {
+				margin-right: -@margin*2;
+			}
+		}
+	}
+	@media screen and (max-width: 479px) {
+		padding-right: 0;
+		>* {
+			width: percentage(1);
+			&:nth-child(2n+0) {
+				margin-right: 0;
+			}
+		}
+	}
+}
+// インラインブロックセンター寄せ
+.clmset-ib(@margin,@clm) {
+	@m: @margin/100;
+	@per: percentage(@m);
+	.fs(0);
+	text-align: center;
+	margin: 0 -@per/2;
+	.clearfix();
+	> * {
+		.inline-block();
+		width: percentage((1-@m*@clm)/@clm);
+		margin: 10px @per/2 0;
+		border:1px solid #ccc;
+	}
+	@media screen and (max-width: 767px) {
+		>* {
+			width: percentage(0.49);
+		}
+	}
+	@media screen and (max-width: 479px) {
+		margin: 0 0;
+		>* {
+			width: percentage(1);
+			margin: 10px 0 0;
+		}
+	}
+}
+
+//ボタンアイコン
+//白いひし型
+.icon01L(@arw,@bg) {
+	.inline-block();
+	position: relative;
+	text-align: center;
+	background: @bg;
+	text-decoration: none;
+	span {
+		position: relative;
+		padding-left: 1.5em;
+		padding-right: 0;
+		&:before {
+			display: inline-block;
+			content: " ";
+			position: absolute;
+			top:0;
+			bottom: 0;
+			left: 0;
+			margin: auto;
+			width: 0;
+			height: 0;
+			border: 0.4em solid transparent;
+			border-left: 0.4em solid @arw;
+		}
+	}
+}
+.icon01R(@arw,@bg) {
+	.inline-block();
+	position: relative;
+	text-align: center;
+	background: @bg;
+	text-decoration: none;
+	span {
+		position: relative;
+		padding-left: 0;
+		padding-right: 1.5em;
+		&:before {
+			display: inline-block;
+			content: " ";
+			position: absolute;
+			top:0;
+			bottom: 0;
+			left: auto;
+			right: -0.4em;
+			margin: auto;
+			width: 0;
+			height: 0;
+			border: 0.4em solid transparent;
+			border-left: 0.4em solid @arw;
+		}
+	}
+}
+//白いひし型
+.icon02L(@arw,@bg) {
+	.inline-block();
+	position: relative;
+	text-align: center;
+	background: @bg;
+	text-decoration: none;
+	span {
+		position: relative;
+		padding-left: 1.5em;
+		padding-right: 0;
+		&:before {
+			display: inline-block;
+			content: " ";
+			position: absolute;
+			top:0;
+			bottom: 0;
+			left: -0.4em;
+			margin: auto;
+			width: 1em;
+			height: 1em;
+			border-radius: 50%;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			background: @arw;
+		}
+		&:after {
+			display: block;
+			content: " ";
+			position: absolute;
+			top:0;
+			bottom: 0;
+			left: 0em;
+			margin: auto;
+			width: 0;
+			height: 0;
+			border: 0.3em solid transparent;
+			border-left: 0.3em solid @bg;
+		}
+	}
+}
+.icon02R(@arw,@bg) {
+	.inline-block();
+	position: relative;
+	text-align: center;
+	background: @bg;
+	text-decoration: none;
+	span {
+		position: relative;
+		padding-left: 0;
+		padding-right: 1.5em;
+		&:before {
+			display: inline-block;
+			content: " ";
+			position: absolute;
+			top:0;
+			bottom: 0;
+			left: auto;
+			right: -0.4em;
+			margin: auto;
+			width: 1em;
+			height: 1em;
+			border-radius: 50%;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			background: @arw;
+		}
+		&:after {
+			display: block;
+			content: " ";
+			position: absolute;
+			top:0;
+			bottom: 0;
+			left: auto;
+			right: -0.25em;
+			margin: auto;
+			width: 0;
+			height: 0;
+			border: 0.3em solid transparent;
+			border-left: 0.3em solid @bg;
+		}
+	}
+}
+
+
+// 正方形化
+.square(@xy) {
+	width:  @xy;
+	height: @xy;
+}
+
+// 角丸設定
+.border-radius(@radiusValue) {
+	-moz-border-radius:    @radiusValue;
+	-webkit-border-radius: @radiusValue;
+	border-radius:         @radiusValue;
+}
+.border-radiusset(@topright: 0, @bottomright: 0, @bottomleft: 0, @topleft: 0) {
+	-webkit-border-top-right-radius:    @topright;
+	-webkit-border-bottom-right-radius: @bottomright;
+	-webkit-border-bottom-left-radius:  @bottomleft;
+	-webkit-border-top-left-radius:     @topleft;
+	border-top-right-radius:            @topright;
+	border-bottom-right-radius:         @bottomright;
+	border-bottom-left-radius:          @bottomleft;
+	border-top-left-radius:             @topleft;
+}
+
+// 要素を指定数値で透過
+.opacity(@alphaValue) {
+  @ms-alphaValue: @alphaValue*100;
+  filter:     ~"alpha(opacity=@{ms-alphaValue})";
+  -ms-filter: ~"alpha(opacity=@{ms-alphaValue})";
+	-moz-opacity: @alphaValue;
+	opacity:      @alphaValue;
+	zoom: 1;
+}
+
+// 背景サイズ
+.bg-size(@width, @height) {
+	-webkit-background-size: @width @height;
+	-moz-background-size: @width @height;
+	-o-background-size: @width @height;
+	background-size: @width @height;
+}
+
+// 背景透過
+.rgba(@colour, @alpha) {
+	@alphaColour: hsla(hue(@colour), saturation(@colour), lightness(@colour), @alpha);
+	@ieAlphaColour: argb(@alphaColour);
+	background-color: @colour; // Fallback for older browsers
+	// IE hacks
+	zoom: 1; // hasLayout
+	background-color: transparent\9;
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=@{ieAlphaColour}, endColorstr=@{ieAlphaColour})"; // IE 8+
+	filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{ieAlphaColour}, endColorstr=@{ieAlphaColour})"; // IE 6 & 7
+	background-color: @alphaColour;
+}
+
+//ボックスシャドウセット
+.box-shadow() {
+	-moz-box-shadow: 0px 5px 10px 0px #000000;
+	-webkit-box-shadow: 0px 5px 10px 0px #000000;
+	-o-box-shadow: 0px 5px 10px 0px #000000;
+	box-shadow: 0px 5px 10px 0px #000000;
+	//filter:progid:DXImageTransform.Microsoft.Shadow(color=#000000, Direction=180, Strength=10);
+}
+
+// グラデーション
+// 1. sample gradient
+//.gradient(linear; #2BC0E4, #EAECC6);
+//.gradient(linear; #2BC0E4, #EAECC6 30%);
+//.gradient(linear; #2BC0E4, #EAECC6 30%; 180deg);
+
+.gradient(@type;
+  @colors;
+  @dir: 90deg;
+  @prefixes: webkit, moz, ms, o;
+  @index: length(@prefixes)) when (@index > 0) {
+    .gradient(@type;
+      @colors;
+      @dir;
+      @prefixes;
+      (@index - 1));
+    @prefix : extract(@prefixes, @index);
+    @dir-old : 90 - (@dir);
+    background-image:~"-@{prefix}-@{type}-gradient(@{dir-old}, @{colors})";
+    & when ( @index =length(@prefixes)) {
+      background-image:~"@{type}-gradient(@{dir}, @{colors})";
+    }
+}
+
+// 1. IE 7,8,9
+//.linear-gradient(top, #2BC0E4, #EAECC6);
+//.linear-gradient(bottom, #2BC0E4, #EAECC6);
+//.linear-gradient(left, #2BC0E4, #EAECC6);
+
+.linear-gradient( @dir: top, @start-color: #eee, @end-color: #aaa ) {
+  background: -webkit-linear-gradient(@dir, @start-color 0%, @end-color 100%);
+  background: -moz-linear-gradient(@dir, @start-color 0%, @end-color 100%);
+  background: -ms-linear-gradient(@dir, @start-color 0%, @end-color 100%);
+  background: -o-linear-gradient(@dir, @start-color 0%, @end-color 100%);
+  background: linear-gradient(@dir, @start-color 0%, @end-color 100%);
+  .linear-gradient-ie( @dir, @start-color, @end-color);
+}
+
+.linear-gradient-multi( ... ) {
+  background-image: -webkit-linear-gradient(@arguments);
+  background-image: -moz-linear-gradient(@arguments);
+  background-image: -ms-linear-gradient(@arguments);
+  background-image: -o-linear-gradient(@arguments);
+  background-image: linear-gradient(@arguments);
+}
+
+.linear-gradient-ie( @dir, @start-color, @end-color) when (@dir = top),
+not ( isstring(@dir) ) and ( @dir >= 225 ) and ( @dir < 315 ),
+not ( isstring(@dir) ) and ( @dir >= -135 ) and ( @dir < -45 ) {
+  .linear-gradient-ie-filter(@start-color, @end-color, 0);
+}
+.linear-gradient-ie( @dir, @start-color, @end-color) when (@dir = right),
+not ( isstring(@dir) ) and ( @dir >= 135 ) and ( @dir < 225 ),
+not ( isstring(@dir) ) and ( @dir >= -225 ) and ( @dir < -135 ) {
+  .linear-gradient-ie-filter(@end-color, @start-color, 1);
+}
+.linear-gradient-ie( @dir, @start-color, @end-color) when (@dir = bottom),
+not ( isstring(@dir) ) and ( @dir >= 45 ) and ( @dir < 135 ),
+not ( isstring(@dir) ) and ( @dir >= -315 ) and ( @dir < -225 ) {
+  .linear-gradient-ie-filter(@end-color, @start-color, 0);
+}
+.linear-gradient-ie( @dir, @start-color, @end-color) when (@dir = left),
+not ( isstring(@dir) ) and ( @dir >= 315 ) and ( @dir < 360 ),
+not ( isstring(@dir) ) and ( @dir >= -45 ) and ( @dir < 45 ),
+not ( isstring(@dir) ) and ( @dir < -315 ) and ( @dir >= -360 ) {
+  .linear-gradient-ie-filter(@start-color, @end-color, 1);
+}
+
+.linear-gradient-ie-filter(@start: #eee, @end: #aaa, @type: 1) {
+  @c-start: argb(@start);
+  @c-end:   argb(@end);
+  filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr='@{c-start}', endColorstr='@{c-end}', GradientType=@{type})";
+  -ms-filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr='@{c-start}',endColorstr='@{c-end}',GradientType=@{type})";
+}
+
+.linear-gradient-ie-filter(@start: #eee, @end: #aaa, @type: 1) {
+  @c-start: argb(@start);
+  @c-end: argb(@end);
+  filter:~"progid:DXImageTransform.Microsoft.gradient(startColorstr='@{c-start}', endColorstr='@{c-end}', GradientType=@{type})";
+  -ms-filter:~"progid:DXImageTransform.Microsoft.gradient(startColorstr='@{c-start}',endColorstr='@{c-end}',GradientType=@{type})";
+}
