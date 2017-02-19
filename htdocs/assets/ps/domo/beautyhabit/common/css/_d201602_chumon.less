@@ -8,8 +8,13 @@
 .bh-productList--wide 
 {
   padding-top: 100px;
+
+  @media screen and (max-width: @break_TABsmall) {
+      padding-top: 50px;
+  }  
+
 	@media screen and (max-width: @break_SP) {
-	    padding-top: 45px;
+	    padding-top: 40px;
       .bh-sectionDeveloper &{
         padding-left: 15px;
         padding-right: 15px;
@@ -21,6 +26,12 @@
 	  margin-top: 0;
 	  text-align: center;
 	}
+
+  @media screen and (max-width: @break_TABsmall) {
+   .bh-productList__title img {
+      max-width: 90%;
+    }
+  }  
 	
 	@media screen and (max-width: @break_SP) {
 	 .bh-productList__title img {

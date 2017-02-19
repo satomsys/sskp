@@ -90,6 +90,11 @@ body {
   z-index: 4;  
   background: url(/assets/ps/domo/beautyhabit/common/img/bg_localheader_01.jpg) repeat center center;
   background-size: cover;
+  
+  &_sp{
+    display: none;
+  }
+
   @media screen and (max-width: @break_SP) {
     width: 100%;
     min-width: 320px;
@@ -107,6 +112,10 @@ body {
       top: 0;
       left: 0;
     }
+
+    &_sp{
+      display: inherit;
+    }    
   }
   ///////// 飲む・食べるドモホルンリンクル ///////// 
   &__wrap{
@@ -438,6 +447,12 @@ body {
     @media screen and (max-width: @break_SP) {
       border-spacing: 5px;
       .clearfix();
+
+       
+       &.lower{
+        margin-top: 0;
+         padding: 0;
+       }
       
       &.lower .bh-localNav__list__nav{
         width: 33.3333%;
@@ -641,12 +656,14 @@ body {
 /////////////////////
 // サイト下部
 /////////////////////
-
+.fixed .bh-localNav.bh-localNav--footer{
+  position: relative;
+}
 .bh-localNav.bh-localNav--footer{
 
   top: 0;
   position: relative;
-
+  z-index: 1;
   // MediaQuery
   // TAB
   @media screen and (max-width: @break_TAB) {
@@ -701,6 +718,7 @@ body {
     ///////// 単体 /////////
     .bh-localNav__list__nav
     {
+      width: 100%;
       min-height: 75px;
       padding: 10px;      
       display: table-cell;

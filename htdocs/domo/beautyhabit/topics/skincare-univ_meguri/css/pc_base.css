@@ -148,6 +148,12 @@ table {
   width: 100% !important;
 }
 
+.main-wrap.single-wrap > .bh-innr{
+  width: auto;
+  // margin-left: -15px;
+  // margin-right: -15px;
+}
+
 .sp{display: none !important;}
 
 .innr{

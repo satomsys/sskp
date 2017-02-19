@@ -59,18 +59,18 @@
   <![endif]-->
 </head>
 
-[: if $status_login:]
-	[:* ログイン済 *:]
-	[:assign var=body_template_class value='template-post-login-layout02':]
+<!-- [: if $status_login:]
+  [:* ログイン済 *:]
+  [:assign var=body_template_class value='template-post-login-layout02':]
 [: else :]
-	[:* 未ログイン *:]
-	[:assign var=body_template_class value='template-pre-login-layout02':]
+  [:* 未ログイン *:]
+  [:assign var=body_template_class value='template-pre-login-layout02':]
 
-	[: if $revisitFlg !==1 && $revisitFlg !==2 :]
-		[:* S未請求 *:]
-		[:assign var=body_template_class value='template-pre-login-layout01':]
-	[: /if :]
-[: /if :]
+  [: if $revisitFlg !==1 && $revisitFlg !==2 :]
+    [:* S未請求 *:]
+    [:assign var=body_template_class value='template-pre-login-layout01':]
+  [: /if :]
+[: /if :] -->
 
 <body class="page-skincare_tips template-enable-media-queries template-legacy-layout02 [:$body_template_class:]">
   <!--///// (3) GTMの指定 - START /////-->

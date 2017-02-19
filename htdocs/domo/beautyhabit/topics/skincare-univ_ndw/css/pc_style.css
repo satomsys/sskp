@@ -77,9 +77,9 @@
   margin-left: 0;
   font-size: 0;
 }
-.idx_vsl .nav li.nav01{margin-top: 0;margin-left: 10px;}
-.idx_vsl .nav li.nav02{margin-top: 8px;margin-left: 6px;}
-.idx_vsl .nav li.nav03{margin-top: 7px;margin-left: 4px;}
+.idx_vsl .nav li.nav01{margin-top: 0;margin-left: 1%;}
+.idx_vsl .nav li.nav02{margin-top: 8px;margin-left:0.6382%;}
+.idx_vsl .nav li.nav03{margin-top: 7px; margin-left: 0.425%;}
 
 /* -------------- blk01 */
 .idx_blk{
@@ -178,6 +178,9 @@
 }
 @media screen and ( max-width: 900px){
   .cmn_vsl .ttl_box{
+    width: 95%;
+  margin-right: auto;
+  margin-left: auto;
     margin-left: 0px;
   }  
   .cmn_vsl .img{

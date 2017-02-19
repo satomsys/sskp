@@ -37,7 +37,6 @@
     <!-- ///// モジュール用CSS START ///// -->
     <link rel="stylesheet" href="/assets/ps/domo/beautyhabit/common/css/templateParts.css?20170204" />
     <!-- ///// モジュール用CSS END ///// -->
-<link rel="stylesheet" href="/assets/ps/domo/beautyhabit/common/css/osusume.css?20161014" />
 <link rel="stylesheet" href="/assets/ps/domo/beautyhabit/mgk/css/mgk.css">
 <link rel="stylesheet" href="/assets/ps/domo/beautyhabit/review/css/review.css">
 <link rel="stylesheet" href="/assets/ps/domo/beautyhabit/review/css/review_list.css">
@@ -377,27 +376,32 @@
 				<!-- //.page-review 口コミ・インタビューコンテンツ END -->
 
 				<div class="bh-innr">
-			 <!-- ///// (new) めぐりの結晶　購入ボタン START ///// -->
+ <!-- ///// (new) めぐりの結晶　購入ボタン START ///// -->
           <!-- ▼めぐりの結晶　購入ボタン-->           
-          <div class="bh-productList bh-productList--wide">
-		         <h3 class="bh-productList__title">
+          <div id="bh_order" class="bh-productList bh-productList--wide">
+             <h3 class="bh-productList__title">
                 <span class="bh-onlyPC"><img src="/assets/ps/domo/beautyhabit/mgk/img/dev_title-conversion.png" alt="お休み中の　きれいづくり　を始めましょう。飲むドモホルンリンクル(50mL1本あたり)"></span>
                 <span class="bh-onlySP"><img src="/assets/ps/domo/beautyhabit/mgk/img/dev_title-conversion_sp.png" alt="お休み中の　きれいづくり　を始めましょう。飲むドモホルンリンクル(50mL1本あたり)"></span>
               </h3>                
               <ul class="bh-productList__clm">
+                    <!-- ▼ 1  -->
                   <li class="bh-productList__clm__li">
                       <div href="[:$URL:]" class="bh-onlyPC">
-                          <div class="bh-productList__thumb"><img src="/assets/ps/domo/beautyhabit/common/img/_order/thumb_pl_mgk_wide_01.png" alt=""></div>
-                          <a href="[:$URL:]" class="bh-productList__btn"><img src="/assets/ps/domo/beautyhabit/common/img/_btn/btn_chumon_wide.png" alt=""></a>
+                      <a href="[:$URL:]" >
+                        <div class="bh-productList__thumb">
+                            <img src="/assets/ps/domo/beautyhabit/common/img/_order/thumb_pl_mgk_wide_01.png" alt="">
+                        </div>
+                        <img src="/assets/ps/domo/beautyhabit/common/img/_btn/btn_chumon_wide.png" class="bh-productList__btn" alt=""></a>
                       </div>
                       <div class="bh-onlySP">
                           <a href="[:$URL:]" class="bh-productList__btn"><img src="/assets/ps/domo/beautyhabit/common/img/_order/thumb_pl_mgk_wide_sp_01.png" alt=""></a>
                       </div>
                   </li>
+                    <!-- ▼ 2  -->
                   <li class="bh-productList__clm__li bh-productList__clm__li--label">
-                      <div class="bh-onlyPC">
+                      <div class="bh-onlyPC"><a href="[:$URL_REGULAR:]">
                           <div class="bh-productList__thumb"><img src="/assets/ps/domo/beautyhabit/common/img/_order/thumb_pl_mgk_wide_02.png" alt=""></div>
-                          <a href="[:$URL_REGULAR:]" class="bh-productList__btn"><img src="/assets/ps/domo/beautyhabit/common/img/_btn/btn_chumon_wide_large.png" alt=""></a>
+                          <img src="/assets/ps/domo/beautyhabit/common/img/_btn/btn_chumon_wide_large.png" class="bh-productList__btn" alt=""></a>
                           <a href="#modal02" class="bh-productList__btn2"><img src="/assets/ps/domo/beautyhabit/common/img/_btn/btn_teiki_wide_01.png" alt="定期お届けコースだけのうれしい特典はこちら"></a>
                       </div>
                       <div class="bh-onlySP">
@@ -405,6 +409,7 @@
                           <a href="#modal02" class="bh-productList__btn2"><img src="/assets/ps/domo/beautyhabit/mgk/img/btn_teiki_01.png" alt="定期お届けコースだけのうれしい特典はこちら"></a>
                       </div>
 
+                        <!-- ▼ modal  -->
                       <div class="remodal modal02" data-remodal-id="modal02">
                           <button data-remodal-action="close" class="remodal-close"></button>
                           <div class="modalContents">
@@ -442,7 +447,7 @@
                   </ul>
                 </div>
                <!-- ▲めぐりの結晶　購入ボタン-->                     
-               <!-- ///// (new) めぐりの結晶　購入ボタン ///// EMD-->					
+               <!-- ///// (new) めぐりの結晶　購入ボタン ///// END-->		
 				</div>
 				
 

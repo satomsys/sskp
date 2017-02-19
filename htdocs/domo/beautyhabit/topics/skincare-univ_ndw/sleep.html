@@ -37,7 +37,6 @@
     <link rel="stylesheet" href="/assets/ps/domo/beautyhabit/common/css/templateParts.css" />
     <!-- ///// (new) モジュール用CSS - END /////-->   
 
-<link rel="stylesheet" href="/assets/ps/domo/beautyhabit/common/css/osusume.css?20161014" />
 
 <!-- end /beautyhabit/ 共通部分css -->
 <script>
@@ -65,7 +64,7 @@
   <script type="text/javascript" src="js/respond.min.js"></script>
   <![endif]-->
 </head>
-[: if $status_login:]
+<!-- [: if $status_login:]
 	[:* ログイン済 *:]
 	[:assign var=body_template_class value='template-post-login-layout02':]
 [: else :]
@@ -76,13 +75,213 @@
 		[:* S未請求 *:]
 		[:assign var=body_template_class value='template-pre-login-layout01':]
 	[: /if :]
-[: /if :]
+[: /if :] -->
 
 <body class="page-skincare_tips template-enable-media-queries template-legacy-layout02 [:$body_template_class:]">
-  <!--///// (3) GTMの指定 - START /////-->
-  [:include file="domo/beautyhabit/_header.inc.tpl":]
+<!--///// (3) GTMの指定 - START /////-->
+<!-- ///// インクルードファイル [:include file="domo/beautyhabit/_header.inc.tpl":] 引用 /////-->
+  <!-- ///// (new) グローバルナビ 2016 - START ///// -->
+  <div class="page-header with-navigation[: if $status_login :] with-user-specific[: /if :]">
+    <!-- [: if $status_login :]
+    [:include file='domo/_shared/_header_usr_specific.inc.tpl' :]
+    [: else :]
+    [:include file='domo/_shared/_header_top01.inc.tpl' :]
+    [: /if :]
+    
+    [:include file='domo/_shared/_header_middle01.inc.tpl' :]
+    [:* グローバルナビゲーション *:] -->
+    <div class="header-navigation01 header-navigation01-autostay">
+      <div class="content-wrapper01">
+        <ul class="global-navigation-list">
+          <li class="list-item item-lv1 list-product with-child"><a href="/domo/about_dw/" class="link-anchor link-product anchor-lv1">ドモホルンリンクルのご紹介</a>
+            <ul class="child-list-lv1">
+              <li class="list-item item-lv2">
+                <span class="link-text01"><a class="link-anchor" href="/domo/about_dw/"><span class="ir ir-link01"></span>ドモホルンリンクルのご紹介トップ</a></span>
+                <ul class="child-list-lv2">
+                  <li class="list-item item-lv3">
+                    <span class="link-text01"><a class="link-anchor" href="/domo/product/"><span class="ir ir-link01"></span>商品一覧</a></span>
+                    <ul class="child-list-lv3">
+                      <li class="list-item item-lv4"><span class="link-text01"><a class="link-anchor" href="/domo/product/dcj/"><span class="ir ir-link01"></span><span class="ir ir-num01">1</span>化粧落しジェル</a>
+                      </span>
+                      </li>
+                      <li class="list-item item-lv4"><span class="link-text01"><a class="link-anchor" href="/domo/product/dcs/"><span class="ir ir-link01"></span><span class="ir ir-num01">2</span>洗顔石鹸</a>
+                      </span>
+                      </li>
+                      <li class="list-item item-lv4"><span class="link-text01"><a class="link-anchor" href="/domo/product/dfp/"><span class="ir ir-link01"></span><span class="ir ir-num01">3</span>泡の集中パック</a>
+                      </span>
+                      </li>
+                      <li class="list-item item-lv4"><span class="link-text01"><a class="link-anchor" href="/domo/product/dl/"><span class="ir ir-link01"></span><span class="ir ir-num02">4</span>保湿液</a>
+                      </span>
+                      </li>
+                      <li class="list-item item-lv4"><span class="link-text01"><a class="link-anchor" href="/domo/product/de/"><span class="ir ir-link01"></span><span class="ir ir-num02">5</span>美活肌エキス</a>
+                      </span>
+                      </li>
+                      <li class="list-item item-lv4"><span class="link-text01"><a class="link-anchor" href="/domo/product/dw20/"><span class="ir ir-link01"></span><span class="ir ir-num02">6</span>クリーム20</a>
+                      </span>
+                      </li>
+                      [:* ▼2015/2/5 R-#16855_グローバルナビの商品名間違い対応 (nul yamashita) *:]
+                      <li class="list-item item-lv4"><span class="link-text01"><a class="link-anchor" href="/domo/product/dml/"><span class="ir ir-link01"></span><span class="ir ir-num02">7</span>保護乳液</a>
+                      </span></li>
+                    [:* ▲2015/2/5 R-#16855_グローバルナビの商品名間違い対応 (nul yamashita) *:]
+                      <li class="list-item item-lv4"><span class="link-text01"><a class="link-anchor" href="/domo/product/dc/"><span class="ir ir-link01"></span><span class="ir ir-num03">8</span>光対策 素肌ドレスクリーム</a></span>
+                      </li>
+                      [:if $smarty.session.LOGINTIME :]
+                      [:assign var=time value=$smarty.session.LOGINTIME:]
+                      [:else:]
+                      [:assign var=time value=$smarty.now:]
+                      [:/if:]
+                      [:if $time >= strtotime('2015-01-06 00:00:00') :]
+                      <li class="list-item item-lv4"><span class="link-text01">&nbsp;</span>
+                      </li>
+                      <li class="list-item item-lv4"><span class="link-text01"><a class="link-anchor" href="/domo/product/mgk/"><span class="ir ir-link01"></span>めぐりの結晶</a>
+                      </span>
+                      </li>
+                    [:/if:]
+                      <li class="list-item item-lv4"><span class="link-text01"><a class="link-anchor" href="/domo/product/dnd/"><span class="ir ir-link01"></span>飲むドモホルンリンクル</a>
+                      </span>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="list-item item-lv3"><span class="link-text01"><a class="link-anchor" href="/domo/sample_guide/"><span class="ir ir-link01"></span>無料お試しセットについて</a>
+                  </span>
+                  </li>
+                  <li class="list-item item-lv3"><span class="link-text01"><a class="link-anchor" href="/domo/speciality/"><span class="ir ir-link01"></span>ドモホルンリンクルのこだわり</a>
+                  </span>
+                  </li>
+                  <li class="list-item item-lv3"><span class="link-text01"><a class="link-anchor" href="/domo/product/history.html"><span class="ir ir-link01"></span>ドモホルンリンクルの歴史</a>
+                  </span>
+                  </li>
+                  <li class="list-item item-lv3"><span class="link-text01"><a class="link-anchor" href="/domo/present_guide/"><span class="ir ir-link01"></span>ポイントプレゼント品のご紹介</a>
+                  </span>
+                  </li>
+                  <li class="list-item item-lv3"><span class="link-text01"><a class="link-anchor" href="/domo/shop/"><span class="ir ir-link01"></span>ドモホルンリンクル コミュニケーションスペースについて</a>
+                  </span>
+                  </li>
+                  <li class="list-item item-lv3"><span class="link-text01"><a class="link-anchor" href="/domo/cm/"><span class="ir ir-link01"></span>CM紹介</a>
+                  </span></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="list-item item-lv1 list-voice with-child"><a href="/domo/customer_voice/" class="link-anchor link-voice anchor-lv1">お客様の声</a>
+            <ul class="child-list-lv1">
+              <li class="list-item item-lv2"><span class="link-text01"><a class="link-anchor" href="/domo/customer_voice/"><span class="ir ir-link01"></span>お客様の声トップ</a></span>
+                <ul class="child-list-lv2">
+                [:* ▼R-#29017_H28-00096-70_SSK_NET-1564_実感のお声ページのリンク元のテキストや見出しの修正 2016/10/19 sai-higashi *:]
+                  <li class="list-item item-lv3"><span class="link-text01"><a class="link-anchor" href="/domo/voice/index2.html"><span class="ir ir-link01"></span>私がドモをはじめた理由</a>
+                  [:* ▲R-#29017_H28-00096-70_SSK_NET-1564_実感のお声ページのリンク元のテキストや見出しの修正 2016/10/19 sai-higashi *:]
+                  </span></li>
+                  <li class="list-item item-lv3"><span class="link-text01"><a class="link-anchor" href="/domo/story/"><span class="ir ir-link01"></span>ドモホルンリンクルのある暮らし</a></span></li>
+                  <li class="list-item item-lv3"><span class="link-text01"><a class="link-anchor" href="/domo/interview/"><span class="ir ir-link01"></span>ドモホルンリンクルお客様インタビュー</a></span></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="list-item item-lv1 list-shiwashimi with-child"><a href="/domo/laboratory/" class="link-anchor link-shiwashimi anchor-lv1">年齢肌のために</a>
+            <ul class="child-list-lv1">
+              <li class="list-item item-lv2"><span class="link-text01"><a class="link-anchor" href="/domo/laboratory/"><span class="ir ir-link01"></span>年齢肌のためにトップ</a></span>
+                <ul class="child-list-lv2">
+                  <li class="list-item item-lv3"><span class="link-text01"><a class="link-anchor" href="/domo/kaihatsu/gakkai/"><span class="ir ir-link01"></span>研究開発の軌跡</a></span></li>
+                  <li class="list-item item-lv3"><span class="link-text01"><a class="link-anchor" href="/domo/raw_material/"><span class="ir ir-link01"></span>探し求めた天然原料</a>
+                  </span></li>
+                  <li class="list-item item-lv3"><span class="link-text01"><a class="link-anchor" href="/domo/skinknowledge/"><span class="ir ir-link01"></span>大人の肌を素敵な肌へ</a>
+                  </span></li>
+                  [:* ▼R-#28526_しわしみ通信動線削除 2016/07/14 sai-higashi *:]
+                  [:* しわしみ通信動線削除のため処理削除 *:]
+                  [:* ▲R-#28526_しわしみ通信動線削除 2016/07/14 sai-higashi *:]
+                  <li class="list-item item-lv3"><span class="link-text01"><a class="link-anchor" href="/domo/sign/"><span class="ir ir-link01"></span>年齢肌のお悩みの原因</a></span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="list-item item-lv1 list-oteate"><a href="/domo/skincare/" class="link-anchor link-oteate anchor-lv1">お肌のお手当て</a>
+          </li>
+          <li class="list-item item-lv1 list-aboutorder"><a href="/domo/order_guide/" class="link-anchor link-aboutorder anchor-lv1">ご注文について</a>
+          </li>
+          <li class="list-item item-lv1 list-faq"><a href="/domo/faq/" class="link-anchor link-faq anchor-lv1">よくあるご質問</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <hr class="hidden-hr" />
+    <!-- /div.page-header-->
+  </div>
+  <!-- ///// (new) グローバルナビ 2016 - END ///// -->
+  <!-- ///// インクルードファイル -->
   <!--///// (3) GTMの指定 - END /////-->
 
+ <!--///// (new) Beautyhabit ローカルナビ - START /////-->
+   <div id="bh-localNavWrap" class="megaDrop megaDrop--header">
+      <div id="bh-localHeader" class="bh-localHeader">
+       <div class="bh-localHeader__wrap">
+         <div class="bh-localHeader__innr">
+           <div class="bh-localHeader__left">
+             <a href="/domo/beautyhabit/" class="bh-localHeader__title">
+               <h1><span>飲む＆食べるドモホルンリンクル</span></h1>
+             </a>
+           </div>
+           <div id="bh-localNavBtn" class="bh-localHeader__right">
+             <div class="bh-localHeader__btn">
+               <span></span>
+               <span></span>
+               <span></span>
+             </div>
+             <div class="bh-localHeader__btnText">MENU</div>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div id="bh-localNav" class="bh-localNav">
+       <div class="bh-localNav__innr">
+         <div class="bh-localNav__list">
+           <ul class="bh-localNav__list__ul upper">
+             <li class="bh-localNav__list__nav bh-localNav__list__nav--ndw">
+               <span><img src="/assets/ps/domo/beautyhabit/common/img/_localnav/localnav_ndw.png" alt="飲むドモホルンリンクル"></span>
+               <ul class="bh-localNav__list__menu">
+                 <li class="bh-localNav__list__menu__li"><a href="">商品情報</a></li>
+                 <li class="bh-localNav__list__menu__li"><a href=""><span class="sub">きれいを生み出すメカニズムがわかる！</span>動画を見る</a></li>
+                 <li class="bh-localNav__list__menu__li"><a href="">開発者インタビュー</a></li>
+                 <li class="bh-localNav__list__menu__li li-button"><a href=""><img src="/assets/ps/domo/beautyhabit/common/img/_localnav/btn_nav.png" alt="ご注文はこちら"></a></li>
+               </ul>
+             </li>
+             <li class="bh-localNav__list__nav bh-localNav__list__nav--mgk">
+               <span><img src="/assets/ps/domo/beautyhabit/common/img/_localnav/localnav_mgk.png" alt="めぐりの結晶"></span>
+               <ul class="bh-localNav__list__menu">
+                 <li class="bh-localNav__list__menu__li"><a href="">商品情報</a></li>
+                 <li class="bh-localNav__list__menu__li"><a href=""><span class="sub">きれいを生み出すメカニズムがわかる！</span>動画を見る</a></li>
+                 <li class="bh-localNav__list__menu__li"><a href="">開発者インタビュー</a></li>
+                 <li class="bh-localNav__list__menu__li li-button"><a href=""><img src="/assets/ps/domo/beautyhabit/common/img/_localnav/btn_nav.png" alt="ご注文はこちら"></a></li>
+               </ul>
+             </li>
+           </ul>
+           <ul class="bh-localNav__list__ul lower">
+             <li class="bh-localNav__list__nav bh-localNav__list__nav--kenkyujo">
+               <a href="/domo/beautyhabit/lab.html">
+                 <span><img src="/assets/ps/domo/beautyhabit/common/img/_localnav/localnav_kenkyu.png" alt="ねむりとめぐりの研究所"></span>
+                 <div class="bh-localNav__list__menu">きれいづくりに大切な睡眠・退社・血行の研究、調査結果、成分をご紹介。</div>
+               </a>
+             </li>
+             <li class="bh-localNav__list__nav bh-localNav__list__nav--kuchikomi">
+               <a href="/domo/beautyhabit/lab.html">
+                 <span><img src="/assets/ps/domo/beautyhabit/common/img/_localnav/localnav_kuchikomi.png" alt="口コミ・インタビュー"></span>
+                 <div class="bh-localNav__list__menu">「うれしい変化を感じています！」愛飲者のリアルな口コミ・インタビューはこちら。</div>
+               </a>
+             </li>
+             <li class="bh-localNav__list__nav bh-localNav__list__nav--kenkyujo">
+               <a href="/domo/beautyhabit/lab.html">
+                 <span><img src="/assets/ps/domo/beautyhabit/common/img/_localnav/localnav_pickup.png" alt="ピックアップ・トピックス"></span>
+                 <div class="bh-localNav__list__menu">メディアからみた「飲むドモホルンリンクル」「めぐりの結晶」の魅力をご紹介。</div>
+               </a>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </div>
+    <!--///// (new) Beautyhabit ローカルナビ - END /////-->     
 <!--///// (4) コンテンツ  <div id="main" class="bh-main">内 - START /////-->
 <div id="main" class="bh-main">
 [:* SP用にナビゲーションを表示 *:]

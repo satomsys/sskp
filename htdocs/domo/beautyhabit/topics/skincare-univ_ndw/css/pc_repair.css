@@ -11,6 +11,11 @@
   padding: 40px 80px 80px;
   font-size: 14px;
 }
+@media screen and (max-width: 768px ){
+  .cmn_blk{
+    padding: 30px 40px 50px;
+  }
+}
 
 /* -------------- media */
 .media{
@@ -48,7 +53,7 @@
 }
 .blk01 .sub{
   display: block;
-  width: 500px;
+  max-width: 500px;
   margin: -92px auto 35px !important;
   text-align: center;
   background-color: #f2f5f7;
@@ -161,18 +166,31 @@
 }
 
 .blk02 .btm_btn{
-  width: 506px;
+  width: 64.87%;
   margin: 35px auto 0 !important;
 }
 .blk02 .btm_btn a{
   display: block;
-  padding: 20px 0 20px 45px;
-  font-size: 28px;
+  padding: 20px 0 20px 8%;
+  font-size: 25px;
   font-weight: bold;
   color: #ebc486;
   border: 4px solid #ebc486;
   border-radius: 10px;
   text-decoration: none;
   letter-spacing: 0.05em;
-  background: url("../images/cmn_btm_arw.png") no-repeat 90% center;
+  background: url("../images/cmn_btm_arw.png") no-repeat 95% center;
+  background-size: 3%;
+}
+
+
+@media screen and (max-width: 768px ){
+  .blk02 .btm_btn{
+    width: 90%;
+  }
+  .blk02 .btm_btn a{
+    font-size: 20px;
+    background-position: 95% center;
+    background-size: 20px;
+  }  
 }

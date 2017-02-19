@@ -327,19 +327,8 @@ html.remodal-is-locked {
   background: url(/assets/ps/domo/beautyhabit/common/img/bg_localheader_01.jpg) repeat center center;
   background-size: cover;
 }
-@media screen and (min-width: 569px) {
-.bh-localHeader_sp {
-  display:none;
-  min-width: 980px;
-  box-sizing: border-box;
-  min-height: 55px;
-  padding: 13px 0 12px;
-  background: url(/assets/ps/domo/beautyhabit/common/img/bg_localheader_01.jpg) repeat center center;
-  background-size: cover;
-}
-}
 @media screen and (max-width: 568px) {
-  .bh-localHeader_sp {
+  .bh-localHeader {
     width: 100%;
     min-width: 320px;
     position: absolute;
@@ -349,10 +338,8 @@ html.remodal-is-locked {
     min-height: inherit;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
-    background: url(/assets/ps/domo/beautyhabit/common/img/bg_localheader_01.jpg) repeat center center;
-    background-size: cover;
   }
-  .fixed .bh-localHeader_sp {
+  .fixed .bh-localHeader {
     position: fixed;
     z-index: 1000;
     top: 0;
@@ -485,49 +472,13 @@ html.remodal-is-locked {
 @media screen and (min-height: 601px) and (min-width: 569px) {
   .bh-localNav.fixed {
     width: 100%;
+    position: fixed;
     z-index: 10;
+    top: 39px;
     left: 0;
   }
-}
-
-
-
-
-@media screen and (min-width: 569px) {
-.bh-localNav_sp {
-    display: none;
-    width: 100%;
-    min-width: 320px;
-    height: 100%;
-    position: absolute;
-    z-index: 10;
-    top: 43px;
-    left: 0;
-    background: #EDE7DF;
-    height: auto;
-    box-sizing: border-box;
-    padding: 30px 0;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
 }
 @media screen and (max-width: 568px) {
-  .bh-localNav_sp {
-    display: none;
-    width: 100%;
-    min-width: 320px;
-    height: 100%;
-    position: absolute;
-    z-index: 10;
-    top: 43px;
-    left: 0;
-    background: #EDE7DF;
-    height: auto;
-    box-sizing: border-box;
-    padding: 30px 0;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
   .bh-localNav {
     display: none;
     width: 100%;
@@ -544,7 +495,7 @@ html.remodal-is-locked {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-  .fixed .bh-localNav_sp {
+  .fixed .bh-localNav {
     position: fixed;
     z-index: 1000;
     top: 43px;
@@ -597,9 +548,6 @@ html.remodal-is-locked {
   .bh-localNav__list__ul:after {
     clear: both;
   }
-  .bh-localNav__list__ul.upper {
-    padding: 0 16px;
-  }
   .bh-localNav__list__ul.lower {
     margin-top: 15px;
     padding: 15px 16px;
@@ -612,10 +560,6 @@ html.remodal-is-locked {
 @media screen and (max-width: 568px) {
   .bh-localNav__list__nav {
     float: none;
-  }
-  .upper .bh-localNav__list__nav {
-    float: left;
-    width: 50%;
   }
   .lower .bh-localNav__list__nav {
     float: none;
@@ -763,5 +707,3 @@ html.remodal-is-locked {
   text-align: center;
   padding: 300px 0;
 }
-
-/*# sourceMappingURL=common.css.map */

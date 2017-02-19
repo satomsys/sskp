@@ -126,6 +126,9 @@ body.open:after {
   background: url(/assets/ps/domo/beautyhabit/common/img/bg_localheader_01.jpg) repeat center center;
   background-size: cover;
 }
+.megaDrop .bh-localHeader_sp {
+  display: none;
+}
 @media screen and (max-width: 568px) {
   .megaDrop .bh-localHeader {
     width: 100%;
@@ -144,6 +147,9 @@ body.open:after {
     z-index: 1000;
     top: 0;
     left: 0;
+  }
+  .megaDrop .bh-localHeader_sp {
+    display: inherit;
   }
 }
 .megaDrop .bh-localHeader__wrap {
@@ -448,6 +454,10 @@ body.open:after {
   .megaDrop .bh-localNav__list__ul:after {
     clear: both;
   }
+  .megaDrop .bh-localNav__list__ul.lower {
+    margin-top: 0;
+    padding: 0;
+  }
   .megaDrop .bh-localNav__list__ul.lower .bh-localNav__list__nav {
     width: 33.3333%;
     padding-left: 10px;
@@ -573,9 +583,13 @@ body.open:after {
     display: none;
   }
 }
+.fixed .bh-localNav.bh-localNav--footer {
+  position: relative;
+}
 .bh-localNav.bh-localNav--footer {
   top: 0;
   position: relative;
+  z-index: 1;
 }
 @media screen and (max-width: 950px) {
   .bh-localNav.bh-localNav--footer {
@@ -618,6 +632,7 @@ body.open:after {
     padding-bottom: 57px;
   }
   .bh-localNav.bh-localNav--footer .bh-localNav__list__nav {
+    width: 100%;
     min-height: 75px;
     padding: 10px;
     display: table-cell;
@@ -678,9 +693,14 @@ body.open:after {
 .bh-productList--wide {
   padding-top: 100px;
 }
+@media screen and (max-width: 768px) {
+  .bh-productList--wide {
+    padding-top: 50px;
+  }
+}
 @media screen and (max-width: 568px) {
   .bh-productList--wide {
-    padding-top: 45px;
+    padding-top: 40px;
   }
   .bh-sectionDeveloper .bh-productList--wide {
     padding-left: 15px;
@@ -690,6 +710,11 @@ body.open:after {
 .bh-productList--wide .bh-productList__title {
   margin-top: 0;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .bh-productList--wide .bh-productList__title img {
+    max-width: 90%;
+  }
 }
 @media screen and (max-width: 568px) {
   .bh-productList--wide .bh-productList__title img {
@@ -1232,6 +1257,12 @@ body.open:after {
 }
 .bh-nomudomotop__banner li {
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .bh-nomudomotop__banner {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 @media screen and (max-width: 568px) {
   .bh-nomudomotop__banner {

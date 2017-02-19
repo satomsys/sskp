@@ -27,7 +27,6 @@
   <!--///// (2) ページに必要なjs と CSS - START /////-->
   <!-- /beautyhabit/ 共通部分css -->
   <link rel="stylesheet" href="/assets/ps/domo/beautyhabit/common/css/common.css?20161014" />
-  <link rel="stylesheet" href="/assets/ps/domo/beautyhabit/common/css/osusume.css?20161014" />
   <!-- end /beautyhabit/ 共通部分css -->
   <!-- ///// (new ) モジュール用CSS - START ///// -->
     <link rel="stylesheet" href="/assets/ps/domo/beautyhabit/common/css/templateParts.css" />
@@ -66,6 +65,76 @@
   <!--///// (3) GTMの指定 - START /////-->
   [:include file="domo/beautyhabit/_header.inc.tpl":]
   <!--///// (3) GTMの指定 - END /////-->
+
+  <!--///// (new) Beautyhabit ローカルナビ - START /////-->
+     <div id="bh-localNavWrap" class="megaDrop megaDrop--header">
+        <div id="bh-localHeader" class="bh-localHeader">
+         <div class="bh-localHeader__wrap">
+           <div class="bh-localHeader__innr">
+             <div class="bh-localHeader__left">
+               <a href="/domo/beautyhabit/" class="bh-localHeader__title">
+                 <h1><span>飲む＆食べるドモホルンリンクル</span></h1>
+               </a>
+             </div>
+             <div id="bh-localNavBtn" class="bh-localHeader__right">
+               <div class="bh-localHeader__btn">
+                 <span></span>
+                 <span></span>
+                 <span></span>
+               </div>
+               <div class="bh-localHeader__btnText">MENU</div>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div id="bh-localNav" class="bh-localNav">
+         <div class="bh-localNav__innr">
+           <div class="bh-localNav__list">
+             <ul class="bh-localNav__list__ul upper">
+               <li class="bh-localNav__list__nav bh-localNav__list__nav--ndw">
+                 <span><img src="/assets/ps/domo/beautyhabit/common/img/_localnav/localnav_ndw.png" alt="飲むドモホルンリンクル"></span>
+                 <ul class="bh-localNav__list__menu">
+                   <li class="bh-localNav__list__menu__li"><a href="">商品情報</a></li>
+                   <li class="bh-localNav__list__menu__li"><a href=""><span class="sub">きれいを生み出すメカニズムがわかる！</span>動画を見る</a></li>
+                   <li class="bh-localNav__list__menu__li"><a href="">開発者インタビュー</a></li>
+                   <li class="bh-localNav__list__menu__li li-button"><a href="https://www.saishunkan.co.jp/domo/direct_order/#dnd-anchor"><img src="/assets/ps/domo/beautyhabit/common/img/_localnav/btn_nav.png" alt="ご注文はこちら"></a></li>
+                 </ul>
+               </li>
+               <li class="bh-localNav__list__nav bh-localNav__list__nav--mgk">
+                 <span><img src="/assets/ps/domo/beautyhabit/common/img/_localnav/localnav_mgk.png" alt="めぐりの結晶"></span>
+                 <ul class="bh-localNav__list__menu">
+                   <li class="bh-localNav__list__menu__li"><a href="">商品情報</a></li>
+                   <li class="bh-localNav__list__menu__li"><a href=""><span class="sub">きれいを生み出すメカニズムがわかる！</span>動画を見る</a></li>
+                   <li class="bh-localNav__list__menu__li"><a href="">開発者インタビュー</a></li>
+                   <li class="bh-localNav__list__menu__li li-button"><a href="https://www.saishunkan.co.jp/domo/direct_order/#beautyhabit"><img src="/assets/ps/domo/beautyhabit/common/img/_localnav/btn_nav.png" alt="ご注文はこちら"></a></li>
+                 </ul>
+               </li>
+             </ul>
+             <ul class="bh-localNav__list__ul lower">
+               <li class="bh-localNav__list__nav bh-localNav__list__nav--kenkyujo">
+                 <a href="/domo/beautyhabit/lab.html">
+                   <span><img src="/assets/ps/domo/beautyhabit/common/img/_localnav/localnav_kenkyu.png" alt="ねむりとめぐりの研究所"></span>
+                   <div class="bh-localNav__list__menu">きれいづくりに大切な睡眠・退社・血行の研究、調査結果、成分をご紹介。</div>
+                 </a>
+               </li>
+               <li class="bh-localNav__list__nav bh-localNav__list__nav--kuchikomi">
+                 <a href="/domo/beautyhabit/lab.html">
+                   <span><img src="/assets/ps/domo/beautyhabit/common/img/_localnav/localnav_kuchikomi.png" alt="口コミ・インタビュー"></span>
+                   <div class="bh-localNav__list__menu">「うれしい変化を感じています！」愛飲者のリアルな口コミ・インタビューはこちら。</div>
+                 </a>
+               </li>
+               <li class="bh-localNav__list__nav bh-localNav__list__nav--kenkyujo">
+                 <a href="/domo/beautyhabit/lab.html">
+                   <span><img src="/assets/ps/domo/beautyhabit/common/img/_localnav/localnav_pickup.png" alt="ピックアップ・トピックス"></span>
+                   <div class="bh-localNav__list__menu">メディアからみた「飲むドモホルンリンクル」「めぐりの結晶」の魅力をご紹介。</div>
+                 </a>
+               </li>
+             </ul>
+           </div>
+         </div>
+       </div>
+     </div>
+      <!--///// (new) Beautyhabit ローカルナビ - END /////-->      
 
   <!--///// (4) コンテンツ  <div id="main" class="bh-main">内 - START /////-->
   <div id="main" class="bh-main">
@@ -358,28 +427,54 @@
             </ul>
           </div>
         </div>
-
-        <div class="bh-localPagetop">
-          <div class="bh-localPagetop__btnBox">
-            <ul class="bh-localPagetop__btnList">
-              <li class="bh-localPagetop__btnList__li">
-                <a href="/domo/beautyhabit/"><img src="/assets/ps/domo/beautyhabit/common/img/btn_ndwtop_01.png" alt=""></a>
-              </li>
-              <li class="bh-localPagetop__btnList__li">
-                <a href="/domo/"><img src="/assets/ps/domo/beautyhabit/common/img/btn_top_01.png" alt=""></a>
-              </li>
-            </ul>
-          </div>
-          <div class="bh-localPagetop__pagetop">
-            <a href="#top"><img src="/assets/ps/domo/beautyhabit/common/img/btn_pagetop_01.png" alt=""></a>
-          </div>
-        </div>
       </div>
     </div>
     <!-- // おすすめコンテンツ - END -->
 
   </div><!-- .wrap -->  
   <!--///// 下層ページ - END /////-->
+
+  <!-- *****　(new) サイト共通 フッターナビ - START -->
+  <div id="" class="bh-localNav bh-localNav--footer">
+    <div class="bh-localNav__innr">
+      <div class="bh-localNav__list">
+                  <ul class="bh-localNav__list__ul upper">
+            <li class="bh-localNav__list__nav bh-localNav__list__nav--ndw">
+              <a href="/domo/beautyhabit/ndw.html" class="nav01">
+                <span>飲むドモホルンリンクル</span>
+              </a>
+            </li>
+            <li class="bh-localNav__list__nav bh-localNav__list__nav--mgk">
+              <a href="/domo/beautyhabit/mgk.html" class="nav02">
+                <span>めぐりの結晶</span>
+              </a>
+            </li>
+          </ul>
+          <ul class="bh-localNav__list__ul lower">
+            <li class="bh-localNav__list__nav bh-localNav__list__nav--kenkyujo">
+              <a href="/domo/beautyhabit/lab.html" class="nav03">
+                <span>ねむりとめぐりの研究所</span>
+              </a>
+            </li>
+            <li class="bh-localNav__list__nav bh-localNav__list__nav--kuchikomi">
+              <a href="/domo/beautyhabit/review.html" class="nav04">
+                <span>口コミ・インタビュー</span>
+              </a>
+            </li>
+            <li class="bh-localNav__list__nav bh-localNav__list__nav--pickup nav05">
+              <a href="/domo/beautyhabit/topics.html" class="nav05">
+                <span>ピックアップ・トピックス</span>
+              </a>
+            </li>
+          </ul>
+      </div>
+    </div>
+    <div class="bh-localNav__pagetop">
+        <a href="#top"><img src="/assets/ps/domo/beautyhabit/common/img/_btn/btn_pagetop_01.png" alt="ページトップへ"></a>
+    </div>
+  </div>
+  <!-- ///// (new) サイト共通 フッターナビ - END ///// -->    
+
 
   </div>
   <!--///// (4) コンテンツ  <div id="main">内 - END /////-->
