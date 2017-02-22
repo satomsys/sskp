@@ -60,7 +60,8 @@
 }
 .blk_top .sub{
   display: block;
-  width: 500px;
+  width: 75%;
+  // width: 500px;
   margin: -92px auto 35px !important;
   text-align: center;
   background-color: #f2f5f7;
@@ -151,7 +152,10 @@
 }
 .blk_btm .sub{
   display: block;
-  width: 500px;
+  width: 75%;
+  padding: 0 1%;
+  box-sizing: border-box;
+  // width: 500px;
   margin: -92px auto 35px !important;
   text-align: center;
   background-color: #f2f5f7;
@@ -160,7 +164,8 @@
 /*col*/
 .blk_btm .col{
   float: right;
-  width: 330px;
+  width: 44.59%;
+  // width: 330px;
 }
 .blk_btm .col:first-child{
   float: left;

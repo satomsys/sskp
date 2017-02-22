@@ -13,7 +13,7 @@
   }
 
   function judge() {
-    if(window.innerWidth <= 568) {
+    if(window.innerWidth <= 768) {
       panels();
     }else if($(window).scrollTop() > 300){
       panels();
@@ -89,15 +89,18 @@
     }
   }
 
-  function masonaryInit() {
+  function masonaryInit( ) {
     $('.bh-articleList__list').masonry({
       // options
       itemSelector: '.bh-articleList__list__li',
       columnWidth: '.bh-articleList__list__gridSizer',//290,
+      // columnWidth: '.bh-articleList__list__gridSizer',//290,
       gutter: '.bh-articleList__list__gutterSizer',
       isResizable: true,
-      percentPosition: true
+      percentPosition: false,
+      isFitWidth: true
     });
+    // console.log (isFitWidth)
   }
 
 　// パネルをスクロールに沿って表示
@@ -118,7 +121,7 @@
     bh_loading(elem);
     setTimeout(function(){
       masonaryRandom();
-      masonaryInit();
+      masonaryInit( );
       bh_loading_hide(elem);
       bh_graduallydisplay();
     },500);
@@ -147,7 +150,7 @@
       clearTimeout(timer);
     }
     timer = setTimeout(function () {
-
+      judge();
     }, 200);
   });
 

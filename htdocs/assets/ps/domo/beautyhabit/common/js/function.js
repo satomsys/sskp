@@ -53,7 +53,9 @@
       var _btn = $('#bh-spLocalNavBtn, #bh-localNavBtn');
       var _trg = $('#bh-localNav');
       var _body = $('body');
-      _btn.on('click', function () {
+      _btn.on('click', function ( e ) {
+        e.stopPropagation();
+        e.preventDefault();
         var _trg = $(this).closest('#bh-localHeader').siblings('#bh-localNav');
         
         if ($(this).hasClass('open')) {

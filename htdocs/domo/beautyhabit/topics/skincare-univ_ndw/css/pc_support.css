@@ -22,7 +22,10 @@
 }
 .blk_top .sub{
   display: block;
-  width: 500px;
+  width: 75%;
+  padding: 0 1%;
+  box-sizing: border-box;  
+  // width: 500px;
   margin: -92px auto 35px !important;
   text-align: center;
   background-color: #f2f5f7;
@@ -78,11 +81,15 @@
   background-color: #fff;
 }
 .blk_btm .in_blk{
+  box-sizing: border-box;
+
   padding: 55px 38px 50px;
   border: 1px solid #886e4f;
 }
 .blk_btm .sub{
-  margin-bottom: 55px !important;
+  width: 75%;
+  padding: 0 1%;
+  margin: 0 auto 55px!important;
   text-align: center;
 }
 

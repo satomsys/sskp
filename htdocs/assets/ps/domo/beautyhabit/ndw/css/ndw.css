@@ -721,11 +721,15 @@
   background-repeat: no-repeat;
   background-size: auto;
   position: relative;
-  padding-top: 100px;
+  // padding-top: 100px;
 }
+@media screen and (max-width: 950px) {
+  .bh-nomudomoDeveloper {
+     padding-top: 40px;}
+  }
 @media screen and (max-width: 568px) {
   .bh-nomudomoDeveloper {
-    padding-top: 40px;
+     padding-top: 40px;
     background-size: 110% auto;
     background-position: center -50px;
   }
@@ -733,6 +737,9 @@
 .bh-nomudomoDeveloper__title {
   text-align: center;
   margin: 0;
+}
+.bh-nomudomoDeveloper__title img{
+  max-width: 84.04%;
 }
 .bh-nomudomoDeveloper__title hr {
   width: 94px;
@@ -808,7 +815,7 @@
   }
 }
 .bh-nomudomoDeveloper__text {
-  width: 768px;
+  width: 81.70%;
   margin: 35px auto 0;
   font-size: 1.13em;
   line-height: 2;
@@ -1110,6 +1117,11 @@
 .bh-nomudomotop {
   position: relative;
   margin-top: 60px;
+}
+@media screen and (max-width: 768px) {
+.bh-nomudomotop {
+  margin-top: 0px;
+}
 }
 .bh-nomudomotop__btnList {
   text-align: center;

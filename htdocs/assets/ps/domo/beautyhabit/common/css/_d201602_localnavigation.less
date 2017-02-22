@@ -65,7 +65,7 @@ body {
     // top: 39px;
     right: 0;
     left: 0;
-    z-index: 4;
+    z-index: 14;
   }
 
   @media screen and (max-width: @break_SP) {
@@ -144,6 +144,8 @@ body {
   &__left {
       display: table-cell;
       vertical-align: middle;  
+      position: relative;
+      // z-index: -1;
   }
 
   //////menubutton //////
@@ -385,6 +387,10 @@ body {
     overflow: hidden;
     border-spacing: 10px 5px;
     background-color: transparent;
+    
+    &.upper{
+      padding: 0;
+    }
 
     &.upper li{
       font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
@@ -567,15 +573,13 @@ body {
        width: 50%;
        padding: 10px 8px;
        margin-left: 0;
-       float: none;
+       float: none!important;
        
       span img{
         max-width: 100%;
       }       
     }  
   }
-
-
 
 
 

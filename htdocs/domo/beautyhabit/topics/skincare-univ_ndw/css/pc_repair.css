@@ -53,7 +53,10 @@
 }
 .blk01 .sub{
   display: block;
-  max-width: 500px;
+  width: 75%;
+  padding: 0 1%;
+  box-sizing: border-box;  
+  // max-width: 500px;
   margin: -92px auto 35px !important;
   text-align: center;
   background-color: #f2f5f7;
@@ -106,6 +109,10 @@
   background-color: #fff;
 }
 .blk02 .sub{
+  width: 75%;
+  padding: 0 1%;
+  margin: auto!important;
+  box-sizing: border-box;  
   margin-bottom: 35px !important;
   text-align: center;
 }

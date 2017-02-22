@@ -201,9 +201,11 @@ table {
   font-size: 0;
 }
 .cmn_vsl .ttl{
+  width: 50.52%;
   float: left;
 }
 .cmn_vsl .vsl{
+  width: 37.52%;
   float: right;
 }
 
@@ -217,8 +219,8 @@ table {
 }
 .cmn_nav li{
   display: inline-block;
-  margin: 0 5px;
-  width: 220px;
+  margin: 0 0.53%;
+  width: 23.40%;
 }
 .cmn_nav li a{
   display: block;

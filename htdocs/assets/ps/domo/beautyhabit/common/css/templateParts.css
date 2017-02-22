@@ -103,7 +103,7 @@ body.open:after {
   position: fixed;
   right: 0;
   left: 0;
-  z-index: 4;
+  z-index: 14;
 }
 @media screen and (max-width: 568px) {
   .megaDrop {
@@ -177,6 +177,7 @@ body.open:after {
 .megaDrop .bh-localHeader__left {
   display: table-cell;
   vertical-align: middle;
+  position: relative;
 }
 .megaDrop .bh-localHeader__right {
   width: 50px;
@@ -405,6 +406,9 @@ body.open:after {
   border-spacing: 10px 5px;
   background-color: transparent;
 }
+.megaDrop .bh-localNav__list__ul.upper {
+  padding: 0;
+}
 .megaDrop .bh-localNav__list__ul.upper li {
   font-family: "游明朝", "Yu Mincho", "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
@@ -524,7 +528,7 @@ body.open:after {
     width: 50%;
     padding: 10px 8px;
     margin-left: 0;
-    float: none;
+    float: none!important;
   }
   .megaDrop .bh-localNav__list__nav span img {
     max-width: 100%;
@@ -866,10 +870,12 @@ body.open:after {
   margin-right: auto;
   padding-top: 100px;
 }
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 950px) {
   .bh-pickup {
-    padding-top: 45px;
+    padding-top: 40px;
   }
+}
+@media screen and (max-width: 568px) {
   .bh-sectionDeveloper .bh-pickup {
     padding-left: 15px;
     padding-right: 15px;
@@ -1279,7 +1285,7 @@ body.open:after {
   right: 3%;
   bottom: 100%;
 }
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 768px) {
   .bh-localNav__pagetop {
     width: 60px;
     position: static;

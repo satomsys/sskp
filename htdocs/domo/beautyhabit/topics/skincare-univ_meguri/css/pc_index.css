@@ -17,7 +17,8 @@
 
 /* -------------- vsl */
 .idx_vsl{
-  width: 940px;
+  max-width: 940px;
+  min-height: 600px;
   overflow: hidden;
   position: relative;
   /* padding-top: 50px !important; */
@@ -30,16 +31,26 @@
   width: 100%;
 }
 .idx_vsl .ttl{
+  width: 40.74%;
   position: absolute;
   top: 26px;
   /*left: 155px;*/
   left: 135px;
 }
 .idx_vsl .sub{
+  width: 55.84%;
   position: absolute;
   z-index: 2;
-  top: 260px;
+  top: 43.333%;
   left: -20px;
+}
+@media screen and ( max-width: 800px ){
+  .idx_vsl{
+    min-height: 0;
+  }  
+  .idx_vsl .sub{
+    top: 32%;
+  }
 }
 .idx_vsl .list{
   position: absolute;
@@ -57,6 +68,8 @@
   color: #4c4c4c;
   font-size: 18px;
 }
+
+
 .idx_vsl .list li{
   margin-top: 14px !important;
   padding-left: 10%;
@@ -64,6 +77,18 @@
   line-height: 30px;
 }
 .idx_vsl .list li:first-child{margin-top: 0;}
+
+@media screen and ( max-width: 800px ){
+  .idx_vsl .list{
+    position: static;
+    width: auto;
+    padding: 20px!important;
+  } 
+
+   .idx_vsl .list li br{
+    display: none;
+  }
+}
 
 /* -------------- blk */
 .idx_blk{

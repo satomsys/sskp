@@ -277,6 +277,10 @@
 .bh-nomudomo01__title {
   text-align: center;
 }
+.bh-nomudomo01__title img{
+  max-width: 84.04%;
+}
+
 .bh-nomudomo01__title hr {
   width: 94px;
   margin: 20px auto 0;
@@ -727,6 +731,11 @@
   position: relative;
   padding-top: 124px;
 }
+@media screen and (max-width: 960px) {
+  .bh-nomudomoDeveloper {
+    padding-top: 40px;
+  }
+}
 @media screen and (max-width: 568px) {
   .bh-nomudomoDeveloper {
     padding-top: 40px;
@@ -737,6 +746,9 @@
 .bh-nomudomoDeveloper__title {
   text-align: center;
   margin: 0;
+}
+.bh-nomudomoDeveloper__title img{
+  max-width: 84.04%;
 }
 .bh-nomudomoDeveloper__title hr {
   width: 94px;
@@ -812,7 +824,7 @@
   }
 }
 .bh-nomudomoDeveloper__text {
-  width: 768px;
+  width: 81.70%;
   margin: 35px auto 0;
   font-size: 1.13em;
   line-height: 2;
@@ -1133,6 +1145,12 @@
   position: relative;
   margin-top: 60px;
 }
+@media screen and (max-width: 768px) {
+.bh-nomudomotop {
+  margin-top: 0px;
+}
+}
+
 .bh-nomudomotop__btnList {
   text-align: center;
   letter-spacing: -0.4em;

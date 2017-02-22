@@ -252,7 +252,25 @@ contents
 	padding: 2% 5%;
 }
 }
+
+/*-------------- bnr ----------------*/
+@media screen and ( max-width: 950px ){
+	.bh-sectionNomudomo .bh-innr:last-child,
+	.bh-sectionNomudomo .bh-innr:last-child .osusume-contents
+	{
+		padding-bottom: 0;
+	}
+	
+}
+
+.main-wrap + .bh-innr > .bh-nomudomotop,
+.main-wrap + .bh-innr > .bh-nomudomotop > .bh-nomudomotop__banner{
+	margin-top: 0;
+}
+
 /*-------------- btn ----------------*/
+
+
 .page-topics .btn-link-wrap {
 	text-align: center;
 	margin: 30px 0;
@@ -316,10 +334,16 @@ contents
 }
 
 /* ----- メニュー高さ調整 ---- */
-@media screen and (min-width: 568px) {
-.bh-main {
-	padding-top: 143px;
+@media screen and (max-width: 768px) {
+	.bh-innr:last-child {
+		padding-bottom: 0px;
+	}	
 }
+@media screen and (min-width: 568px) {
+	.bh-main {
+		padding-top: 143px;
+	}
+
 }
 
 
