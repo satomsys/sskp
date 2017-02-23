@@ -15,7 +15,7 @@
   function judge() {
     if(window.innerWidth <= 768) {
       panels();
-    }else if($(window).scrollTop() > 300){
+    }else if($(window).scrollTop() > 250){
       panels();
     }
     return;

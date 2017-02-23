@@ -15,14 +15,26 @@
 /********** TOPへバナー **********/
 
 .bh-nomudomotop{
+
+  margin-top: 0!important;
+  
   &__banner{
     max-width: @column_PC;
     padding-left: 0;
-    margin: 80px auto;
+    margin: 50px auto;
     list-style: none;
     
     li{
       text-align: center;      
+    }
+
+    li a{
+      cursor: pointer;
+       transition: opacity .3s ease;
+    }
+
+    li a:hover{
+      opacity: 0.8;
     }
   }
   @media screen and (max-width: @break_TABsmall) {

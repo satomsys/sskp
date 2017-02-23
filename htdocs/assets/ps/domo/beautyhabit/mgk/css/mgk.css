@@ -4,6 +4,11 @@
   2016 02　メインヴィジュアル
 **********************/
 
+.bh-nomudomoDeveloper__heading h2{
+  padding: 0;
+  margin-bottom: 0;
+}
+
 .bh-sectionMainvisual {
   padding-bottom: 83px;
   position: relative;
@@ -729,7 +734,7 @@
   background-repeat: no-repeat;
   background-size: auto;
   position: relative;
-  padding-top: 124px;
+  padding-top: 40px;
 }
 @media screen and (max-width: 960px) {
   .bh-nomudomoDeveloper {

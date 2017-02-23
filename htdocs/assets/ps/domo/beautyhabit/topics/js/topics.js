@@ -13,9 +13,9 @@
   }
 
   function judge() {
-    if(window.innerWidth <= 568) {
+    if(window.innerWidth <= 768) {
       panels();
-    }else if($(window).scrollTop() > ($(window).height()/8)){
+    }else if($(window).scrollTop() > ($(window).height()/10)){
     panels();
     }
     return;
@@ -88,7 +88,8 @@
       columnWidth: '.bh-articleList__list__gridSizer',//290,
       gutter: '.bh-articleList__list__gutterSizer',
       isResizable: true,
-      percentPosition: true
+      percentPosition: true,
+      isFitWidth: true
     });
   }
 
@@ -142,7 +143,7 @@
       clearTimeout(timer);
     }
     timer = setTimeout(function () {
-
+      judge();
     }, 200);
   });
 
